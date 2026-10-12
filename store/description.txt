@@ -1,0 +1,26 @@
+PhraseTab turns every new tab into a quick English lesson.
+
+Each time you open a tab, you see a different English phrase, laid out like a dictionary entry:
+
+• The phrase, its type (idiom, phrasal verb, expression or collocation) and its level
+• A clear, simple definition
+• A natural example sentence
+• Pronunciation at the click of a button
+• Optional Bangla and Chinese (Simplified) translations
+
+There are 220 hand-written phrases, from everyday ones like "piece of cake" and "call off" to professional ones like "bring someone up to speed" and "take it with a grain of salt".
+
+LEARN AT YOUR OWN PACE
+• Mark a phrase as Learning to see it more often, or as Known to see it rarely
+• Save phrases to a personal list you can search later
+• Choose Beginner, Intermediate or Advanced levels, or all three
+• Prefer repetition? Set each phrase to stay for a few tabs before it changes
+• Keyboard shortcuts: N next, L learning, K known, S save, P pronounce
+• Light and dark themes in a clean black-and-white design
+
+PRIVATE BY DESIGN
+• No account, no ads, no analytics, no tracking
+• Works completely offline. Nothing you do ever leaves your computer
+• Uses a single permission, storage, to remember your settings and progress on your own device
+
+Created by Anik Tahabilder, PhD student in Computer Science at Wayne State University.

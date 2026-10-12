@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Generate WordTab's extension icons.
+"""Generate PhraseTab's extension icons.
 
-The mark is a rounded square in the app accent colour carrying a white "W"
-underlined by a short rule -- a "word" plus the tab it sits on. Rendered at 8x
-and downsampled so the diagonals stay smooth at 16px.
+The mark is a black rounded square carrying a white "P" underlined by a short
+rule -- a "phrase" plus the tab it sits on -- matching the black-and-white
+interface. Rendered at 8x and downsampled so the curves stay smooth at 16px.
 """
 from PIL import Image, ImageDraw
 import os
 
-ACCENT_TOP = (79, 70, 229)     # indigo-600
-ACCENT_BOTTOM = (99, 102, 241)  # indigo-500
+GROUND = (0, 0, 0)
 INK = (255, 255, 255)
 
 SS = 8  # supersampling factor
@@ -21,34 +20,39 @@ def render(size: int) -> Image.Image:
     s = size * SS
     img = Image.new('RGBA', (s, s), (0, 0, 0, 0))
 
-    # Vertical gradient body, clipped to a rounded square.
-    grad = Image.new('RGBA', (s, s))
-    gd = ImageDraw.Draw(grad)
-    for y in range(s):
-        t = y / max(s - 1, 1)
-        gd.line(
-            [(0, y), (s, y)],
-            fill=tuple(round(a + (b - a) * t) for a, b in zip(ACCENT_TOP, ACCENT_BOTTOM)) + (255,),
-        )
-    mask = Image.new('L', (s, s), 0)
-    ImageDraw.Draw(mask).rounded_rectangle([0, 0, s - 1, s - 1], radius=int(s * 0.24), fill=255)
-    img.paste(grad, (0, 0), mask)
-
     d = ImageDraw.Draw(img)
+    d.rounded_rectangle([0, 0, s - 1, s - 1], radius=int(s * 0.24), fill=GROUND + (255,))
 
-    # "W" as four strokes of a single polyline.
-    top, bottom = s * 0.30, s * 0.63
+    # "P": a stem plus a bowl, drawn as a ring with its left half covered by
+    # the stem so the joins stay crisp.
+    stroke = s * 0.105
+    top, bottom = s * 0.20, s * 0.64
+    stem_left = s * 0.32
+    bowl_bottom = s * 0.475
+    bowl_right = s * 0.70
+    bowl_h = bowl_bottom - top
+    d.rounded_rectangle(
+        [stem_left, top, bowl_right, bowl_bottom],
+        radius=bowl_h / 2,
+        fill=INK + (255,),
+    )
+    d.rounded_rectangle(
+        [stem_left + stroke, top + stroke, bowl_right - stroke, bowl_bottom - stroke],
+        radius=max(bowl_h / 2 - stroke, 1),
+        fill=GROUND + (255,),
+    )
+    d.rectangle([stem_left, top, stem_left + stroke, bottom], fill=INK + (255,))
+    # Square off the bowl's left side so it meets the stem flush.
+    d.rectangle([stem_left, top, stem_left + bowl_h / 2, top + stroke], fill=INK + (255,))
+    d.rectangle(
+        [stem_left, bowl_bottom - stroke, stem_left + bowl_h / 2, bowl_bottom],
+        fill=INK + (255,),
+    )
+    d.rectangle(
+        [stem_left + stroke, top + stroke, stem_left + bowl_h / 2, bowl_bottom - stroke],
+        fill=GROUND + (255,),
+    )
     left, right = s * 0.22, s * 0.78
-    mid_y = s * 0.47
-    span = right - left
-    points = [
-        (left, top),
-        (left + span * 0.25, bottom),
-        (left + span * 0.50, mid_y),
-        (left + span * 0.75, bottom),
-        (right, top),
-    ]
-    d.line(points, fill=INK + (255,), width=max(int(s * 0.085), SS), joint='curve')
 
     # Underline: the "tab" the word rests on.
     rule_y = s * 0.74
