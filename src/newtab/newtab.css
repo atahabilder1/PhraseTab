@@ -54,11 +54,22 @@
   }
 }
 
+.entry__label-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.entry__label-row > .listen {
+  /* Keep the label line as tall as the text, not the button's hit area. */
+  margin-block: -0.6rem;
+}
+
 .entry__eyebrow {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 0.75rem;
 }
 
 .entry__eyebrow-dot {
@@ -81,6 +92,17 @@
      them would misrepresent how they are written. */
   overflow-wrap: break-word;
   hyphens: auto;
+  /* Even out multi-line phrases ("take it with a / grain of salt") instead of
+     stranding a short tail on the last line. Ignored before Chrome 114. */
+  text-wrap: balance;
+}
+
+/* Most phrases are shrunk to fit one line by useFitOneLine. Idioms too long
+   for that ("cross that bridge when we come to it") wrap instead, at this
+   smaller size so they stay at two lines on a laptop. */
+.entry__term--long {
+  font-size: clamp(2.125rem, 5vw, 3.375rem);
+  line-height: 1.08;
 }
 
 .entry__pronunciation {
@@ -137,7 +159,7 @@
   display: flex;
   align-items: center;
   gap: 0.9rem;
-  margin: 1.15rem 0 1.35rem;
+  margin: 1.5rem 0 1.35rem;
 }
 
 .entry__rule-line {
@@ -295,16 +317,11 @@
   display: block;
 }
 
-.action--learning.is-active {
-  color: var(--learning);
-}
-
-.action--known.is-active {
-  color: var(--known);
-}
-
-.action--save.is-active {
-  color: var(--accent);
+/* Black and white only, so an active state is full-strength ink plus weight
+   rather than a colour. */
+.action.is-active {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .action--next {

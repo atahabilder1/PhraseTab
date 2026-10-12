@@ -24,11 +24,8 @@ export const STORAGE_KEYS = {
  */
 export const THEME_MIRROR_KEY = 'wordtab.theme';
 
-export type ContentMode = 'mixed' | 'words' | 'phrases';
-
 export type ThemePreference = 'system' | 'light' | 'dark';
 
-export const CONTENT_MODES: readonly ContentMode[] = ['mixed', 'words', 'phrases'];
 export const THEME_PREFERENCES: readonly ThemePreference[] = ['system', 'light', 'dark'];
 
 export const MIN_EXPOSURES = 1;
@@ -37,28 +34,33 @@ export const MAX_EXPOSURES = 10;
 export interface Settings {
   /** Schema version, so future shape changes can migrate rather than reset. */
   version: number;
-  contentMode: ContentMode;
   difficulties: Difficulty[];
   /** Translation languages to display under the card. Empty means none. */
   translations: TranslationLanguage[];
   /** How many times an item is shown before the selector rotates. */
   exposuresPerItem: number;
-  /** When true, every new tab picks a fresh item regardless of exposures. */
+  /**
+   * When true (the default), every new tab picks a fresh item. When false, an
+   * item repeats for `exposuresPerItem` views before rotating.
+   */
   alwaysNewItem: boolean;
   theme: ThemePreference;
   /** False until onboarding is completed or skipped. */
   onboardingComplete: boolean;
 }
 
-export const SETTINGS_VERSION = 1;
+/**
+ * 2: dropped `contentMode` (phrases only) and made `alwaysNewItem` the default.
+ * Settings stored by version 1 are migrated to a new item on every tab.
+ */
+export const SETTINGS_VERSION = 2;
 
 export const DEFAULT_SETTINGS: Settings = {
   version: SETTINGS_VERSION,
-  contentMode: 'mixed',
   difficulties: [...DIFFICULTIES],
   translations: [],
   exposuresPerItem: 3,
-  alwaysNewItem: false,
+  alwaysNewItem: true,
   theme: 'system',
   onboardingComplete: false,
 };
@@ -104,7 +106,6 @@ export const DEFAULT_PROGRESS: Progress = {
   items: {},
 };
 
-const CONTENT_MODE_SET = new Set<string>(CONTENT_MODES);
 const THEME_SET = new Set<string>(THEME_PREFERENCES);
 const STATUS_SET = new Set<string>(['unseen', 'learning', 'known']);
 
@@ -135,12 +136,12 @@ export function normalizeSettings(raw: unknown): Settings {
     ? TRANSLATION_LANGUAGE_CODES.filter((code) => (raw.translations as unknown[]).includes(code))
     : [];
 
+  // Version 1 defaulted to repeating each item; version 2 shows a new item on
+  // every tab, so older stored choices are reset to the new default.
+  const isLegacy = typeof raw.version !== 'number' || raw.version < 2;
+
   return {
     version: SETTINGS_VERSION,
-    contentMode:
-      typeof raw.contentMode === 'string' && CONTENT_MODE_SET.has(raw.contentMode)
-        ? (raw.contentMode as ContentMode)
-        : DEFAULT_SETTINGS.contentMode,
     // An empty difficulty list would leave nothing to show, so fall back to all.
     difficulties: difficulties.length > 0 ? difficulties : [...DIFFICULTIES],
     translations,
@@ -151,7 +152,7 @@ export function normalizeSettings(raw: unknown): Settings {
       DEFAULT_SETTINGS.exposuresPerItem,
     ),
     alwaysNewItem:
-      typeof raw.alwaysNewItem === 'boolean'
+      !isLegacy && typeof raw.alwaysNewItem === 'boolean'
         ? raw.alwaysNewItem
         : DEFAULT_SETTINGS.alwaysNewItem,
     theme:

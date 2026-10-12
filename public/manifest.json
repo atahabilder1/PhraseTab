@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "PhraseTab",
-  "version": "0.1.0",
-  "description": "Learn a useful English word or phrase with every new tab. Offline, private, no account.",
+  "version": "1.0.0",
+  "description": "Learn a new English phrase with every new tab: idioms, phrasal verbs and expressions. Offline, private, no account.",
   "minimum_chrome_version": "108",
   "permissions": ["storage"],
   "chrome_url_overrides": {

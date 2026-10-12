@@ -16,18 +16,18 @@ import {
   type VocabularyKind,
 } from '@/types/vocabulary';
 
-type KindFilter = 'all' | 'word' | 'phrase';
+type KindFilter = 'all' | VocabularyKind;
 
 const KIND_FILTERS: { value: KindFilter; label: string }[] = [
   { value: 'all', label: 'All' },
-  { value: 'word', label: 'Words' },
-  { value: 'phrase', label: 'Phrases' },
+  { value: 'phrasal_verb', label: 'Phrasal verbs' },
+  { value: 'idiom', label: 'Idioms' },
+  { value: 'expression', label: 'Expressions' },
+  { value: 'collocation', label: 'Collocations' },
 ];
 
 function matchesKind(kind: VocabularyKind, filter: KindFilter): boolean {
-  if (filter === 'all') return true;
-  if (filter === 'word') return kind === 'word';
-  return kind !== 'word';
+  return filter === 'all' || kind === filter;
 }
 
 /**
@@ -153,7 +153,7 @@ export function Saved() {
           <div className="empty">
             <p className="empty__body">
               No saved item matches “{query.trim()}”
-              {kindFilter !== 'all' ? ` in ${kindFilter === 'word' ? 'words' : 'phrases'}` : ''}.
+              {kindFilter !== 'all' ? ` in ${kindLabel(kindFilter)}s` : ''}.
             </p>
             <button
               type="button"

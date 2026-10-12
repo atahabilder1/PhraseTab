@@ -1,23 +1,18 @@
 /**
  * Item selection and the repeated-exposure model.
  *
- * The product principle (CLAUDE.md) is that WordTab must *not* throw a new
- * random item at the user on every tab. An item stays pinned for
- * `settings.exposuresPerItem` views, then rotates. `Next` forces a rotation.
+ * By default every new tab shows a fresh item (`settings.alwaysNewItem`). When
+ * the user turns that off, an item stays pinned for `settings.exposuresPerItem`
+ * views, then rotates. `Next` always forces a rotation.
  *
  * All functions here are pure: they take state in and return state out, with
  * randomness injected via a `rng` parameter so tests are deterministic.
  */
 
-import {
-  isPhraseKind,
-  type Difficulty,
-  type VocabularyItem,
-} from '@/types/vocabulary';
+import type { Difficulty, VocabularyItem } from '@/types/vocabulary';
 import {
   getItemProgress,
   MAX_EXPOSURES,
-  type ContentMode,
   type Progress,
   type Settings,
 } from '@/storage/types';
@@ -44,21 +39,12 @@ export const STATUS_WEIGHTS = {
 export const SAVED_WEIGHT_BONUS = 1.5;
 
 export interface SelectionFilters {
-  contentMode: ContentMode;
   difficulties: readonly Difficulty[];
 }
 
-/** Does an item pass the user's content-type and difficulty filters? */
+/** Does an item pass the user's difficulty filter? */
 export function matchesFilters(item: VocabularyItem, filters: SelectionFilters): boolean {
-  if (!filters.difficulties.includes(item.difficulty)) return false;
-  switch (filters.contentMode) {
-    case 'words':
-      return item.kind === 'word';
-    case 'phrases':
-      return isPhraseKind(item.kind);
-    case 'mixed':
-      return true;
-  }
+  return filters.difficulties.includes(item.difficulty);
 }
 
 /** Every item the user's current settings allow. May be empty. */
@@ -103,12 +89,31 @@ export function weightedPick(
 }
 
 /**
+ * How many of the most recently shown items sit out of the next pick. Capped
+ * at half the eligible pool so narrow filters still leave real choice.
+ */
+export const RECENT_WINDOW = 30;
+
+/** Ids of the most recently shown eligible items, newest first. */
+function recentlyShownIds(eligible: readonly VocabularyItem[], progress: Progress): Set<string> {
+  const size = Math.min(RECENT_WINDOW, Math.floor(eligible.length / 2));
+  if (size === 0) return new Set();
+  const shown = eligible
+    .map((item) => ({ id: item.id, at: getItemProgress(progress, item.id).lastShownAt }))
+    .filter((entry) => entry.at > 0)
+    .sort((a, b) => b.at - a.at)
+    .slice(0, size);
+  return new Set(shown.map((entry) => entry.id));
+}
+
+/**
  * Choose the next item to show.
  *
- * Avoids `excludeId` (normally the item being rotated away from) whenever an
- * alternative exists, so the user never sees the same card twice in a row. If
- * the filters leave exactly one eligible item, that item is returned rather
- * than nothing — the New Tab page must always have something to render.
+ * Avoids `excludeId` (normally the item being rotated away from) and the most
+ * recently shown items whenever alternatives exist, so a phrase does not come
+ * back a couple of tabs after it was seen. If the filters leave exactly one
+ * eligible item, that item is returned rather than nothing — the New Tab page
+ * must always have something to render.
  */
 export function pickNextItem(
   items: readonly VocabularyItem[],
@@ -124,9 +129,13 @@ export function pickNextItem(
   const withoutExcluded =
     excludeId == null ? eligible : eligible.filter((item) => item.id !== excludeId);
 
-  // Falling back to the full list is what keeps a single-item filter from
+  const recent = recentlyShownIds(eligible, progress);
+  const fresh = withoutExcluded.filter((item) => !recent.has(item.id));
+
+  // Falling back step by step is what keeps a single-item filter from
   // returning nothing (or looping forever looking for an alternative).
-  const candidates = withoutExcluded.length > 0 ? withoutExcluded : eligible;
+  const candidates =
+    fresh.length > 0 ? fresh : withoutExcluded.length > 0 ? withoutExcluded : eligible;
   return weightedPick(candidates, progress, rng);
 }
 
@@ -162,7 +171,6 @@ export function resolveCurrentItem(
   const { forceNew = false, rng = defaultRng, now = Date.now } = options;
 
   const filters: SelectionFilters = {
-    contentMode: settings.contentMode,
     difficulties: settings.difficulties,
   };
 

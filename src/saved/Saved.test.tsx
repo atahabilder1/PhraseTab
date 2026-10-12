@@ -5,16 +5,16 @@ import { Saved } from './Saved';
 import { loadProgress, resetMemoryStorage, saveProgress, updateSettings } from '@/storage/storage';
 import { DEFAULT_PROGRESS } from '@/storage/types';
 
-/** Three saved items spanning both content types, for filter and search tests. */
+/** Three saved items spanning several phrase kinds, for filter and search tests. */
 async function seedSaved() {
   await saveProgress({
     ...DEFAULT_PROGRESS,
     items: {
-      'word-resilient': { status: 'learning', exposures: 2, lastShownAt: 300, saved: true },
+      'idiom-under-the-weather': { status: 'learning', exposures: 2, lastShownAt: 300, saved: true },
       'phrasal-figure-out': { status: 'unseen', exposures: 1, lastShownAt: 200, saved: true },
-      'word-nuance': { status: 'known', exposures: 4, lastShownAt: 100, saved: true },
+      'collocation-meet-a-deadline': { status: 'known', exposures: 4, lastShownAt: 100, saved: true },
       // Seen but not saved: must never appear in the list.
-      'word-concise': { status: 'known', exposures: 5, lastShownAt: 400, saved: false },
+      'expression-fair-enough': { status: 'known', exposures: 5, lastShownAt: 400, saved: false },
     },
   });
 }
@@ -41,9 +41,9 @@ describe('the list', () => {
     render(<Saved />);
     const headings = await screen.findAllByRole('heading', { level: 2 });
     expect(headings.map((node) => node.textContent)).toEqual([
-      'resilient',
+      'under the weather',
       'figure out',
-      'nuance',
+      'meet a deadline',
     ]);
   });
 
@@ -68,9 +68,9 @@ describe('search and filters', () => {
     render(<Saved />);
     await screen.findAllByRole('heading', { level: 2 });
 
-    await user.type(screen.getByRole('searchbox'), 'resil');
+    await user.type(screen.getByRole('searchbox'), 'weath');
     expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(1);
-    expect(screen.getByRole('heading', { level: 2, name: 'resilient' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'under the weather' })).toBeInTheDocument();
   });
 
   it('searches definitions too, because people remember meanings', async () => {
@@ -78,22 +78,22 @@ describe('search and filters', () => {
     render(<Saved />);
     await screen.findAllByRole('heading', { level: 2 });
 
-    await user.type(screen.getByRole('searchbox'), 'difference in meaning');
+    await user.type(screen.getByRole('searchbox'), 'required time');
     expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(1);
-    expect(screen.getByRole('heading', { level: 2, name: 'nuance' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'meet a deadline' })).toBeInTheDocument();
   });
 
-  it('filters to words and to phrases', async () => {
+  it('filters by phrase kind', async () => {
     const user = userEvent.setup();
     render(<Saved />);
     await screen.findAllByRole('heading', { level: 2 });
 
-    await user.click(screen.getByRole('button', { name: 'Words' }));
+    await user.click(screen.getByRole('button', { name: 'Idioms' }));
     expect(
       screen.getAllByRole('heading', { level: 2 }).map((node) => node.textContent),
-    ).toEqual(['resilient', 'nuance']);
+    ).toEqual(['under the weather']);
 
-    await user.click(screen.getByRole('button', { name: 'Phrases' }));
+    await user.click(screen.getByRole('button', { name: 'Phrasal verbs' }));
     expect(
       screen.getAllByRole('heading', { level: 2 }).map((node) => node.textContent),
     ).toEqual(['figure out']);
@@ -120,14 +120,14 @@ describe('removing', () => {
     render(<Saved />);
     await screen.findAllByRole('heading', { level: 2 });
 
-    await user.click(screen.getByRole('button', { name: 'Remove resilient from saved' }));
-    expect(screen.queryByRole('heading', { level: 2, name: 'resilient' })).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Remove under the weather from saved' }));
+    expect(screen.queryByRole('heading', { level: 2, name: 'under the weather' })).not.toBeInTheDocument();
 
     const progress = await loadProgress();
-    expect(progress.items['word-resilient']?.saved).toBe(false);
+    expect(progress.items['idiom-under-the-weather']?.saved).toBe(false);
     // Unsaving must not erase what the user learned about the item.
-    expect(progress.items['word-resilient']?.status).toBe('learning');
-    expect(progress.items['word-resilient']?.exposures).toBe(2);
+    expect(progress.items['idiom-under-the-weather']?.status).toBe('learning');
+    expect(progress.items['idiom-under-the-weather']?.exposures).toBe(2);
     expect(progress.items['phrasal-figure-out']?.saved).toBe(true);
   });
 });

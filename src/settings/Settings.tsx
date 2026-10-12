@@ -8,7 +8,6 @@ import {
   countKnown,
   countLearning,
   savedItemIds,
-  type ContentMode,
   type Settings as SettingsShape,
   type ThemePreference,
 } from '@/storage/types';
@@ -22,12 +21,6 @@ import {
 } from '@/types/vocabulary';
 import { VOCABULARY } from '@/data/vocabulary';
 
-const CONTENT_MODES: { value: ContentMode; label: string; hint: string }[] = [
-  { value: 'mixed', label: 'Mixed', hint: 'Words and phrases together' },
-  { value: 'words', label: 'Words', hint: 'Single vocabulary words only' },
-  { value: 'phrases', label: 'Phrases', hint: 'Phrasal verbs, idioms, expressions, collocations' },
-];
-
 const THEMES: { value: ThemePreference; label: string }[] = [
   { value: 'system', label: 'System' },
   { value: 'light', label: 'Light' },
@@ -35,8 +28,8 @@ const THEMES: { value: ThemePreference; label: string }[] = [
 ];
 
 const DIFFICULTY_HINTS: Record<Difficulty, string> = {
-  beginner: 'Everyday words you will use constantly',
-  intermediate: 'Words that make writing and speech precise',
+  beginner: 'Everyday phrases you will use constantly',
+  intermediate: 'Phrases that make writing and speech precise',
   advanced: 'Academic and professional register',
 };
 
@@ -126,31 +119,11 @@ export function Settings() {
       <main className="page__body">
         <h1 className="page__title">Settings</h1>
         <p className="page__lede">
-          {VOCABULARY.length} words and phrases, stored in the extension. Changes apply to
+          {VOCABULARY.length} phrases, stored in the extension. Changes apply to
           open tabs right away.
         </p>
 
-        <Section title="Content" hint="What appears on a new tab.">
-          <fieldset className="field">
-            <legend className="field__legend eyebrow">Type</legend>
-            <div className="choices">
-              {CONTENT_MODES.map((mode) => (
-                <label className="choice" key={mode.value}>
-                  <input
-                    type="radio"
-                    name="contentMode"
-                    checked={settings.contentMode === mode.value}
-                    onChange={() => void patch({ contentMode: mode.value })}
-                  />
-                  <span className="choice__body">
-                    <span className="choice__label">{mode.label}</span>
-                    <span className="choice__hint">{mode.hint}</span>
-                  </span>
-                </label>
-              ))}
-            </div>
-          </fieldset>
-
+        <Section title="Content" hint="Phrasal verbs, idioms, expressions and collocations.">
           <fieldset className="field">
             <legend className="field__legend eyebrow">Difficulty</legend>
             <div className="choices">
@@ -205,15 +178,29 @@ export function Settings() {
         </Section>
 
         <Section
-          title="Repetition"
-          hint="PhraseTab shows the same item a few times before moving on, because that is how words stick."
+          title="Rotation"
+          hint="By default every new tab shows a different phrase."
         >
+          <label className="choice">
+            <input
+              type="checkbox"
+              checked={settings.alwaysNewItem}
+              onChange={(event) => void patch({ alwaysNewItem: event.target.checked })}
+            />
+            <span className="choice__body">
+              <span className="choice__label">Show a new phrase on every tab</span>
+              <span className="choice__hint">
+                Turn off to repeat each phrase a few times, which helps it stick.
+              </span>
+            </span>
+          </label>
+
           <div className="field">
             <label className="field__row" htmlFor="exposures">
               <span className="field__label">
-                Times to show an item
+                Times to show a phrase
                 <span className="field__hint">
-                  Press Next any time to move on early.
+                  Used when the option above is off. Press Next any time to move on.
                 </span>
               </span>
               <span className="stepper">
@@ -235,20 +222,6 @@ export function Settings() {
               </span>
             </label>
           </div>
-
-          <label className="choice">
-            <input
-              type="checkbox"
-              checked={settings.alwaysNewItem}
-              onChange={(event) => void patch({ alwaysNewItem: event.target.checked })}
-            />
-            <span className="choice__body">
-              <span className="choice__label">Show a new item on every tab</span>
-              <span className="choice__hint">
-                Turns repetition off entirely. Faster, but harder to remember.
-              </span>
-            </span>
-          </label>
         </Section>
 
         <Section title="Appearance">

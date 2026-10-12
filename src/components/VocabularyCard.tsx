@@ -1,6 +1,8 @@
+import { useRef } from 'react';
 import { ExposureTally } from './ExposureTally';
 import { ListenButton } from './ListenButton';
 import { TranslationBlock } from './TranslationBlock';
+import { useFitOneLine } from './useFitOneLine';
 import {
   difficultyLabel,
   kindLabel,
@@ -23,7 +25,14 @@ interface VocabularyCardProps {
  * under the headword is the only structural device, and it carries the
  * repetition tally at its end.
  */
+/** Headwords longer than this (in characters) wrap at a smaller size when
+    they cannot fit on one line. */
+const LONG_TERM_LENGTH = 22;
+
 export function VocabularyCard({ item, translations, exposure }: VocabularyCardProps) {
+  const termRef = useRef<HTMLHeadingElement>(null);
+  useFitOneLine(termRef, item.term);
+  const ipa = item.pronunciation?.ipa;
   const hasSynonyms = (item.synonyms?.length ?? 0) > 0;
   const hasAntonyms = (item.antonyms?.length ?? 0) > 0;
 
@@ -31,30 +40,43 @@ export function VocabularyCard({ item, translations, exposure }: VocabularyCardP
     // Keying on the id restarts the entrance animation whenever the item
     // rotates, which is the only motion on the page.
     <article className="entry" key={item.id} aria-labelledby="entry-term">
-      <p className="entry__eyebrow eyebrow">
-        <span>{item.partOfSpeech ?? kindLabel(item.kind)}</span>
-        <span className="entry__eyebrow-dot" aria-hidden="true" />
-        <span>{difficultyLabel(item.difficulty)}</span>
-      </p>
+      <div className="entry__label-row">
+        <p className="entry__eyebrow eyebrow">
+          <span>{item.partOfSpeech ?? kindLabel(item.kind)}</span>
+          <span className="entry__eyebrow-dot" aria-hidden="true" />
+          <span>{difficultyLabel(item.difficulty)}</span>
+        </p>
+        {/* Without IPA the speaker would sit alone on its own row under the
+            headword, so it rides on the label line instead. */}
+        {!ipa && <ListenButton term={item.term} />}
+      </div>
 
-      <h1 className="entry__term" id="entry-term" lang="en">
+      <h1
+        ref={termRef}
+        className={
+          item.term.length > LONG_TERM_LENGTH ? 'entry__term entry__term--long' : 'entry__term'
+        }
+        id="entry-term"
+        lang="en"
+      >
         {item.term}
       </h1>
 
-      {/* Phrases carry no IPA; the row keeps its height either way so the rule
-          below never shifts between items. */}
-      <div className="entry__pronunciation">
-        {item.pronunciation?.ipa && (
-          <span className="entry__ipa" aria-label={`Pronounced ${item.pronunciation.ipa}`}>
-            {item.pronunciation.ipa}
+      {ipa && (
+        <div className="entry__pronunciation">
+          <span className="entry__ipa" aria-label={`Pronounced ${ipa}`}>
+            {ipa}
           </span>
-        )}
-        <ListenButton term={item.term} />
-      </div>
+          <ListenButton term={item.term} />
+        </div>
+      )}
 
       <div className="entry__rule">
         <span className="entry__rule-line" aria-hidden="true" />
-        <ExposureTally current={exposure.current} total={exposure.total} />
+        {/* With a new phrase on every tab there is no repetition to count. */}
+        {exposure.total > 1 && (
+          <ExposureTally current={exposure.current} total={exposure.total} />
+        )}
       </div>
 
       <p className="entry__definition">{item.definition}</p>

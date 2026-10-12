@@ -39,12 +39,11 @@ Build a polished, fast, privacy-friendly MVP of PhraseTab that teaches useful En
 ## MVP Definition of Done
 The extension is ready for MVP when:
 - It installs as an unpacked Chrome extension.
-- Opening a new tab shows a vocabulary word or phrase.
+- Opening a new tab shows an English phrase (phrasal verb, idiom, expression or collocation). Single words are not included.
 - The card shows type, simple definition, example, and difficulty.
 - The user can hear pronunciation when browser speech synthesis is available.
 - The user can mark an item as Known, Learning, Save, or Next.
 - The extension remembers progress and preferences.
-- The user can select Words / Phrases / Mixed.
 - Optional Bangla and Chinese translations can be turned on/off.
 - The app works offline after installation.
 - The interface is responsive, clean, and fast.
@@ -52,4 +51,4 @@ The extension is ready for MVP when:
 - README contains exact build and install instructions.
 
 ## Product Principle
-PhraseTab should not bombard users with a new random item on every tab. Repetition is part of learning. Prefer a simple spaced/repeated exposure model that shows the current item multiple times before rotating, while still allowing the user to press Next.
+PhraseTab shows a new phrase on every new tab by default. This is the owner's decision (2026-10-12) and replaces the earlier repeat-before-rotating default. Repetition is still available as an opt-in setting, and the selector still favours Learning items and avoids immediate repeats. PhraseTab teaches phrases only: do not add single-word entries to the dataset.

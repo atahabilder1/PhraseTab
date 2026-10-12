@@ -135,7 +135,7 @@ export function usePhraseTab(): PhraseTabState {
   }, []);
 
   // Re-resolve when filters change: the pinned item may no longer qualify.
-  const filterKey = `${settings.contentMode}|${settings.difficulties.join(',')}`;
+  const filterKey = settings.difficulties.join(',');
   const lastFilterKey = useRef<string | null>(null);
   useEffect(() => {
     if (!ready || !settings.onboardingComplete) return;

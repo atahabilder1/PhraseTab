@@ -3,7 +3,7 @@ import { formatIssues, validateDataset } from './schema';
 import { getRawDataset, VOCABULARY } from './vocabulary';
 import {
   DIFFICULTIES,
-  PHRASE_KINDS,
+  VOCABULARY_KINDS,
   TRANSLATION_LANGUAGE_CODES,
   normalizeTerm,
 } from '@/types/vocabulary';
@@ -35,22 +35,25 @@ describe('bundled vocabulary dataset', () => {
     expect(VOCABULARY.length).toBeGreaterThanOrEqual(50);
   });
 
-  it('covers both words and phrases', () => {
-    const words = VOCABULARY.filter((item) => item.kind === 'word');
-    const phrases = VOCABULARY.filter((item) => PHRASE_KINDS.includes(item.kind));
-    expect(words.length).toBeGreaterThan(0);
-    expect(phrases.length).toBeGreaterThan(0);
+  it('contains phrases only, no single words', () => {
+    for (const item of VOCABULARY) {
+      expect(item.term.trim(), item.id).toMatch(/\s/);
+    }
   });
 
-  it('has at least one word and one phrase at every difficulty', () => {
+  it('covers every phrase kind', () => {
+    for (const kind of VOCABULARY_KINDS) {
+      expect(VOCABULARY.some((item) => item.kind === kind), kind).toBe(true);
+    }
+  });
+
+  it('has at least one phrase at every difficulty', () => {
     // The selector must always find something when a user narrows the filters
-    // to a single difficulty plus a single content mode.
+    // to a single difficulty.
     for (const difficulty of DIFFICULTIES) {
-      const atLevel = VOCABULARY.filter((item) => item.difficulty === difficulty);
-      expect(atLevel.some((item) => item.kind === 'word'), `word/${difficulty}`).toBe(true);
       expect(
-        atLevel.some((item) => PHRASE_KINDS.includes(item.kind)),
-        `phrase/${difficulty}`,
+        VOCABULARY.some((item) => item.difficulty === difficulty),
+        difficulty,
       ).toBe(true);
     }
   });

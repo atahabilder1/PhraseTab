@@ -3,7 +3,13 @@
 ## 1. Product Summary
 
 **Name:** PhraseTab  
-**Tagline:** Learn a word or phrase with every new tab.
+**Tagline:** Learn a new English phrase with every new tab.
+
+> **Revision, 2026-10-12 (owner decision):** PhraseTab shows phrases only (no
+> single words) and shows a new phrase on every new tab by default. The
+> Words / Phrases / Mixed setting has been removed. Repeating each item before
+> it rotates is still available as an opt-in setting. Where sections below
+> say otherwise, this note takes precedence.
 
 PhraseTab is a Chrome extension that replaces the browser's New Tab page with a lightweight English-learning card.
 
@@ -49,12 +55,8 @@ Support these item types:
 4. `expression`
 5. `collocation`
 
-The default content mode should be **Mixed**.
-
-User options:
-- Words only
-- Phrases only
-- Mixed
+~~The default content mode should be **Mixed**.~~ Superseded: phrases only,
+and `word` has been removed as a kind (see the revision note at the top).
 
 ---
 
@@ -286,7 +288,9 @@ Optional later:
 
 ## 9. Repetition / Learning Logic
 
-Do not select a fully random new item every time a tab opens.
+~~Do not select a fully random new item every time a tab opens.~~ Superseded:
+a new (weighted) item is picked on every tab by default; the exposure-count
+model below applies only when the user turns repetition on.
 
 Problem:
 A user may open dozens of tabs per day and cannot meaningfully learn dozens of new items.
@@ -335,9 +339,7 @@ Create a Settings panel/page.
 MVP settings:
 
 ### Content
-- Mixed (default)
-- Words
-- Phrases
+- ~~Mixed / Words / Phrases~~ — removed; phrases only
 
 ### Difficulty
 Checkboxes/toggles:
@@ -356,8 +358,8 @@ Default:
 Allow multiple translation languages simultaneously.
 
 ### Learning
-- Exposures before automatic next item: default 3
-- optional: "Always show a new item on every tab"
+- "Show a new phrase on every tab": default **on**
+- Exposures before automatic next item (when the above is off): default 3
 
 ### Appearance
 - System
@@ -910,8 +912,8 @@ These decisions are intentionally fixed so development can proceed without unnec
 - Manifest: V3
 - Main language: English
 - Translation add-ons initially: Bangla + Chinese Simplified
-- Content: both words and phrases
-- Default content mode: Mixed
+- Content: phrases only (revised 2026-10-12)
+- New phrase on every tab by default (revised 2026-10-12)
 - Difficulty labels: Beginner / Intermediate / Advanced
 - Account required: No
 - Backend: No
@@ -970,17 +972,17 @@ account, or artwork that cannot be generated from the code.
 
 ### Outstanding
 - [ ] Developer account and the one-time registration fee
-- [ ] Privacy policy hosted at a public URL (the text exists in README §Privacy
-      and in the Settings page; it needs somewhere to live)
-- [ ] Store listing copy: short description, full description, category
-- [ ] Screenshots at 1280×800 or 640×400 — at least one, up to five
+- [x] Privacy policy at a public URL — `PRIVACY.md` on GitHub
+- [x] Store listing copy: short description, full description, category (`store/listing.md`)
+- [x] Screenshots at 1280×800 or 640×400 — four in `store/screenshots/`
 - [ ] Optional promotional tile artwork
-- [ ] Single purpose statement — "replace the New Tab page with an English
-      vocabulary card" — plus the justification for the `storage` permission
+- [x] Single purpose statement — "replace the New Tab page with an English
+      phrase to learn" — plus the justification for the `storage` permission
+      (both in `store/listing.md`)
 - [ ] Data-use disclosures in the Developer Dashboard: declare that no user data
       is collected or transmitted
-- [ ] Decide a public version number and tag the release
-- [ ] Zip `dist/` (not the repository root) for upload
+- [x] Decide a public version number (1.0.0)
+- [x] Zip `dist/` (not the repository root) for upload — `npm run package`
 
 ### Notes
 - Chrome shows users a "an extension changed your New Tab page" prompt on

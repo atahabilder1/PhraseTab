@@ -36,9 +36,9 @@ function makeItem(
 }
 
 const ITEMS: VocabularyItem[] = [
-  makeItem('w-beg', 'word', 'beginner'),
-  makeItem('w-int', 'word', 'intermediate'),
-  makeItem('w-adv', 'word', 'advanced'),
+  makeItem('w-beg', 'idiom', 'beginner'),
+  makeItem('w-int', 'phrasal_verb', 'intermediate'),
+  makeItem('w-adv', 'collocation', 'advanced'),
   makeItem('p-beg', 'phrasal_verb', 'beginner'),
   makeItem('p-int', 'idiom', 'intermediate'),
   makeItem('p-adv', 'expression', 'advanced'),
@@ -62,34 +62,17 @@ function scriptedRng(values: number[]): Rng {
 }
 
 describe('matchesFilters', () => {
-  it('accepts everything in mixed mode when all difficulties are on', () => {
-    const filters = { contentMode: 'mixed' as const, difficulties: ALL_DIFFICULTIES };
+  it('accepts everything when all difficulties are on', () => {
+    const filters = { difficulties: ALL_DIFFICULTIES };
     for (const item of ITEMS) {
       expect(matchesFilters(item, filters)).toBe(true);
     }
   });
 
-  it('keeps only single words in words mode', () => {
-    const filters = { contentMode: 'words' as const, difficulties: ALL_DIFFICULTIES };
-    const kept = eligibleItems(ITEMS, filters);
-    expect(kept.map((item) => item.id)).toEqual(['w-beg', 'w-int', 'w-adv']);
-  });
-
-  it('keeps every non-word kind in phrases mode', () => {
-    const filters = { contentMode: 'phrases' as const, difficulties: ALL_DIFFICULTIES };
-    const kept = eligibleItems(ITEMS, filters);
-    expect(kept.map((item) => item.id)).toEqual(['p-beg', 'p-int', 'p-adv', 'c-int']);
-  });
-
   it('respects difficulty filters', () => {
-    const filters = { contentMode: 'mixed' as const, difficulties: ['advanced' as const] };
+    const filters = { difficulties: ['advanced' as const] };
     const kept = eligibleItems(ITEMS, filters);
     expect(kept.map((item) => item.id)).toEqual(['w-adv', 'p-adv']);
-  });
-
-  it('combines content and difficulty filters', () => {
-    const filters = { contentMode: 'words' as const, difficulties: ['beginner' as const] };
-    expect(eligibleItems(ITEMS, filters).map((item) => item.id)).toEqual(['w-beg']);
   });
 });
 
@@ -166,7 +149,7 @@ describe('weightedPick', () => {
 });
 
 describe('pickNextItem', () => {
-  const filters = { contentMode: 'mixed' as const, difficulties: ALL_DIFFICULTIES };
+  const filters = { difficulties: ALL_DIFFICULTIES };
 
   it('returns an eligible item', () => {
     const picked = pickNextItem(ITEMS, filters, progress(), { rng: () => 0.5 });
@@ -175,7 +158,7 @@ describe('pickNextItem', () => {
   });
 
   it('returns undefined when nothing matches the filters', () => {
-    const narrow = { contentMode: 'words' as const, difficulties: [] as Difficulty[] };
+    const narrow = { difficulties: [] as Difficulty[] };
     expect(pickNextItem(ITEMS, narrow, progress())).toBeUndefined();
   });
 
@@ -189,11 +172,41 @@ describe('pickNextItem', () => {
     }
   });
 
+  it('skips recently shown items while unseen ones remain', () => {
+    // 7 items -> window of 3. The three most recently shown must sit out.
+    const state = progress({
+      items: {
+        'w-beg': { status: 'unseen', exposures: 1, lastShownAt: 30, saved: false },
+        'w-int': { status: 'unseen', exposures: 1, lastShownAt: 20, saved: false },
+        'w-adv': { status: 'unseen', exposures: 1, lastShownAt: 10, saved: false },
+      },
+    });
+    for (let i = 0; i < 50; i += 1) {
+      const picked = pickNextItem(ITEMS, filters, state, { rng: () => i / 50 });
+      expect(['w-beg', 'w-int', 'w-adv']).not.toContain(picked?.id);
+    }
+  });
+
+  it('does not repeat a phrase within a short run of new tabs', () => {
+    let state = progress();
+    const seen: string[] = [];
+    let tick = 0;
+    for (let i = 0; i < 3; i += 1) {
+      const result = resolveCurrentItem(ITEMS, settings(), state, {
+        rng: () => 0.5,
+        now: () => (tick += 1),
+      });
+      seen.push(result.item!.id);
+      state = result.progress;
+    }
+    expect(new Set(seen).size).toBe(3);
+  });
+
   it('returns the only eligible item even when it is excluded', () => {
     // One eligible item and it is the one we would rather avoid: showing it
     // again beats showing nothing, and must not loop.
-    const single = { contentMode: 'words' as const, difficulties: ['beginner' as const] };
-    const picked = pickNextItem(ITEMS, single, progress(), { excludeId: 'w-beg' });
+    const single = { difficulties: ['beginner' as const] };
+    const picked = pickNextItem(ITEMS.slice(0, 1), single, progress(), { excludeId: 'w-beg' });
     expect(picked?.id).toBe('w-beg');
   });
 });
@@ -215,9 +228,22 @@ describe('resolveCurrentItem', () => {
     });
   });
 
-  it('keeps the same item until the exposure budget is spent', () => {
+  it('shows a new item on every open by default', () => {
+    const first = resolveCurrentItem(ITEMS, settings(), progress(), {
+      rng: () => 0.5,
+      now: () => 1,
+    });
+    const second = resolveCurrentItem(ITEMS, settings(), first.progress, {
+      rng: () => 0.5,
+      now: () => 2,
+    });
+    expect(second.item!.id).not.toBe(first.item!.id);
+    expect(second.rotated).toBe(true);
+  });
+
+  it('keeps the same item until the exposure budget is spent when repetition is on', () => {
     let state = progress();
-    const config = settings({ exposuresPerItem: 3 });
+    const config = settings({ alwaysNewItem: false, exposuresPerItem: 3 });
 
     const first = resolveCurrentItem(ITEMS, config, state, { rng: () => 0.5, now: () => 1 });
     const pinned = first.item!.id;
@@ -265,7 +291,7 @@ describe('resolveCurrentItem', () => {
   });
 
   it('accumulates lifetime exposures across rotations', () => {
-    const config = settings({ exposuresPerItem: 1 });
+    const config = settings({ alwaysNewItem: false, exposuresPerItem: 1 });
     // With one exposure per item the selector rotates every open; the pinned
     // item's lifetime count must still keep climbing when it comes back.
     let state = progress();
@@ -283,11 +309,12 @@ describe('resolveCurrentItem', () => {
 
   it('drops a pinned item that no longer passes the filters', () => {
     const state = progress({ currentItemId: 'p-int', currentExposures: 1 });
-    const result = resolveCurrentItem(ITEMS, settings({ contentMode: 'words' }), state, {
+    const config = settings({ alwaysNewItem: false, difficulties: ['advanced'] });
+    const result = resolveCurrentItem(ITEMS, config, state, {
       rng: () => 0.5,
       now: () => 1,
     });
-    expect(result.item!.kind).toBe('word');
+    expect(result.item!.difficulty).toBe('advanced');
     expect(result.rotated).toBe(true);
   });
 
@@ -310,10 +337,10 @@ describe('resolveCurrentItem', () => {
   });
 
   it('keeps showing the only eligible item without looping', () => {
-    const config = settings({ contentMode: 'words', difficulties: ['beginner'] });
+    const only = ITEMS.slice(0, 1);
     let state = progress();
     for (let i = 0; i < 10; i += 1) {
-      const result = resolveCurrentItem(ITEMS, config, state, { rng: () => 0.5, now: () => i });
+      const result = resolveCurrentItem(only, settings(), state, { rng: () => 0.5, now: () => i });
       expect(result.item!.id).toBe('w-beg');
       state = result.progress;
     }
@@ -323,9 +350,11 @@ describe('resolveCurrentItem', () => {
 
 describe('applyItemAction', () => {
   let state: Progress;
+  // Repetition on, so "ends its rotation" is observable.
+  const repeating = settings({ alwaysNewItem: false });
 
   beforeEach(() => {
-    state = resolveCurrentItem(ITEMS, settings(), progress(), {
+    state = resolveCurrentItem(ITEMS, repeating, progress(), {
       rng: () => 0.5,
       now: () => 100,
     }).progress;
@@ -336,7 +365,7 @@ describe('applyItemAction', () => {
     const next = applyItemAction(state, id, 'known');
     expect(next.items[id]?.status).toBe('known');
 
-    const after = resolveCurrentItem(ITEMS, settings(), next, { rng: () => 0.5, now: () => 101 });
+    const after = resolveCurrentItem(ITEMS, repeating, next, { rng: () => 0.5, now: () => 101 });
     expect(after.item!.id).not.toBe(id);
   });
 
@@ -345,7 +374,7 @@ describe('applyItemAction', () => {
     const next = applyItemAction(state, id, 'learning');
     expect(next.items[id]?.status).toBe('learning');
 
-    const after = resolveCurrentItem(ITEMS, settings(), next, { rng: () => 0.5, now: () => 101 });
+    const after = resolveCurrentItem(ITEMS, repeating, next, { rng: () => 0.5, now: () => 101 });
     expect(after.item!.id).not.toBe(id);
   });
 

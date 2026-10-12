@@ -3,14 +3,14 @@ import { formatIssues, validateDataset } from './schema';
 
 function validItem(overrides: Record<string, unknown> = {}) {
   return {
-    id: 'word-concise',
-    term: 'concise',
-    normalizedTerm: 'concise',
-    kind: 'word',
-    partOfSpeech: 'adjective',
+    id: 'pv-cut-down',
+    term: 'cut down',
+    normalizedTerm: 'cut down',
+    kind: 'phrasal_verb',
+    partOfSpeech: 'verb',
     difficulty: 'intermediate',
-    definition: 'Saying what is needed in few words.',
-    example: 'Keep the summary concise.',
+    definition: 'To make something smaller or use less of it.',
+    example: 'Try to cut down the summary to one page.',
     ...overrides,
   };
 }

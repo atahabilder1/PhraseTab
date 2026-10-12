@@ -1,15 +1,16 @@
 # PhraseTab
 
-**Learn a word or phrase with every new tab.**
+**Learn a new English phrase with every new tab.**
 
 PhraseTab is a Chrome extension that replaces the New Tab page with a single
-English vocabulary entry — a word, a phrasal verb, an idiom, an expression or a
-collocation — set as a dictionary entry rather than a dashboard widget.
+English phrase — a phrasal verb, an idiom, an expression or a collocation —
+set as a dictionary entry rather than a dashboard widget. It shows phrases only,
+never single words.
 
-It deliberately does *not* show you something new on every tab. You might open
-forty tabs a day; you cannot learn forty words a day. The same entry stays for a
-few views (three by default) before it rotates, and `Next` moves on whenever you
-want. Repetition is the product.
+Every new tab shows a different phrase. Phrases you mark as Learning come back
+more often, and phrases you mark as Known rarely come back. If you would rather
+see each phrase a few times before it changes, turn off **Show a new phrase on
+every tab** in Settings.
 
 Everything runs locally. No account, no backend, no analytics, no network
 requests — the extension asks for exactly one Chrome permission, `storage`, and
@@ -39,8 +40,8 @@ works fully offline the moment it is installed.
 - **Vitest** for unit tests
 - **No backend, no database, no runtime AI, no third-party requests**
 
-The New Tab entry chunk is ~12 KB and the whole packaged extension is ~420 KB,
-most of which is the two bundled typefaces.
+The New Tab entry chunk is ~12 KB and the whole packaged extension is ~500 KB,
+most of which is the bundled typefaces.
 
 ---
 
@@ -118,21 +119,24 @@ introduce by accident and invisible in a screenshot.
 
 ### What the tests cover
 
-**Selector and repetition logic** (`src/learning/selector.test.ts`) — eligible
-item selection, content-type and difficulty filters, holding an item for its
-exposure budget, `Next` forcing rotation, avoiding an immediate repeat, learning
-items being favoured, known items being deprioritised without being excluded,
-and the single-eligible-item case terminating instead of looping.
+**Selector and rotation logic** (`src/learning/selector.test.ts`) — a new item
+on every tab by default, skipping recently shown items, difficulty filters,
+holding an item for its exposure budget when repetition is turned on, `Next`
+forcing rotation, learning items being favoured, known items being
+deprioritised without being excluded, and the single-eligible-item case
+terminating instead of looping.
 
 **Storage** (`src/storage/storage.test.ts`) — defaults on empty storage,
 round-tripping, settings surviving a progress write and vice versa, and
-migration: any corrupt or unknown field is repaired to a default rather than
-throwing, so a bad write can never brick the New Tab page.
+migration: version 1 settings move to a new phrase on every tab, and any
+corrupt or unknown field is repaired to a default rather than throwing, so a
+bad write can never brick the New Tab page.
 
 **Dataset** (`src/data/dataset.test.ts`) — every entry satisfies the schema, IDs
-and normalised terms are unique, every item carries both translations, and each
-difficulty level has at least one word *and* one phrase, so no combination of
-filters can empty the library.
+and normalised terms are unique, every item carries both translations, every
+entry is a multi-word phrase (no single words), every phrase kind is present,
+and each difficulty level has at least one phrase, so no combination of filters
+can empty the library.
 
 **Validator** (`src/data/schema.test.ts`) — the validator itself, against
 deliberately malformed input.
@@ -143,16 +147,17 @@ and persisting, `Save` *not* rotating the card away, the keyboard shortcuts, and
 modifier combinations like Ctrl+N being left alone for the browser.
 
 **Saved page** (`src/saved/Saved.test.tsx`) — ordering, search over terms and
-definitions, the type filter, both empty states, and unsaving an item without
+definitions, the phrase-kind filter, both empty states, and unsaving an item without
 erasing what was learned about it.
 
-106 tests across 6 files.
+109 tests across 6 files.
 
 ### Manual checks before release
 
 - [ ] Loads unpacked with no errors on the `chrome://extensions` card
 - [ ] New Tab override works; opening a tab shows an entry
-- [ ] The same entry returns for the configured number of views, then rotates
+- [ ] Each new tab shows a different phrase, with no quick repeats
+- [ ] With "Show a new phrase on every tab" off, a phrase repeats for the set number of views
 - [ ] `Next` rotates immediately
 - [ ] Learning / I know this / Save persist after a browser restart
 - [ ] Keyboard: `L`, `K`, `S`, `N` / `→`, `P` all work
@@ -169,10 +174,11 @@ erasing what was learned about it.
 ## Project structure
 
 ```text
-wordtab/
+PhraseTab/
 ├── CLAUDE.md                  Project instructions
 ├── PLAN.md                    Product and engineering plan, milestone status
 ├── README.md
+├── PRIVACY.md                 Privacy policy (linked from the Web Store listing)
 ├── THIRD_PARTY_NOTICES.md     Font licences; dataset provenance
 ├── newtab.html                Entry points. Vite builds these into dist/
 ├── settings.html
@@ -184,10 +190,14 @@ wordtab/
 │   ├── fonts/                 Bundled woff2 (latin subset)
 │   └── icons/                 Generated PNG icons
 ├── docs/                      README screenshots
+├── store/
+│   ├── listing.md             Chrome Web Store listing copy, ready to paste
+│   └── screenshots/           1280×800 store screenshots
 ├── scripts/
 │   ├── fetch-fonts.mjs        Downloads and self-hosts the typefaces
 │   ├── generate-icons.py      Renders the extension icons
-│   └── verify-build.mjs       Asserts dist/ stays offline and minimal
+│   ├── verify-build.mjs       Asserts dist/ stays offline and minimal
+│   └── package.mjs            Zips dist/ into release/ for the Web Store
 └── src/
     ├── newtab/                New Tab page, state hook, its stylesheet
     ├── settings/              Settings page
@@ -195,7 +205,7 @@ wordtab/
     ├── onboarding/            First-run flow
     ├── components/            VocabularyCard, ActionBar, TranslationBlock, …
     ├── data/                  vocabulary.json, validator, dataset tests
-    ├── learning/              Selection and repetition engine
+    ├── learning/              Selection and rotation engine
     ├── storage/               chrome.storage wrapper, persisted shapes
     ├── speech/                Speech synthesis
     ├── theme/                 Theme resolution
@@ -207,9 +217,10 @@ wordtab/
 
 ## Data, sources and licensing
 
-The bundled dataset is **100 entries** — 50 single words and 50 phrases
-(20 phrasal verbs, 15 idioms, 5 expressions, 10 collocations) — spread across
-Beginner, Intermediate and Advanced.
+The bundled dataset is **220 phrases** (62 phrasal verbs, 118 idioms,
+26 expressions, 14 collocations) spread across Beginner, Intermediate and
+Advanced. Single words are not allowed: `word` is not a valid kind, and a
+dataset test rejects any term without a space.
 
 Every definition, example sentence and translation is original work written for
 PhraseTab. Nothing is copied from any dictionary, and no third-party lexical
@@ -224,29 +235,27 @@ Add an object to `items` in `src/data/vocabulary.json`:
 
 ```json
 {
-  "id": "word-succinct",
-  "term": "succinct",
-  "normalizedTerm": "succinct",
-  "kind": "word",
-  "partOfSpeech": "adjective",
-  "difficulty": "advanced",
-  "definition": "Expressed clearly in very few words.",
-  "example": "Her summary was succinct and easy to act on.",
-  "synonyms": ["concise", "brief"],
-  "antonyms": ["rambling"],
-  "pronunciation": { "ipa": "/səkˈsɪŋkt/" },
-  "translations": { "bn": "সংক্ষিপ্ত ও স্পষ্ট", "zh-CN": "简洁的" },
-  "tags": ["writing"],
+  "id": "expression-keep-me-posted",
+  "term": "keep me posted",
+  "normalizedTerm": "keep me posted",
+  "kind": "expression",
+  "difficulty": "beginner",
+  "definition": "Please tell me about any news or changes as they happen.",
+  "example": "I'm not sure the flight is on time, so keep me posted.",
+  "synonyms": ["keep me updated"],
+  "translations": { "bn": "আমাকে খবর জানাতে থেকো", "zh-CN": "随时告诉我最新情况" },
+  "tags": ["work"],
   "source": "wordtab-original"
 }
 ```
 
 Rules the validator enforces (`npm test` will tell you if you break one):
 
-- `id` is unique and kebab-case, prefixed by kind (`word-`, `phrasal-`,
-  `idiom-`, `expression-`, `collocation-`)
+- `id` is unique and kebab-case; by convention it is prefixed by kind
+  (`phrasal_verb-`, `idiom-`, `expression-`, `collocation-`)
 - `normalizedTerm` equals the term lowercased with whitespace collapsed
-- `kind` is one of `word`, `phrasal_verb`, `idiom`, `expression`, `collocation`
+- `kind` is one of `phrasal_verb`, `idiom`, `expression`, `collocation`
+  (single words are not allowed, and the term must contain a space)
 - `difficulty` is `beginner`, `intermediate` or `advanced`
 - `definition` and `example` are non-empty, original, and the example actually
   uses the term
@@ -330,16 +339,54 @@ widget, and this should read as a page you happened to open. The column is
 centred but the type inside is left-aligned, so a one-word headword and a
 five-word phrase never shunt the layout sideways.
 
-One structural device carries the page: a hairline under the headword, with the
-repetition tally at its end. That tally is the only visible trace of the
-learning model, and it is the reason the same word keeps coming back.
+One structural device carries the page: a hairline under the headword. When
+repetition is turned on in Settings, a tally at the end of that line shows how
+many more times the current phrase will appear.
 
 Three typefaces, each with one job: **Newsreader** for the headword and example,
 **IBM Plex Sans** for prose and controls, **IBM Plex Mono** for metadata.
 
 ---
 
+## Publishing to the Chrome Web Store
+
+```bash
+npm run package    # lint, typecheck, test, build, verify, then zip
+```
+
+This writes `release/phrasetab-<version>.zip` with `manifest.json` at its root,
+which is the file to upload. The version comes from `public/manifest.json` and
+must match `package.json`; bump both for every update.
+
+Everything else the listing needs is in `store/`:
+
+- `store/listing.md` — summary, description, category, single-purpose
+  statement, `storage` permission justification, data-use answers and the
+  privacy policy URL, ready to paste into the Developer Dashboard
+- `store/screenshots/` — four 1280×800 screenshots
+
+The privacy policy is `PRIVACY.md`; its public URL is
+<https://github.com/atahabilder1/PhraseTab/blob/main/PRIVACY.md>.
+
+Steps in the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole):
+register as a developer (one-time fee), choose **New item**, upload the zip,
+fill in the **Store listing**, **Privacy** and **Distribution** tabs from
+`store/listing.md`, then **Submit for review**. To ship an update, bump the
+version, run `npm run package` again, and upload the new zip on the item's
+**Package** tab.
+
+---
+
 ## Status
 
-MVP milestones 0–9 are implemented. See `PLAN.md` for the milestone checklist
-and for the features deliberately deferred past V1.
+Version 1.0.0. MVP milestones 0–9 are implemented. See `PLAN.md` for the
+milestone checklist and for the features deliberately deferred past V1.
+
+---
+
+## Author
+
+**Anik Tahabilder**
+PhD student, Computer Science, Wayne State University
+
+Issues and suggestions: <https://github.com/atahabilder1/PhraseTab/issues>

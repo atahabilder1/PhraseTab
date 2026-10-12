@@ -16,28 +16,30 @@
  */
 
 :root {
-  /* Light: cool paper rather than cream. This page is opened at every hour of
-     the day, and warmth reads as "blog" instead of "reference". */
-  --ground: #f4f4f7;
-  --ground-raised: #fbfbfd;
-  --ground-sunken: #ececf1;
+  /* Strictly black and white: pure black ink on white paper, with neutral
+     (untinted) greys for secondary text and rules. Secondary greys stay at
+     4.5:1 or better against the ground. */
+  --ground: #ffffff;
+  --ground-raised: #ffffff;
+  --ground-sunken: #f2f2f2;
 
-  --ink: #17171f;
-  --ink-muted: #5e5e6d;
-  --ink-faint: #8b8b9b;
+  --ink: #000000;
+  --ink-muted: #474747;
+  --ink-faint: #6b6b6b;
 
-  --rule: #dcdce5;
-  --rule-strong: #c2c2d0;
+  --rule: #e3e3e3;
+  --rule-strong: #c4c4c4;
 
-  --accent: #4f46e5;
+  /* The accent is the ink itself: no colour anywhere on the page. */
+  --accent: #000000;
   --accent-ink: #ffffff;
-  --accent-soft: rgb(79 70 229 / 9%);
+  --accent-soft: rgb(0 0 0 / 6%);
   /* Checked rows: most difficulty boxes are on by default, so the selected
      fill has to survive being repeated three times without shouting. */
-  --accent-wash: rgb(79 70 229 / 4.5%);
+  --accent-wash: rgb(0 0 0 / 3%);
 
-  --known: #0f766e;
-  --learning: #a15608;
+  --known: var(--ink);
+  --learning: var(--ink);
 
   --focus: var(--accent);
 
@@ -65,24 +67,25 @@
 }
 
 :root[data-theme='dark'] {
-  --ground: #101015;
-  --ground-raised: #17171e;
-  --ground-sunken: #0a0a0e;
+  /* The inverse: pure white ink on black. */
+  --ground: #000000;
+  --ground-raised: #111111;
+  --ground-sunken: #000000;
 
-  --ink: #ececf3;
-  --ink-muted: #a0a0b1;
-  --ink-faint: #74748a;
+  --ink: #ffffff;
+  --ink-muted: #c2c2c2;
+  --ink-faint: #969696;
 
-  --rule: #2a2a35;
-  --rule-strong: #3d3d4b;
+  --rule: #262626;
+  --rule-strong: #3d3d3d;
 
-  --accent: #9b95ff;
-  --accent-ink: #14141c;
-  --accent-soft: rgb(155 149 255 / 12%);
-  --accent-wash: rgb(155 149 255 / 7%);
+  --accent: #ffffff;
+  --accent-ink: #000000;
+  --accent-soft: rgb(255 255 255 / 10%);
+  --accent-wash: rgb(255 255 255 / 5%);
 
-  --known: #4dbfa6;
-  --learning: #e0a960;
+  --known: var(--ink);
+  --learning: var(--ink);
 }
 
 /* Reset -------------------------------------------------------------------- */

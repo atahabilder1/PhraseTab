@@ -1,29 +1,23 @@
 import { useState } from 'react';
-import type { ContentMode, Settings } from '@/storage/types';
+import type { Settings } from '@/storage/types';
 import { DIFFICULTIES, TRANSLATION_LANGUAGES, type Difficulty, type TranslationLanguage } from '@/types/vocabulary';
 
 interface OnboardingProps {
   onDone: (settings: Partial<Settings>) => void;
 }
 
-type StepId = 'welcome' | 'content' | 'difficulty' | 'translations';
+type StepId = 'welcome' | 'difficulty' | 'translations';
 
-const STEPS: StepId[] = ['welcome', 'content', 'difficulty', 'translations'];
-
-const CONTENT_CHOICES: { value: ContentMode; label: string; hint: string }[] = [
-  { value: 'words', label: 'Words', hint: 'Single vocabulary words' },
-  { value: 'phrases', label: 'Phrases', hint: 'Phrasal verbs, idioms, expressions' },
-  { value: 'mixed', label: 'Both', hint: 'A mix of words and phrases' },
-];
+const STEPS: StepId[] = ['welcome', 'difficulty', 'translations'];
 
 const DIFFICULTY_HINTS: Record<Difficulty, string> = {
-  beginner: 'Everyday words you will use constantly',
-  intermediate: 'Words that make writing and speech precise',
+  beginner: 'Everyday phrases you will use constantly',
+  intermediate: 'Phrases that make writing and speech precise',
   advanced: 'Academic and professional register',
 };
 
 /**
- * First-run setup, four short steps (PLAN §11).
+ * First-run setup, three short steps (PLAN §11).
  *
  * Everything here has a sensible default already selected, so a user who wants
  * to skip can press Enter through the whole thing in about two seconds. No
@@ -31,7 +25,6 @@ const DIFFICULTY_HINTS: Record<Difficulty, string> = {
  */
 export function Onboarding({ onDone }: OnboardingProps) {
   const [step, setStep] = useState(0);
-  const [contentMode, setContentMode] = useState<ContentMode>('mixed');
   const [difficulties, setDifficulties] = useState<Difficulty[]>([...DIFFICULTIES]);
   const [translations, setTranslations] = useState<TranslationLanguage[]>([]);
 
@@ -59,7 +52,6 @@ export function Onboarding({ onDone }: OnboardingProps) {
 
   const finish = () => {
     onDone({
-      contentMode,
       difficulties: DIFFICULTIES.filter((level) => difficulties.includes(level)),
       translations,
     });
@@ -76,36 +68,12 @@ export function Onboarding({ onDone }: OnboardingProps) {
           <>
             <h1 className="onboarding__title">Welcome to PhraseTab.</h1>
             <p className="onboarding__body">
-              Every new tab shows one English word or phrase. The same one comes back a
-              few times before it moves on, because that is how words stick.
+              Every new tab shows a different English phrase: phrasal verbs, idioms,
+              everyday expressions and natural word pairings.
             </p>
             <p className="onboarding__body">
-              Three quick questions and you are set. Nothing leaves your browser.
+              Two quick questions and you are set. Nothing leaves your browser.
             </p>
-          </>
-        )}
-
-        {current === 'content' && (
-          <>
-            <h1 className="onboarding__title">What would you like to learn?</h1>
-            <fieldset className="onboarding__choices">
-              <legend className="sr-only">Content type</legend>
-              {CONTENT_CHOICES.map((choice) => (
-                <label className="choice" key={choice.value}>
-                  <input
-                    type="radio"
-                    name="contentMode"
-                    value={choice.value}
-                    checked={contentMode === choice.value}
-                    onChange={() => setContentMode(choice.value)}
-                  />
-                  <span className="choice__body">
-                    <span className="choice__label">{choice.label}</span>
-                    <span className="choice__hint">{choice.hint}</span>
-                  </span>
-                </label>
-              ))}
-            </fieldset>
           </>
         )}
 

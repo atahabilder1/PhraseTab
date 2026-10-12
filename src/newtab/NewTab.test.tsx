@@ -80,7 +80,13 @@ describe('the card', () => {
     expect(term.length).toBeGreaterThan(0);
   });
 
-  it('reports the exposure tally to assistive technology', async () => {
+  it('hides the exposure tally when every tab shows a new phrase', async () => {
+    await renderReady();
+    expect(screen.queryByText(/Seen \d+ of \d+ times/)).not.toBeInTheDocument();
+  });
+
+  it('reports the exposure tally to assistive technology when repetition is on', async () => {
+    await updateSettings({ alwaysNewItem: false });
     await renderReady();
     expect(screen.getByText(/Seen 1 of 3 times before moving on\./)).toBeInTheDocument();
   });
@@ -202,13 +208,9 @@ describe('keyboard', () => {
 });
 
 describe('filters', () => {
-  it('honours words-only mode', async () => {
-    await updateSettings({ contentMode: 'words' });
+  it('shows a phrase, never a single word', async () => {
     await renderReady();
-    // Every single-word entry in the dataset carries a part of speech; phrases
-    // fall back to their kind label, so this distinguishes them.
-    const eyebrow = screen.getByRole('article').textContent ?? '';
-    expect(eyebrow).not.toMatch(/phrasal verb|idiom|expression|collocation/);
+    expect(currentTerm().trim()).toMatch(/\s/);
   });
 
   it('honours a single difficulty', async () => {

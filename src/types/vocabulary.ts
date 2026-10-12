@@ -6,8 +6,8 @@
  * the tests and the validation script alike.
  */
 
+/** PhraseTab teaches phrases only; single words are deliberately not a kind. */
 export const VOCABULARY_KINDS = [
-  'word',
   'phrasal_verb',
   'idiom',
   'expression',
@@ -77,20 +77,7 @@ export interface VocabularyDataset {
   items: VocabularyItem[];
 }
 
-/** Kinds that count as "phrases" for the Words / Phrases / Mixed setting. */
-export const PHRASE_KINDS: readonly VocabularyKind[] = [
-  'phrasal_verb',
-  'idiom',
-  'expression',
-  'collocation',
-];
-
-export function isPhraseKind(kind: VocabularyKind): boolean {
-  return kind !== 'word';
-}
-
 const KIND_LABELS: Record<VocabularyKind, string> = {
-  word: 'word',
   phrasal_verb: 'phrasal verb',
   idiom: 'idiom',
   expression: 'expression',

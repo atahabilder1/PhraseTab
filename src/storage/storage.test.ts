@@ -37,9 +37,9 @@ describe('defaults on empty storage', () => {
     await expect(loadProgress()).resolves.toEqual({ ...DEFAULT_PROGRESS, items: {} });
   });
 
-  it('defaults to mixed content, all difficulties, and no translations', async () => {
+  it('defaults to a new item every tab, all difficulties, and no translations', async () => {
     const settings = await loadSettings();
-    expect(settings.contentMode).toBe('mixed');
+    expect(settings.alwaysNewItem).toBe(true);
     expect(settings.difficulties).toEqual(['beginner', 'intermediate', 'advanced']);
     expect(settings.translations).toEqual([]);
     expect(settings.exposuresPerItem).toBe(3);
@@ -49,9 +49,9 @@ describe('defaults on empty storage', () => {
 
 describe('round-tripping', () => {
   it('persists a settings update', async () => {
-    await updateSettings({ contentMode: 'phrases', translations: ['bn'] });
+    await updateSettings({ alwaysNewItem: false, translations: ['bn'] });
     const reloaded = await loadSettings();
-    expect(reloaded.contentMode).toBe('phrases');
+    expect(reloaded.alwaysNewItem).toBe(false);
     expect(reloaded.translations).toEqual(['bn']);
   });
 
@@ -115,15 +115,31 @@ describe('round-tripping', () => {
   });
 
   it('a progress write leaves settings intact', async () => {
-    await updateSettings({ theme: 'dark', contentMode: 'words' });
+    await updateSettings({ theme: 'dark', alwaysNewItem: false });
     await saveProgress({ ...DEFAULT_PROGRESS, currentItemId: 'y' });
     const settings = await loadSettings();
     expect(settings.theme).toBe('dark');
-    expect(settings.contentMode).toBe('words');
+    expect(settings.alwaysNewItem).toBe(false);
   });
 });
 
 describe('normalizeSettings migration and repair', () => {
+  it('migrates version 1 settings to a new item on every tab', () => {
+    const result = normalizeSettings({
+      version: 1,
+      contentMode: 'mixed',
+      alwaysNewItem: false,
+      theme: 'dark',
+      onboardingComplete: true,
+    });
+    expect(result.version).toBe(2);
+    expect(result.alwaysNewItem).toBe(true);
+    expect(result).not.toHaveProperty('contentMode');
+    // Everything else the user chose survives the migration.
+    expect(result.theme).toBe('dark');
+    expect(result.onboardingComplete).toBe(true);
+  });
+
   it('falls back to defaults for a non-object value', () => {
     expect(normalizeSettings(null)).toEqual(DEFAULT_SETTINGS);
     expect(normalizeSettings('nonsense')).toEqual(DEFAULT_SETTINGS);
@@ -132,14 +148,15 @@ describe('normalizeSettings migration and repair', () => {
 
   it('keeps valid fields and repairs invalid ones', () => {
     const result = normalizeSettings({
-      contentMode: 'words',
+      version: 2,
+      alwaysNewItem: false,
       difficulties: ['beginner', 'not-a-level'],
       translations: ['bn', 'kl'],
       exposuresPerItem: 'three',
       theme: 'neon',
       onboardingComplete: true,
     });
-    expect(result.contentMode).toBe('words');
+    expect(result.alwaysNewItem).toBe(false);
     expect(result.difficulties).toEqual(['beginner']);
     expect(result.translations).toEqual(['bn']);
     expect(result.exposuresPerItem).toBe(DEFAULT_SETTINGS.exposuresPerItem);
