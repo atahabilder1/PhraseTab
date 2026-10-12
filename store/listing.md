@@ -45,9 +45,11 @@ Private by design:
 • Works completely offline. Nothing you do ever leaves your computer
 • Uses one permission, storage, to remember your settings and progress on your device
 
-**Screenshots** (1280×800): `store/screenshots/` — upload in numbered order.
+**Screenshots** (1280×800): `store/images/screenshot-*-1280x800.png` — upload in numbered order.
 
-**Icon:** 128×128 is taken from the package (`icons/icon128.png`).
+**Store icon** (128×128): `store/images/store-icon-128x128.png`
+
+**Small promo tile** (440×280): `store/images/small-promo-tile-440x280.png`
 
 ## Privacy practices tab
 

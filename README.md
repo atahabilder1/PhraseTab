@@ -192,7 +192,8 @@ PhraseTab/
 ├── docs/                      README screenshots
 ├── store/
 │   ├── listing.md             Chrome Web Store listing copy, ready to paste
-│   └── screenshots/           1280×800 store screenshots
+│   ├── description.txt        Store description, plain text
+│   └── images/                Store icon, screenshots, promo tile (size in name)
 ├── scripts/
 │   ├── fetch-fonts.mjs        Downloads and self-hosts the typefaces
 │   ├── generate-icons.py      Renders the extension icons
@@ -363,7 +364,9 @@ Everything else the listing needs is in `store/`:
 - `store/listing.md` — summary, description, category, single-purpose
   statement, `storage` permission justification, data-use answers and the
   privacy policy URL, ready to paste into the Developer Dashboard
-- `store/screenshots/` — four 1280×800 screenshots
+- `store/images/` — every image the listing asks for, with its size in the
+  file name: the 128×128 store icon, four 1280×800 screenshots and the
+  440×280 small promo tile
 
 The privacy policy is `PRIVACY.md`; its public URL is
 <https://github.com/atahabilder1/PhraseTab/blob/main/PRIVACY.md>.

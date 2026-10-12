@@ -974,7 +974,7 @@ account, or artwork that cannot be generated from the code.
 - [ ] Developer account and the one-time registration fee
 - [x] Privacy policy at a public URL — `PRIVACY.md` on GitHub
 - [x] Store listing copy: short description, full description, category (`store/listing.md`)
-- [x] Screenshots at 1280×800 or 640×400 — four in `store/screenshots/`
+- [x] Screenshots at 1280×800 or 640×400 — four in `store/images/`
 - [ ] Optional promotional tile artwork
 - [x] Single purpose statement — "replace the New Tab page with an English
       phrase to learn" — plus the justification for the `storage` permission
