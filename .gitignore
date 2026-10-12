@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+*.local
+.DS_Store
+
+# Vite / editor scratch
+.vite/
+*.tsbuildinfo
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local documents
+*.pdf

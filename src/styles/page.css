@@ -1,0 +1,408 @@
+/*
+ * Shared styling for the two secondary surfaces, Settings and Saved.
+ *
+ * These pages carry more controls than the New Tab entry, so they use a
+ * two-column section layout: a monospace section label in the left margin and
+ * the controls to its right. That keeps the same "reference page" register as
+ * the entry without pretending a settings form is a dictionary column.
+ */
+
+.page {
+  min-height: 100vh;
+  padding: clamp(1rem, 3vw, 1.75rem) clamp(1rem, 3vw, 1.75rem) 5rem;
+}
+
+/* Overrides .frame__bar's narrower column so the wordmark lines up with the
+   page title and the section grid below it. */
+.page__bar {
+  width: min(46rem, 100%);
+  margin-bottom: clamp(2rem, 6vh, 3.5rem);
+}
+
+.page__body {
+  width: min(46rem, 100%);
+  margin-inline: auto;
+}
+
+.page__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 2.85rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.page__lede {
+  margin-top: 0.6rem;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+  text-wrap: pretty;
+}
+
+/* Sections ---------------------------------------------------------------- */
+
+.section {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.5rem 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.section__head {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+}
+
+.section__title {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.section__hint {
+  margin-top: 0.55rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+  text-wrap: pretty;
+}
+
+.section__body {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+@media (max-width: 44rem) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .section__head {
+    position: static;
+  }
+}
+
+/* Fields ------------------------------------------------------------------ */
+
+.field {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.field__legend {
+  padding: 0;
+  margin-bottom: 0.6rem;
+  color: var(--ink-faint);
+}
+
+.field__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.field__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.field__hint {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--ink-faint);
+  text-wrap: pretty;
+}
+
+.field__hint code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  background: var(--ground-sunken);
+  color: var(--ink-muted);
+}
+
+.choices {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.choices--row {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+@media (max-width: 30rem) {
+  .choices--row {
+    grid-auto-flow: row;
+  }
+}
+
+.choice--compact {
+  align-items: center;
+  padding: 0.6rem 0.85rem;
+}
+
+.choice--compact .choice__label {
+  font-size: 0.875rem;
+}
+
+.choice:has(input:disabled) {
+  cursor: default;
+  opacity: 0.72;
+}
+
+/* Range control ----------------------------------------------------------- */
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.stepper input[type='range'] {
+  width: clamp(8rem, 20vw, 12rem);
+  accent-color: var(--accent);
+}
+
+.stepper input[type='range']:disabled {
+  opacity: 0.45;
+}
+
+.stepper__value {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  color: var(--ink);
+  min-width: 1.25rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stats ------------------------------------------------------------------- */
+
+.stats {
+  display: flex;
+  gap: 2.25rem;
+  flex-wrap: wrap;
+}
+
+.stats__item dt {
+  margin-bottom: 0.3rem;
+}
+
+.stats__item dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.danger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.button--danger {
+  border-color: #b3261e;
+  color: #b3261e;
+}
+
+:root[data-theme='dark'] .button--danger {
+  border-color: #f2857c;
+  color: #f2857c;
+}
+
+/* Saved ------------------------------------------------------------------- */
+
+.saved__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.search {
+  position: relative;
+  flex: 1 1 14rem;
+}
+
+.search__icon {
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  color: var(--ink-faint);
+  pointer-events: none;
+}
+
+.search__input {
+  width: 100%;
+  padding: 0.55rem 0.75rem 0.55rem 2.1rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--ground-raised);
+  font-size: 0.9375rem;
+}
+
+.search__input::placeholder {
+  color: var(--ink-faint);
+}
+
+.search__input:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 2px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--ground-sunken);
+}
+
+.segmented__item {
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.segmented__item:hover {
+  color: var(--ink);
+}
+
+.segmented__item.is-active {
+  background: var(--ground-raised);
+  color: var(--ink);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
+}
+
+.saved__list {
+  display: grid;
+  gap: 0;
+}
+
+.saved__row {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.saved__head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+.saved__term {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.012em;
+  line-height: 1.2;
+}
+
+.saved__tags {
+  color: var(--ink-faint);
+}
+
+.saved__remove {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  color: var(--ink-faint);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.saved__remove svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.saved__remove:hover {
+  color: var(--ink);
+  background: var(--ground-sunken);
+}
+
+.saved__definition {
+  margin-top: 0.6rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.saved__example {
+  margin-top: 0.5rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--rule-strong);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+}
+
+.saved__translation {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
+.saved__translation-label {
+  display: inline-block;
+  min-width: 3.5rem;
+  color: var(--ink-faint);
+  font-size: 0.8125rem;
+}
+
+/* Empty states ------------------------------------------------------------ */
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 3rem 0;
+  max-width: 30rem;
+}
+
+.empty__body {
+  color: var(--ink-muted);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.empty__body .action__key {
+  display: inline-block;
+}

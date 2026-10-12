@@ -1,0 +1,429 @@
+/*
+ * The New Tab entry.
+ *
+ * The column is centred on screen but the type inside is left-aligned, which
+ * is what makes it read as a page rather than a greeting card — and it means a
+ * one-word headword and a five-word phrase do not shunt the whole layout
+ * sideways on a page seen dozens of times a day.
+ */
+
+/* The entry sits in the same column as the top bar and the action row, hugging
+   its left edge, so every left edge on the page lines up. The entry itself is
+   narrower than the column because ~34em is the readable measure for prose. */
+.frame__main {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  width: min(var(--measure) + 8rem, 100%);
+  margin-inline: auto;
+  /* Optical centre sits a little above geometric centre. */
+  padding-block-end: clamp(0rem, 6vh, 4rem);
+}
+
+.frame--holding {
+  /* Same frame, no content: holds the background so there is no flash. */
+  visibility: hidden;
+}
+
+.frame__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: min(var(--measure) + 8rem, 100%);
+  margin-inline: auto;
+  /* Reserve the footer's height even before an item resolves, so the entry
+     above never jumps once the actions appear. */
+  min-height: 4.5rem;
+}
+
+/* The entry ------------------------------------------------------------- */
+
+.entry {
+  width: min(var(--measure), 100%);
+  animation: entry-in 280ms cubic-bezier(0.22, 0.7, 0.28, 1) both;
+}
+
+@keyframes entry-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.entry__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.entry__eyebrow-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--rule-strong);
+}
+
+.entry__term {
+  font-family: var(--font-display);
+  font-weight: 500;
+  /* Large enough to be the only thing you see, capped so a long phrase like
+     "give someone a heads-up" still fits two lines on a laptop. */
+  font-size: clamp(2.5rem, 6.4vw, 4.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.021em;
+  color: var(--ink);
+  /* Phrases are lowercase in the data and stay lowercase here: capitalising
+     them would misrepresent how they are written. */
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.entry__pronunciation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 1.9rem;
+  margin-top: 0.5rem;
+}
+
+.entry__ipa {
+  font-family: var(--font-ipa);
+  font-size: 0.9375rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.01em;
+}
+
+/* Pull the button's padding off the column edge so its icon lines up with the
+   headword above when an item has no IPA. */
+.entry__pronunciation > .listen:first-child {
+  margin-left: -0.45rem;
+}
+
+.listen {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  color: var(--ink-faint);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.listen svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.listen:hover {
+  color: var(--ink);
+  background: var(--accent-soft);
+}
+
+.listen--speaking {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* The rule: the entry's one structural device. It divides the headword from
+   its sense, and carries the repetition tally at its end. */
+.entry__rule {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1.15rem 0 1.35rem;
+}
+
+.entry__rule-line {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.tally {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.tally__mark {
+  width: 2px;
+  height: 10px;
+  border-radius: 1px;
+  background: var(--rule);
+  transition: background-color var(--transition);
+}
+
+.tally__mark--on {
+  background: var(--ink-faint);
+}
+
+.entry__definition {
+  font-size: clamp(1.0625rem, 1.55vw, 1.25rem);
+  line-height: 1.58;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+/* The citation. A left hairline instead of quotation marks — the mark of a
+   quoted line in a reference book. */
+.entry__example {
+  margin-top: 1.15rem;
+  padding-left: 1.05rem;
+  border-left: 1px solid var(--rule-strong);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  color: var(--ink-muted);
+  text-wrap: pretty;
+}
+
+/* Label/value rows: synonyms, antonyms, translations. */
+.entry__meta {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 1.4rem;
+}
+
+.entry__meta--translations {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--rule);
+}
+
+.entry__meta-row {
+  display: grid;
+  grid-template-columns: 3.75rem 1fr;
+  gap: 0.9rem;
+  align-items: baseline;
+}
+
+.entry__meta-label {
+  color: var(--ink-faint);
+  font-size: 0.6875rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+
+/* Bangla and Chinese labels are set in their own script, which has no
+   uppercase and needs the extra size to stay legible. */
+.entry__meta--translations .entry__meta-label {
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+}
+
+.entry__meta-value {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.entry__meta--translations .entry__meta-value {
+  color: var(--ink);
+}
+
+/* Empty state ----------------------------------------------------------- */
+
+.entry--empty .entry__term--empty {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-block: 0.5rem 1rem;
+}
+
+.entry--empty .button {
+  margin-top: 1.25rem;
+}
+
+/* Actions ---------------------------------------------------------------- */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+}
+
+.actions__group {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.action:hover {
+  color: var(--ink);
+  background: var(--accent-soft);
+}
+
+/* The row's outer buttons lose their outer padding so their text edges line up
+   with every other left and right edge on the page. */
+.actions__group:first-child .action:first-child {
+  padding-left: 0;
+}
+
+.actions__group:last-child .action:last-child {
+  padding-right: 0;
+}
+
+.action__icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.action--learning.is-active {
+  color: var(--learning);
+}
+
+.action--known.is-active {
+  color: var(--known);
+}
+
+.action--save.is-active {
+  color: var(--accent);
+}
+
+.action--next {
+  color: var(--ink);
+}
+
+.counts {
+  margin: 0;
+  color: var(--ink-faint);
+}
+
+/* Onboarding -------------------------------------------------------------- */
+
+.onboarding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.onboarding__panel {
+  width: min(30rem, 100%);
+  animation: entry-in 300ms cubic-bezier(0.22, 0.7, 0.28, 1) both;
+}
+
+.onboarding__progress {
+  margin-bottom: 1.5rem;
+}
+
+.onboarding__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.018em;
+  margin-bottom: 1rem;
+}
+
+.onboarding__body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  margin-bottom: 0.85rem;
+  text-wrap: pretty;
+}
+
+.onboarding__note {
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  color: var(--ink-faint);
+}
+
+.onboarding__choices {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border: none;
+}
+
+.onboarding__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Crash fallback ---------------------------------------------------------- */
+
+.crash {
+  width: min(32rem, 100%);
+  margin: clamp(3rem, 14vh, 8rem) auto;
+  padding-inline: 1.5rem;
+}
+
+.crash__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.015em;
+  margin: 0.5rem 0 0.9rem;
+}
+
+.crash__body {
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-wrap: pretty;
+}
+
+.crash__detail {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--ground-sunken);
+  overflow-wrap: anywhere;
+}
+
+.crash__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+/* Small screens ----------------------------------------------------------- */
+
+@media (max-width: 30rem) {
+  .entry__meta-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .actions {
+    justify-content: flex-start;
+  }
+}

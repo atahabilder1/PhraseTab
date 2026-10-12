@@ -1,0 +1,2442 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "word-optimistic",
+      "term": "optimistic",
+      "normalizedTerm": "optimistic",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "beginner",
+      "definition": "Expecting good things to happen.",
+      "example": "He is optimistic that the team will finish on time.",
+      "synonyms": [
+        "hopeful",
+        "positive"
+      ],
+      "antonyms": [
+        "pessimistic"
+      ],
+      "pronunciation": {
+        "ipa": "/ˌɑːptɪˈmɪstɪk/"
+      },
+      "translations": {
+        "bn": "আশাবাদী",
+        "zh-CN": "乐观的"
+      },
+      "tags": [
+        "attitude",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-pessimistic",
+      "term": "pessimistic",
+      "normalizedTerm": "pessimistic",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Expecting that something bad or unfavorable will happen.",
+      "example": "She was pessimistic about her chances of winning.",
+      "synonyms": [
+        "negative",
+        "doubtful"
+      ],
+      "antonyms": [
+        "optimistic"
+      ],
+      "pronunciation": {
+        "ipa": "/ˌpesɪˈmɪstɪk/"
+      },
+      "translations": {
+        "bn": "হতাশাবাদী",
+        "zh-CN": "悲观的"
+      },
+      "tags": [
+        "attitude",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-phenomenal",
+      "term": "phenomenal",
+      "normalizedTerm": "phenomenal",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "So good or so large that it is surprising.",
+      "example": "The response to the new course has been phenomenal.",
+      "synonyms": [
+        "remarkable",
+        "extraordinary"
+      ],
+      "antonyms": [
+        "ordinary"
+      ],
+      "pronunciation": {
+        "ipa": "/fəˈnɑːmɪnl/"
+      },
+      "translations": {
+        "bn": "অসাধারণ",
+        "zh-CN": "非凡的"
+      },
+      "tags": [
+        "praise",
+        "description"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-reluctant",
+      "term": "reluctant",
+      "normalizedTerm": "reluctant",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Not willing to do something, and therefore slow to do it.",
+      "example": "He was reluctant to share his notes before the exam.",
+      "synonyms": [
+        "unwilling",
+        "hesitant"
+      ],
+      "antonyms": [
+        "eager",
+        "willing"
+      ],
+      "pronunciation": {
+        "ipa": "/rɪˈlʌktənt/"
+      },
+      "translations": {
+        "bn": "অনিচ্ছুক",
+        "zh-CN": "不情愿的"
+      },
+      "tags": [
+        "attitude",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-inevitable",
+      "term": "inevitable",
+      "normalizedTerm": "inevitable",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Certain to happen and impossible to avoid.",
+      "example": "With so many delays, a later launch date was inevitable.",
+      "synonyms": [
+        "unavoidable",
+        "certain"
+      ],
+      "antonyms": [
+        "avoidable"
+      ],
+      "pronunciation": {
+        "ipa": "/ɪnˈevɪtəbl/"
+      },
+      "translations": {
+        "bn": "অনিবার্য",
+        "zh-CN": "不可避免的"
+      },
+      "tags": [
+        "academic",
+        "description"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-skeptical",
+      "term": "skeptical",
+      "normalizedTerm": "skeptical",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Doubting that something is true or that it will work.",
+      "example": "Investors remain skeptical about the company's forecast.",
+      "synonyms": [
+        "doubtful",
+        "unconvinced"
+      ],
+      "antonyms": [
+        "convinced",
+        "credulous"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈskeptɪkl/"
+      },
+      "translations": {
+        "bn": "সন্দেহপ্রবণ",
+        "zh-CN": "持怀疑态度的"
+      },
+      "tags": [
+        "attitude",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-ambiguous",
+      "term": "ambiguous",
+      "normalizedTerm": "ambiguous",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Able to be understood in more than one way, so the meaning is unclear.",
+      "example": "The instructions were ambiguous, so half the class did the wrong task.",
+      "synonyms": [
+        "unclear",
+        "vague"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "pronunciation": {
+        "ipa": "/æmˈbɪɡjuəs/"
+      },
+      "translations": {
+        "bn": "দ্ব্যর্থক",
+        "zh-CN": "含糊不清的"
+      },
+      "tags": [
+        "academic",
+        "writing"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-compelling",
+      "term": "compelling",
+      "normalizedTerm": "compelling",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Strong enough to convince you, or interesting enough to hold your attention.",
+      "example": "She made a compelling case for changing the schedule.",
+      "synonyms": [
+        "convincing",
+        "persuasive"
+      ],
+      "antonyms": [
+        "weak",
+        "unconvincing"
+      ],
+      "pronunciation": {
+        "ipa": "/kəmˈpelɪŋ/"
+      },
+      "translations": {
+        "bn": "জোরালো",
+        "zh-CN": "有说服力的"
+      },
+      "tags": [
+        "academic",
+        "argument"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-resilient",
+      "term": "resilient",
+      "normalizedTerm": "resilient",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Able to recover quickly after something difficult happens.",
+      "example": "Small businesses here proved surprisingly resilient after the flood.",
+      "synonyms": [
+        "tough",
+        "adaptable"
+      ],
+      "antonyms": [
+        "fragile"
+      ],
+      "pronunciation": {
+        "ipa": "/rɪˈzɪliənt/"
+      },
+      "translations": {
+        "bn": "সহনশীল",
+        "zh-CN": "有韧性的"
+      },
+      "tags": [
+        "character",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-concise",
+      "term": "concise",
+      "normalizedTerm": "concise",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Saying what is needed in few words.",
+      "example": "Keep the summary concise so people actually read it.",
+      "synonyms": [
+        "brief",
+        "succinct"
+      ],
+      "antonyms": [
+        "wordy",
+        "rambling"
+      ],
+      "pronunciation": {
+        "ipa": "/kənˈsaɪs/"
+      },
+      "translations": {
+        "bn": "সংক্ষিপ্ত",
+        "zh-CN": "简洁的"
+      },
+      "tags": [
+        "writing",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-spontaneous",
+      "term": "spontaneous",
+      "normalizedTerm": "spontaneous",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Done suddenly because you want to, without planning it.",
+      "example": "We took a spontaneous trip to the coast on Saturday.",
+      "synonyms": [
+        "unplanned",
+        "impulsive"
+      ],
+      "antonyms": [
+        "planned",
+        "deliberate"
+      ],
+      "pronunciation": {
+        "ipa": "/spɑːnˈteɪniəs/"
+      },
+      "translations": {
+        "bn": "স্বতঃস্ফূর্ত",
+        "zh-CN": "自发的"
+      },
+      "tags": [
+        "everyday",
+        "character"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-plausible",
+      "term": "plausible",
+      "normalizedTerm": "plausible",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Reasonable enough to be believed, even if it is not proven.",
+      "example": "That is a plausible explanation, but we should still check the data.",
+      "synonyms": [
+        "believable",
+        "credible"
+      ],
+      "antonyms": [
+        "implausible",
+        "far-fetched"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈplɔːzəbl/"
+      },
+      "translations": {
+        "bn": "বিশ্বাসযোগ্য",
+        "zh-CN": "看似合理的"
+      },
+      "tags": [
+        "academic",
+        "argument"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-meticulous",
+      "term": "meticulous",
+      "normalizedTerm": "meticulous",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Very careful about small details.",
+      "example": "He keeps meticulous records of every experiment.",
+      "synonyms": [
+        "thorough",
+        "painstaking"
+      ],
+      "antonyms": [
+        "careless",
+        "sloppy"
+      ],
+      "pronunciation": {
+        "ipa": "/məˈtɪkjələs/"
+      },
+      "translations": {
+        "bn": "অত্যন্ত সূক্ষ্ম ও যত্নশীল",
+        "zh-CN": "一丝不苟的"
+      },
+      "tags": [
+        "character",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-substantial",
+      "term": "substantial",
+      "normalizedTerm": "substantial",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Large enough to matter.",
+      "example": "There was a substantial drop in costs after the change.",
+      "synonyms": [
+        "considerable",
+        "significant"
+      ],
+      "antonyms": [
+        "minor",
+        "negligible"
+      ],
+      "pronunciation": {
+        "ipa": "/səbˈstænʃl/"
+      },
+      "translations": {
+        "bn": "উল্লেখযোগ্য",
+        "zh-CN": "大量的"
+      },
+      "tags": [
+        "academic",
+        "business"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-trivial",
+      "term": "trivial",
+      "normalizedTerm": "trivial",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "So small or unimportant that it is not worth worrying about.",
+      "example": "We spent an hour arguing about a trivial detail.",
+      "synonyms": [
+        "minor",
+        "insignificant"
+      ],
+      "antonyms": [
+        "important",
+        "crucial"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈtrɪviəl/"
+      },
+      "translations": {
+        "bn": "তুচ্ছ",
+        "zh-CN": "微不足道的"
+      },
+      "tags": [
+        "academic",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-coherent",
+      "term": "coherent",
+      "normalizedTerm": "coherent",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Clear and logically connected, so it is easy to follow.",
+      "example": "Your essay needs a coherent argument, not just a list of facts.",
+      "synonyms": [
+        "logical",
+        "consistent"
+      ],
+      "antonyms": [
+        "incoherent",
+        "disjointed"
+      ],
+      "pronunciation": {
+        "ipa": "/koʊˈhɪrənt/"
+      },
+      "translations": {
+        "bn": "সুসংগত",
+        "zh-CN": "连贯的"
+      },
+      "tags": [
+        "academic",
+        "writing"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-persistent",
+      "term": "persistent",
+      "normalizedTerm": "persistent",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Continuing to try, or continuing to happen, over a long time.",
+      "example": "Her persistent questions finally got us a straight answer.",
+      "synonyms": [
+        "determined",
+        "continual"
+      ],
+      "antonyms": [
+        "temporary"
+      ],
+      "pronunciation": {
+        "ipa": "/pərˈsɪstənt/"
+      },
+      "translations": {
+        "bn": "অধ্যবসায়ী",
+        "zh-CN": "坚持不懈的"
+      },
+      "tags": [
+        "character",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-feasible",
+      "term": "feasible",
+      "normalizedTerm": "feasible",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Possible to do with the time, money, or tools you have.",
+      "example": "Finishing by Friday is feasible if two more people help.",
+      "synonyms": [
+        "practical",
+        "workable"
+      ],
+      "antonyms": [
+        "impossible",
+        "unrealistic"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈfiːzəbl/"
+      },
+      "translations": {
+        "bn": "বাস্তবসম্মত",
+        "zh-CN": "可行的"
+      },
+      "tags": [
+        "business",
+        "planning"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-obsolete",
+      "term": "obsolete",
+      "normalizedTerm": "obsolete",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "No longer used because something newer has replaced it.",
+      "example": "The old file format became obsolete within a few years.",
+      "synonyms": [
+        "outdated",
+        "outmoded"
+      ],
+      "antonyms": [
+        "current",
+        "modern"
+      ],
+      "pronunciation": {
+        "ipa": "/ˌɑːbsəˈliːt/"
+      },
+      "translations": {
+        "bn": "অপ্রচলিত",
+        "zh-CN": "过时的"
+      },
+      "tags": [
+        "technology",
+        "business"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-reliable",
+      "term": "reliable",
+      "normalizedTerm": "reliable",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "beginner",
+      "definition": "Able to be trusted to do what is expected.",
+      "example": "We need a reliable way to back up the files.",
+      "synonyms": [
+        "dependable",
+        "trustworthy"
+      ],
+      "antonyms": [
+        "unreliable"
+      ],
+      "pronunciation": {
+        "ipa": "/rɪˈlaɪəbl/"
+      },
+      "translations": {
+        "bn": "নির্ভরযোগ্য",
+        "zh-CN": "可靠的"
+      },
+      "tags": [
+        "everyday",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-thorough",
+      "term": "thorough",
+      "normalizedTerm": "thorough",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Complete, leaving out nothing important.",
+      "example": "The report was thorough and answered every question we had.",
+      "synonyms": [
+        "complete",
+        "detailed"
+      ],
+      "antonyms": [
+        "superficial"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈθɜːroʊ/"
+      },
+      "translations": {
+        "bn": "পুঙ্খানুপুঙ্খ",
+        "zh-CN": "彻底的"
+      },
+      "tags": [
+        "workplace",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-blunt",
+      "term": "blunt",
+      "normalizedTerm": "blunt",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Saying what you think very directly, even if it sounds rude.",
+      "example": "To be blunt, the design is not ready to ship.",
+      "synonyms": [
+        "direct",
+        "frank"
+      ],
+      "antonyms": [
+        "tactful",
+        "diplomatic"
+      ],
+      "pronunciation": {
+        "ipa": "/blʌnt/"
+      },
+      "translations": {
+        "bn": "স্পষ্টভাষী",
+        "zh-CN": "直言不讳的"
+      },
+      "tags": [
+        "conversation",
+        "character"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-redundant",
+      "term": "redundant",
+      "normalizedTerm": "redundant",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "definition": "Not needed because the same thing already exists somewhere else.",
+      "example": "The last paragraph is redundant; it repeats the introduction.",
+      "synonyms": [
+        "repetitive",
+        "unnecessary"
+      ],
+      "antonyms": [
+        "essential"
+      ],
+      "pronunciation": {
+        "ipa": "/rɪˈdʌndənt/"
+      },
+      "translations": {
+        "bn": "অপ্রয়োজনীয়ভাবে পুনরাবৃত্ত",
+        "zh-CN": "多余的"
+      },
+      "tags": [
+        "writing",
+        "technology"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-versatile",
+      "term": "versatile",
+      "normalizedTerm": "versatile",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Useful in many different situations, or able to do many things well.",
+      "example": "A good notebook app is versatile enough for work and study.",
+      "synonyms": [
+        "adaptable",
+        "flexible"
+      ],
+      "antonyms": [
+        "limited"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈvɜːrsətl/"
+      },
+      "translations": {
+        "bn": "বহুমুখী",
+        "zh-CN": "多才多艺的"
+      },
+      "tags": [
+        "description",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-tedious",
+      "term": "tedious",
+      "normalizedTerm": "tedious",
+      "kind": "word",
+      "partOfSpeech": "adjective",
+      "difficulty": "intermediate",
+      "definition": "Boring because it is slow and repetitive.",
+      "example": "Checking each row by hand is tedious but necessary.",
+      "synonyms": [
+        "boring",
+        "monotonous"
+      ],
+      "antonyms": [
+        "interesting",
+        "engaging"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈtiːdiəs/"
+      },
+      "translations": {
+        "bn": "ক্লান্তিকর",
+        "zh-CN": "乏味的"
+      },
+      "tags": [
+        "everyday",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-acknowledge",
+      "term": "acknowledge",
+      "normalizedTerm": "acknowledge",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "intermediate",
+      "definition": "To accept or admit that something is true, or to show that you received something.",
+      "example": "She acknowledged the mistake and explained how she would fix it.",
+      "synonyms": [
+        "admit",
+        "recognize"
+      ],
+      "antonyms": [
+        "deny",
+        "ignore"
+      ],
+      "pronunciation": {
+        "ipa": "/əkˈnɑːlɪdʒ/"
+      },
+      "translations": {
+        "bn": "স্বীকার করা",
+        "zh-CN": "承认"
+      },
+      "tags": [
+        "workplace",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-emphasize",
+      "term": "emphasize",
+      "normalizedTerm": "emphasize",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "intermediate",
+      "definition": "To give special importance or attention to something.",
+      "example": "The teacher emphasized that the deadline would not move.",
+      "synonyms": [
+        "stress",
+        "highlight"
+      ],
+      "antonyms": [
+        "downplay"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈemfəsaɪz/"
+      },
+      "translations": {
+        "bn": "জোর দেওয়া",
+        "zh-CN": "强调"
+      },
+      "tags": [
+        "academic",
+        "presentation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-anticipate",
+      "term": "anticipate",
+      "normalizedTerm": "anticipate",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "intermediate",
+      "definition": "To expect something and get ready for it.",
+      "example": "We anticipate a busy week, so plan your time carefully.",
+      "synonyms": [
+        "expect",
+        "foresee"
+      ],
+      "antonyms": [
+        "overlook"
+      ],
+      "pronunciation": {
+        "ipa": "/ænˈtɪsɪpeɪt/"
+      },
+      "translations": {
+        "bn": "পূর্বানুমান করা",
+        "zh-CN": "预料"
+      },
+      "tags": [
+        "business",
+        "planning"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-clarify",
+      "term": "clarify",
+      "normalizedTerm": "clarify",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "beginner",
+      "definition": "To make something easier to understand.",
+      "example": "Could you clarify what you mean by \"soon\"?",
+      "synonyms": [
+        "explain",
+        "spell out"
+      ],
+      "antonyms": [
+        "confuse"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈklærəfaɪ/"
+      },
+      "translations": {
+        "bn": "স্পষ্ট করা",
+        "zh-CN": "澄清"
+      },
+      "tags": [
+        "conversation",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-postpone",
+      "term": "postpone",
+      "normalizedTerm": "postpone",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "beginner",
+      "definition": "To move something to a later time.",
+      "example": "They postponed the meeting until Thursday morning.",
+      "synonyms": [
+        "delay",
+        "reschedule"
+      ],
+      "antonyms": [
+        "advance"
+      ],
+      "pronunciation": {
+        "ipa": "/poʊstˈpoʊn/"
+      },
+      "translations": {
+        "bn": "স্থগিত করা",
+        "zh-CN": "推迟"
+      },
+      "tags": [
+        "workplace",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-allocate",
+      "term": "allocate",
+      "normalizedTerm": "allocate",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "definition": "To officially give a share of money, time, or space to something.",
+      "example": "We allocated two hours a day to language practice.",
+      "synonyms": [
+        "assign",
+        "distribute"
+      ],
+      "antonyms": [
+        "withhold"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈæləkeɪt/"
+      },
+      "translations": {
+        "bn": "বরাদ্দ করা",
+        "zh-CN": "分配"
+      },
+      "tags": [
+        "business",
+        "planning"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-mitigate",
+      "term": "mitigate",
+      "normalizedTerm": "mitigate",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "definition": "To make something bad less severe.",
+      "example": "Regular backups mitigate the damage when a drive fails.",
+      "synonyms": [
+        "reduce",
+        "lessen"
+      ],
+      "antonyms": [
+        "worsen",
+        "aggravate"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈmɪtɪɡeɪt/"
+      },
+      "translations": {
+        "bn": "প্রশমিত করা",
+        "zh-CN": "减轻"
+      },
+      "tags": [
+        "business",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-undermine",
+      "term": "undermine",
+      "normalizedTerm": "undermine",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "definition": "To gradually weaken something, often without it being obvious.",
+      "example": "Missing small deadlines undermines trust over time.",
+      "synonyms": [
+        "weaken",
+        "erode"
+      ],
+      "antonyms": [
+        "strengthen",
+        "reinforce"
+      ],
+      "pronunciation": {
+        "ipa": "/ˌʌndərˈmaɪn/"
+      },
+      "translations": {
+        "bn": "দুর্বল করে দেওয়া",
+        "zh-CN": "逐渐削弱"
+      },
+      "tags": [
+        "workplace",
+        "argument"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-accommodate",
+      "term": "accommodate",
+      "normalizedTerm": "accommodate",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "definition": "To make room for someone or something, or to change plans to help someone.",
+      "example": "The schedule can accommodate one more presenter.",
+      "synonyms": [
+        "fit",
+        "adapt to"
+      ],
+      "antonyms": [
+        "refuse"
+      ],
+      "pronunciation": {
+        "ipa": "/əˈkɑːmədeɪt/"
+      },
+      "translations": {
+        "bn": "স্থান বা সুযোগ করে দেওয়া",
+        "zh-CN": "容纳；迁就"
+      },
+      "tags": [
+        "workplace",
+        "travel"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-hesitate",
+      "term": "hesitate",
+      "normalizedTerm": "hesitate",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "beginner",
+      "definition": "To pause before doing something because you are unsure.",
+      "example": "Don't hesitate to ask if the task is unclear.",
+      "synonyms": [
+        "pause",
+        "waver"
+      ],
+      "antonyms": [
+        "act"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈhezɪteɪt/"
+      },
+      "translations": {
+        "bn": "দ্বিধা করা",
+        "zh-CN": "犹豫"
+      },
+      "tags": [
+        "conversation",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-justify",
+      "term": "justify",
+      "normalizedTerm": "justify",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "intermediate",
+      "definition": "To give a good reason for something you did or want to do.",
+      "example": "It is hard to justify the extra cost with these numbers.",
+      "synonyms": [
+        "defend",
+        "explain"
+      ],
+      "antonyms": [
+        "condemn"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdʒʌstɪfaɪ/"
+      },
+      "translations": {
+        "bn": "যৌক্তিকতা দেখানো",
+        "zh-CN": "证明…有理"
+      },
+      "tags": [
+        "argument",
+        "business"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-streamline",
+      "term": "streamline",
+      "normalizedTerm": "streamline",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "definition": "To make a process simpler and more efficient by removing extra steps.",
+      "example": "We streamlined onboarding from six forms to one.",
+      "synonyms": [
+        "simplify",
+        "optimize"
+      ],
+      "antonyms": [
+        "complicate"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈstriːmlaɪn/"
+      },
+      "translations": {
+        "bn": "সহজতর ও দক্ষ করা",
+        "zh-CN": "精简"
+      },
+      "tags": [
+        "business",
+        "technology"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-overlook",
+      "term": "overlook",
+      "normalizedTerm": "overlook",
+      "kind": "word",
+      "partOfSpeech": "verb",
+      "difficulty": "intermediate",
+      "definition": "To fail to notice something, or to decide to ignore a small fault.",
+      "example": "It is easy to overlook a typo in your own writing.",
+      "synonyms": [
+        "miss",
+        "disregard"
+      ],
+      "antonyms": [
+        "notice",
+        "spot"
+      ],
+      "pronunciation": {
+        "ipa": "/ˌoʊvərˈlʊk/"
+      },
+      "translations": {
+        "bn": "উপেক্ষা করা বা খেয়াল না করা",
+        "zh-CN": "忽略"
+      },
+      "tags": [
+        "everyday",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-drawback",
+      "term": "drawback",
+      "normalizedTerm": "drawback",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "intermediate",
+      "definition": "A disadvantage of something that is otherwise good.",
+      "example": "The main drawback of the free plan is the storage limit.",
+      "synonyms": [
+        "disadvantage",
+        "downside"
+      ],
+      "antonyms": [
+        "advantage",
+        "benefit"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdrɔːbæk/"
+      },
+      "translations": {
+        "bn": "অসুবিধা",
+        "zh-CN": "缺点"
+      },
+      "tags": [
+        "academic",
+        "business"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-consensus",
+      "term": "consensus",
+      "normalizedTerm": "consensus",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "definition": "General agreement among a group of people.",
+      "example": "After an hour we reached a consensus on the budget.",
+      "synonyms": [
+        "agreement",
+        "common ground"
+      ],
+      "antonyms": [
+        "disagreement"
+      ],
+      "pronunciation": {
+        "ipa": "/kənˈsensəs/"
+      },
+      "translations": {
+        "bn": "ঐকমত্য",
+        "zh-CN": "共识"
+      },
+      "tags": [
+        "business",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-deadline",
+      "term": "deadline",
+      "normalizedTerm": "deadline",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "beginner",
+      "definition": "The latest time by which something must be finished.",
+      "example": "The deadline for applications is the fifth of March.",
+      "synonyms": [
+        "due date",
+        "cutoff"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdedlaɪn/"
+      },
+      "translations": {
+        "bn": "শেষ সময়সীমা",
+        "zh-CN": "截止日期"
+      },
+      "tags": [
+        "workplace",
+        "study"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-insight",
+      "term": "insight",
+      "normalizedTerm": "insight",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "intermediate",
+      "definition": "A clear, useful understanding of how something really works.",
+      "example": "The interviews gave us real insight into why users leave.",
+      "synonyms": [
+        "understanding",
+        "perception"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈɪnsaɪt/"
+      },
+      "translations": {
+        "bn": "অন্তর্দৃষ্টি",
+        "zh-CN": "洞察"
+      },
+      "tags": [
+        "academic",
+        "business"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-discrepancy",
+      "term": "discrepancy",
+      "normalizedTerm": "discrepancy",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "definition": "A difference between two things that should match.",
+      "example": "There is a discrepancy between the invoice and the receipt.",
+      "synonyms": [
+        "inconsistency",
+        "mismatch"
+      ],
+      "antonyms": [
+        "match"
+      ],
+      "pronunciation": {
+        "ipa": "/dɪsˈkrepənsi/"
+      },
+      "translations": {
+        "bn": "অসঙ্গতি",
+        "zh-CN": "差异"
+      },
+      "tags": [
+        "business",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-milestone",
+      "term": "milestone",
+      "normalizedTerm": "milestone",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "intermediate",
+      "definition": "An important point of progress in a longer project or journey.",
+      "example": "Finishing the first draft was a real milestone.",
+      "synonyms": [
+        "landmark",
+        "turning point"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈmaɪlstoʊn/"
+      },
+      "translations": {
+        "bn": "গুরুত্বপূর্ণ অগ্রগতির ধাপ",
+        "zh-CN": "里程碑"
+      },
+      "tags": [
+        "business",
+        "study"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-nuance",
+      "term": "nuance",
+      "normalizedTerm": "nuance",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "definition": "A small difference in meaning, tone, or feeling.",
+      "example": "Translation often loses the nuance of the original.",
+      "synonyms": [
+        "subtlety",
+        "shade"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈnuːɑːns/"
+      },
+      "translations": {
+        "bn": "সূক্ষ্ম পার্থক্য",
+        "zh-CN": "细微差别"
+      },
+      "tags": [
+        "language",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-setback",
+      "term": "setback",
+      "normalizedTerm": "setback",
+      "kind": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "intermediate",
+      "definition": "A problem that delays progress or pushes you backwards.",
+      "example": "Losing the data was a setback, but we recovered in a week.",
+      "synonyms": [
+        "obstacle",
+        "hitch"
+      ],
+      "antonyms": [
+        "breakthrough"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈsetbæk/"
+      },
+      "translations": {
+        "bn": "বিপত্তি",
+        "zh-CN": "挫折"
+      },
+      "tags": [
+        "workplace",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-eventually",
+      "term": "eventually",
+      "normalizedTerm": "eventually",
+      "kind": "word",
+      "partOfSpeech": "adverb",
+      "difficulty": "beginner",
+      "definition": "In the end, after a long time or several delays.",
+      "example": "The bus eventually arrived forty minutes late.",
+      "synonyms": [
+        "finally",
+        "in the end"
+      ],
+      "pronunciation": {
+        "ipa": "/ɪˈventʃuəli/"
+      },
+      "translations": {
+        "bn": "শেষ পর্যন্ত",
+        "zh-CN": "最终"
+      },
+      "tags": [
+        "everyday",
+        "narration"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-arguably",
+      "term": "arguably",
+      "normalizedTerm": "arguably",
+      "kind": "word",
+      "partOfSpeech": "adverb",
+      "difficulty": "advanced",
+      "definition": "Used to say something can reasonably be argued, though others may disagree.",
+      "example": "This is arguably the clearest chapter in the book.",
+      "synonyms": [
+        "possibly",
+        "conceivably"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈɑːrɡjuəbli/"
+      },
+      "translations": {
+        "bn": "যুক্তিসঙ্গতভাবে বলা যায়",
+        "zh-CN": "可以说"
+      },
+      "tags": [
+        "academic",
+        "argument"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-deliberately",
+      "term": "deliberately",
+      "normalizedTerm": "deliberately",
+      "kind": "word",
+      "partOfSpeech": "adverb",
+      "difficulty": "intermediate",
+      "definition": "On purpose, not by accident.",
+      "example": "The form is deliberately short so more people finish it.",
+      "synonyms": [
+        "intentionally",
+        "on purpose"
+      ],
+      "antonyms": [
+        "accidentally"
+      ],
+      "pronunciation": {
+        "ipa": "/dɪˈlɪbərətli/"
+      },
+      "translations": {
+        "bn": "ইচ্ছাকৃতভাবে",
+        "zh-CN": "故意地"
+      },
+      "tags": [
+        "everyday",
+        "writing"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "word-roughly",
+      "term": "roughly",
+      "normalizedTerm": "roughly",
+      "kind": "word",
+      "partOfSpeech": "adverb",
+      "difficulty": "beginner",
+      "definition": "Approximately; close to a number but not exact.",
+      "example": "The walk takes roughly twenty minutes.",
+      "synonyms": [
+        "about",
+        "approximately"
+      ],
+      "antonyms": [
+        "exactly"
+      ],
+      "pronunciation": {
+        "ipa": "/ˈrʌfli/"
+      },
+      "translations": {
+        "bn": "মোটামুটি",
+        "zh-CN": "大约"
+      },
+      "tags": [
+        "everyday",
+        "numbers"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-figure-out",
+      "term": "figure out",
+      "normalizedTerm": "figure out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To understand something or find the answer after thinking about it.",
+      "example": "It took me a while to figure out how the app saves files.",
+      "synonyms": [
+        "work out",
+        "solve"
+      ],
+      "translations": {
+        "bn": "বুঝে ফেলা বা সমাধান বের করা",
+        "zh-CN": "弄明白"
+      },
+      "tags": [
+        "conversation",
+        "problem-solving"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-carry-on",
+      "term": "carry on",
+      "normalizedTerm": "carry on",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To continue doing what you were doing.",
+      "example": "Carry on with the exercise while I check the answers.",
+      "synonyms": [
+        "continue",
+        "keep going"
+      ],
+      "antonyms": [
+        "stop"
+      ],
+      "translations": {
+        "bn": "চালিয়ে যাওয়া",
+        "zh-CN": "继续"
+      },
+      "tags": [
+        "conversation",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-give-up",
+      "term": "give up",
+      "normalizedTerm": "give up",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To stop trying, or to stop doing something you used to do.",
+      "example": "Don't give up after one bad practice test.",
+      "synonyms": [
+        "quit",
+        "surrender"
+      ],
+      "antonyms": [
+        "persist"
+      ],
+      "translations": {
+        "bn": "হাল ছেড়ে দেওয়া",
+        "zh-CN": "放弃"
+      },
+      "tags": [
+        "everyday",
+        "motivation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-point-out",
+      "term": "point out",
+      "normalizedTerm": "point out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To tell someone about something they may not have noticed.",
+      "example": "She pointed out that the numbers on page two don't add up.",
+      "synonyms": [
+        "highlight",
+        "note"
+      ],
+      "translations": {
+        "bn": "নির্দেশ করে দেখানো",
+        "zh-CN": "指出"
+      },
+      "tags": [
+        "workplace",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-bring-up",
+      "term": "bring up",
+      "normalizedTerm": "bring up",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To start talking about a subject.",
+      "example": "I'll bring up the budget question in tomorrow's meeting.",
+      "synonyms": [
+        "raise",
+        "mention"
+      ],
+      "translations": {
+        "bn": "প্রসঙ্গ তোলা",
+        "zh-CN": "提出（话题）"
+      },
+      "tags": [
+        "workplace",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-come-across",
+      "term": "come across",
+      "normalizedTerm": "come across",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To find something by chance, or to give a certain impression to others.",
+      "example": "I came across an old photo while cleaning my desk.",
+      "synonyms": [
+        "stumble upon",
+        "seem"
+      ],
+      "translations": {
+        "bn": "হঠাৎ খুঁজে পাওয়া",
+        "zh-CN": "偶然发现"
+      },
+      "tags": [
+        "everyday",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-rule-out",
+      "term": "rule out",
+      "normalizedTerm": "rule out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To decide that something is not possible or not the cause.",
+      "example": "We can rule out a network problem — the logs are clean.",
+      "synonyms": [
+        "exclude",
+        "eliminate"
+      ],
+      "antonyms": [
+        "consider"
+      ],
+      "translations": {
+        "bn": "বাতিল করে দেওয়া",
+        "zh-CN": "排除"
+      },
+      "tags": [
+        "problem-solving",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-follow-up",
+      "term": "follow up",
+      "normalizedTerm": "follow up",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To check again later, or to take the next step after something.",
+      "example": "I'll follow up with the supplier on Monday.",
+      "synonyms": [
+        "check back",
+        "pursue"
+      ],
+      "translations": {
+        "bn": "পরে খোঁজ নেওয়া",
+        "zh-CN": "跟进"
+      },
+      "tags": [
+        "workplace",
+        "email"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-back-down",
+      "term": "back down",
+      "normalizedTerm": "back down",
+      "kind": "phrasal_verb",
+      "difficulty": "advanced",
+      "definition": "To stop insisting on something after opposition.",
+      "example": "Neither side would back down, so the meeting ended early.",
+      "synonyms": [
+        "give in",
+        "yield"
+      ],
+      "antonyms": [
+        "stand firm"
+      ],
+      "translations": {
+        "bn": "নিজের অবস্থান থেকে সরে আসা",
+        "zh-CN": "让步"
+      },
+      "tags": [
+        "negotiation",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-work-out",
+      "term": "work out",
+      "normalizedTerm": "work out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To end well, or to calculate or solve something.",
+      "example": "I was nervous about the move, but it worked out well.",
+      "synonyms": [
+        "turn out",
+        "calculate"
+      ],
+      "translations": {
+        "bn": "শেষমেশ ভালোভাবে হওয়া",
+        "zh-CN": "顺利解决"
+      },
+      "tags": [
+        "everyday",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-turn-down",
+      "term": "turn down",
+      "normalizedTerm": "turn down",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To refuse an offer, or to reduce the volume or level of something.",
+      "example": "He turned down the job because of the commute.",
+      "synonyms": [
+        "reject",
+        "decline"
+      ],
+      "antonyms": [
+        "accept"
+      ],
+      "translations": {
+        "bn": "প্রত্যাখ্যান করা",
+        "zh-CN": "拒绝；调小"
+      },
+      "tags": [
+        "everyday",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-break-down",
+      "term": "break down",
+      "normalizedTerm": "break down",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To stop working, or to separate something into smaller parts.",
+      "example": "Let's break down the project into weekly tasks.",
+      "synonyms": [
+        "split up",
+        "fail"
+      ],
+      "translations": {
+        "bn": "ছোট ভাগে ভাগ করা; বিকল হওয়া",
+        "zh-CN": "分解；出故障"
+      },
+      "tags": [
+        "workplace",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-look-into",
+      "term": "look into",
+      "normalizedTerm": "look into",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To investigate something to learn more about it.",
+      "example": "Support said they would look into the billing error.",
+      "synonyms": [
+        "investigate",
+        "examine"
+      ],
+      "translations": {
+        "bn": "খতিয়ে দেখা",
+        "zh-CN": "调查"
+      },
+      "tags": [
+        "workplace",
+        "problem-solving"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-end-up",
+      "term": "end up",
+      "normalizedTerm": "end up",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To reach a situation or place that you did not plan.",
+      "example": "We ended up staying an extra night because of the storm.",
+      "synonyms": [
+        "wind up"
+      ],
+      "translations": {
+        "bn": "শেষ পর্যন্ত কোনো অবস্থায় পৌঁছানো",
+        "zh-CN": "最终变成"
+      },
+      "tags": [
+        "everyday",
+        "narration"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-set-up",
+      "term": "set up",
+      "normalizedTerm": "set up",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To prepare or arrange something so it is ready to use.",
+      "example": "It only takes a minute to set up the extension.",
+      "synonyms": [
+        "arrange",
+        "configure"
+      ],
+      "antonyms": [
+        "dismantle"
+      ],
+      "translations": {
+        "bn": "স্থাপন করা বা প্রস্তুত করা",
+        "zh-CN": "设置；建立"
+      },
+      "tags": [
+        "technology",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-put-off",
+      "term": "put off",
+      "normalizedTerm": "put off",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To delay something until later.",
+      "example": "Don't put off the application until the last day.",
+      "synonyms": [
+        "postpone",
+        "delay"
+      ],
+      "translations": {
+        "bn": "পিছিয়ে দেওয়া",
+        "zh-CN": "推迟"
+      },
+      "tags": [
+        "everyday",
+        "study"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-run-out-of",
+      "term": "run out of",
+      "normalizedTerm": "run out of",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To use all of something so that none is left.",
+      "example": "We ran out of time before the last question.",
+      "translations": {
+        "bn": "ফুরিয়ে যাওয়া",
+        "zh-CN": "用完"
+      },
+      "tags": [
+        "everyday",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-get-along-with",
+      "term": "get along with",
+      "normalizedTerm": "get along with",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To have a friendly relationship with someone.",
+      "example": "She gets along with everyone on the team.",
+      "translations": {
+        "bn": "সদ্ভাব বজায় রাখা",
+        "zh-CN": "与…相处融洽"
+      },
+      "tags": [
+        "conversation",
+        "relationships"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-catch-up",
+      "term": "catch up",
+      "normalizedTerm": "catch up",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To reach the same level as others, or to share news with someone after time apart.",
+      "example": "Let's catch up over coffee next week.",
+      "translations": {
+        "bn": "পিছিয়ে পড়া অবস্থা পুষিয়ে নেওয়া; খোঁজখবর নেওয়া",
+        "zh-CN": "赶上；叙旧"
+      },
+      "tags": [
+        "conversation",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "phrasal-sort-out",
+      "term": "sort out",
+      "normalizedTerm": "sort out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To deal with a problem successfully, or to organize things.",
+      "example": "I need an hour to sort out my notes before the exam.",
+      "synonyms": [
+        "resolve",
+        "organize"
+      ],
+      "translations": {
+        "bn": "গুছিয়ে ফেলা বা মিটিয়ে ফেলা",
+        "zh-CN": "整理；解决"
+      },
+      "tags": [
+        "everyday",
+        "problem-solving"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-benefit-of-the-doubt",
+      "term": "benefit of the doubt",
+      "normalizedTerm": "benefit of the doubt",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To choose to believe someone when you are not completely sure what happened.",
+      "example": "I'll give her the benefit of the doubt because she has always been reliable.",
+      "translations": {
+        "bn": "সন্দেহ থাকা সত্ত্বেও কাউকে বিশ্বাস করার সুযোগ দেওয়া",
+        "zh-CN": "在有疑问时暂且相信某人"
+      },
+      "tags": [
+        "conversation",
+        "trust"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-take-for-granted",
+      "term": "take for granted",
+      "normalizedTerm": "take for granted",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To stop appreciating something, or to assume it is true without checking.",
+      "example": "We take clean water for granted until it stops running.",
+      "translations": {
+        "bn": "মূল্য না দেওয়া বা যাচাই ছাড়াই ধরে নেওয়া",
+        "zh-CN": "认为理所当然"
+      },
+      "tags": [
+        "conversation",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-double-down",
+      "term": "double down",
+      "normalizedTerm": "double down",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "To commit even harder to a choice, especially after it is criticized.",
+      "example": "Instead of apologizing, he doubled down on his original claim.",
+      "translations": {
+        "bn": "সমালোচনার পরেও নিজের অবস্থানে আরও জোর দেওয়া",
+        "zh-CN": "加倍坚持原来的做法"
+      },
+      "tags": [
+        "news",
+        "argument"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "expression-fair-enough",
+      "term": "fair enough",
+      "normalizedTerm": "fair enough",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Said to show you accept someone's reason, even if you don't fully agree.",
+      "example": "\"I'd rather review it tomorrow.\" \"Fair enough.\"",
+      "translations": {
+        "bn": "ঠিক আছে, যুক্তিটা মেনে নিলাম",
+        "zh-CN": "有道理，那就这样吧"
+      },
+      "tags": [
+        "conversation",
+        "spoken"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-under-the-weather",
+      "term": "under the weather",
+      "normalizedTerm": "under the weather",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Slightly ill.",
+      "example": "I'm a bit under the weather, so I'll join the call from home.",
+      "translations": {
+        "bn": "শরীরটা একটু খারাপ",
+        "zh-CN": "身体不舒服"
+      },
+      "tags": [
+        "health",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-on-the-same-page",
+      "term": "on the same page",
+      "normalizedTerm": "on the same page",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Understanding a situation in the same way as someone else.",
+      "example": "Let's talk for five minutes so we're on the same page.",
+      "translations": {
+        "bn": "একই বিষয়ে একমত বা সমঝোতায় থাকা",
+        "zh-CN": "看法一致"
+      },
+      "tags": [
+        "workplace",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "expression-in-the-long-run",
+      "term": "in the long run",
+      "normalizedTerm": "in the long run",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Over a long period of time, rather than immediately.",
+      "example": "Studying a little every day pays off in the long run.",
+      "translations": {
+        "bn": "দীর্ঘমেয়াদে",
+        "zh-CN": "从长远来看"
+      },
+      "tags": [
+        "academic",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-out-of-the-blue",
+      "term": "out of the blue",
+      "normalizedTerm": "out of the blue",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Completely unexpectedly, with no warning.",
+      "example": "She called me out of the blue after five years.",
+      "translations": {
+        "bn": "হঠাৎ করেই, বিনা নোটিশে",
+        "zh-CN": "突如其来"
+      },
+      "tags": [
+        "conversation",
+        "narration"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-rule-of-thumb",
+      "term": "a rule of thumb",
+      "normalizedTerm": "a rule of thumb",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "A rough practical guideline that works most of the time.",
+      "example": "As a rule of thumb, keep slides to one idea each.",
+      "translations": {
+        "bn": "অভিজ্ঞতাভিত্তিক মোটামুটি নিয়ম",
+        "zh-CN": "经验法则"
+      },
+      "tags": [
+        "workplace",
+        "advice"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "expression-easier-said-than-done",
+      "term": "easier said than done",
+      "normalizedTerm": "easier said than done",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Said when something sounds simple but is hard to actually do.",
+      "example": "\"Just wake up at five.\" That's easier said than done.",
+      "translations": {
+        "bn": "বলা সহজ, করা কঠিন",
+        "zh-CN": "说起来容易做起来难"
+      },
+      "tags": [
+        "conversation",
+        "spoken"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-heads-up",
+      "term": "give someone a heads-up",
+      "normalizedTerm": "give someone a heads-up",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To warn someone about something in advance.",
+      "example": "Give me a heads-up if the meeting moves.",
+      "translations": {
+        "bn": "আগেভাগে জানিয়ে রাখা",
+        "zh-CN": "提前告知一声"
+      },
+      "tags": [
+        "workplace",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-get-the-hang-of-it",
+      "term": "get the hang of it",
+      "normalizedTerm": "get the hang of it",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To learn how to do something after some practice.",
+      "example": "The shortcuts feel odd at first, but you'll get the hang of it.",
+      "translations": {
+        "bn": "চর্চার পর কৌশলটা রপ্ত করে ফেলা",
+        "zh-CN": "掌握窍门"
+      },
+      "tags": [
+        "learning",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-go-the-extra-mile",
+      "term": "go the extra mile",
+      "normalizedTerm": "go the extra mile",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To do more than what is required.",
+      "example": "He went the extra mile and rewrote the guide in plain English.",
+      "translations": {
+        "bn": "প্রত্যাশার চেয়ে বেশি পরিশ্রম করা",
+        "zh-CN": "多付出一份努力"
+      },
+      "tags": [
+        "workplace",
+        "praise"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "expression-miss-the-point",
+      "term": "miss the point",
+      "normalizedTerm": "miss the point",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "To fail to understand the most important part of what was said.",
+      "example": "You're missing the point — speed isn't the issue, accuracy is.",
+      "translations": {
+        "bn": "মূল কথাটাই ধরতে না পারা",
+        "zh-CN": "没抓住重点"
+      },
+      "tags": [
+        "argument",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-make-up-your-mind",
+      "term": "make up your mind",
+      "normalizedTerm": "make up your mind",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To finally decide between choices.",
+      "example": "Make up your mind before the tickets sell out.",
+      "translations": {
+        "bn": "মনস্থির করা",
+        "zh-CN": "下定决心"
+      },
+      "tags": [
+        "everyday",
+        "conversation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "expression-no-hard-feelings",
+      "term": "no hard feelings",
+      "normalizedTerm": "no hard feelings",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Said to show you are not angry after a disagreement or a loss.",
+      "example": "You got the role instead of me — no hard feelings.",
+      "translations": {
+        "bn": "মনে কোনো রাগ বা ক্ষোভ নেই",
+        "zh-CN": "别往心里去，我不介意"
+      },
+      "tags": [
+        "conversation",
+        "spoken"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-cut-corners",
+      "term": "cut corners",
+      "normalizedTerm": "cut corners",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To save time or money by skipping steps, usually hurting quality.",
+      "example": "They cut corners on testing and paid for it later.",
+      "translations": {
+        "bn": "সহজ পথ ধরে মান নষ্ট করা",
+        "zh-CN": "偷工减料"
+      },
+      "tags": [
+        "workplace",
+        "quality"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-bite-the-bullet",
+      "term": "bite the bullet",
+      "normalizedTerm": "bite the bullet",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "To force yourself to do something unpleasant that you have been avoiding.",
+      "example": "I finally bit the bullet and rewrote the whole chapter.",
+      "translations": {
+        "bn": "কষ্টকর কাজটা সাহস করে করে ফেলা",
+        "zh-CN": "硬着头皮去做"
+      },
+      "tags": [
+        "conversation",
+        "motivation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-play-it-by-ear",
+      "term": "play it by ear",
+      "normalizedTerm": "play it by ear",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "To decide what to do as the situation develops, instead of planning ahead.",
+      "example": "We don't know the weather yet, so let's play it by ear.",
+      "translations": {
+        "bn": "পরিস্থিতি বুঝে সিদ্ধান্ত নেওয়া",
+        "zh-CN": "见机行事"
+      },
+      "tags": [
+        "conversation",
+        "planning"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-touch-base",
+      "term": "touch base",
+      "normalizedTerm": "touch base",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "To make brief contact with someone to share an update.",
+      "example": "Let's touch base on Friday before the client call.",
+      "translations": {
+        "bn": "সংক্ষেপে যোগাযোগ করে হালনাগাদ জানানো",
+        "zh-CN": "简短联系一下、通个气"
+      },
+      "tags": [
+        "workplace",
+        "email"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-make-a-decision",
+      "term": "make a decision",
+      "normalizedTerm": "make a decision",
+      "kind": "collocation",
+      "difficulty": "beginner",
+      "definition": "To decide something. English uses \"make\", not \"take\", with this noun.",
+      "example": "We need to make a decision by the end of the week.",
+      "translations": {
+        "bn": "সিদ্ধান্ত নেওয়া",
+        "zh-CN": "做决定"
+      },
+      "tags": [
+        "workplace",
+        "grammar"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-take-responsibility",
+      "term": "take responsibility",
+      "normalizedTerm": "take responsibility",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "To accept that something is your duty or your fault.",
+      "example": "She took responsibility for the delay and apologized.",
+      "translations": {
+        "bn": "দায়িত্ব নেওয়া",
+        "zh-CN": "承担责任"
+      },
+      "tags": [
+        "workplace",
+        "character"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-meet-a-deadline",
+      "term": "meet a deadline",
+      "normalizedTerm": "meet a deadline",
+      "kind": "collocation",
+      "difficulty": "beginner",
+      "definition": "To finish something by the required time.",
+      "example": "We met the deadline with two hours to spare.",
+      "translations": {
+        "bn": "সময়সীমার মধ্যে শেষ করা",
+        "zh-CN": "按期完成"
+      },
+      "tags": [
+        "workplace",
+        "study"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-raise-a-concern",
+      "term": "raise a concern",
+      "normalizedTerm": "raise a concern",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "To formally mention a worry so others can address it.",
+      "example": "Two reviewers raised a concern about the sample size.",
+      "translations": {
+        "bn": "উদ্বেগের বিষয়টি উত্থাপন করা",
+        "zh-CN": "提出担忧"
+      },
+      "tags": [
+        "workplace",
+        "academic"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-draw-a-conclusion",
+      "term": "draw a conclusion",
+      "normalizedTerm": "draw a conclusion",
+      "kind": "collocation",
+      "difficulty": "advanced",
+      "definition": "To decide what something means based on the evidence.",
+      "example": "It is too early to draw a conclusion from one survey.",
+      "translations": {
+        "bn": "সিদ্ধান্তে উপনীত হওয়া",
+        "zh-CN": "得出结论"
+      },
+      "tags": [
+        "academic",
+        "writing"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-pay-attention",
+      "term": "pay attention",
+      "normalizedTerm": "pay attention",
+      "kind": "collocation",
+      "difficulty": "beginner",
+      "definition": "To watch or listen carefully.",
+      "example": "Pay attention to the units in the second question.",
+      "translations": {
+        "bn": "মনোযোগ দেওয়া",
+        "zh-CN": "注意"
+      },
+      "tags": [
+        "study",
+        "everyday"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-keep-in-mind",
+      "term": "keep in mind",
+      "normalizedTerm": "keep in mind",
+      "kind": "collocation",
+      "difficulty": "beginner",
+      "definition": "To remember something while you make a decision.",
+      "example": "Keep in mind that the office closes at six.",
+      "translations": {
+        "bn": "মনে রাখা",
+        "zh-CN": "记住；考虑到"
+      },
+      "tags": [
+        "conversation",
+        "workplace"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-take-into-account",
+      "term": "take into account",
+      "normalizedTerm": "take into account",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "To include something as a factor when judging or deciding.",
+      "example": "The score takes attendance into account.",
+      "translations": {
+        "bn": "বিবেচনায় নেওয়া",
+        "zh-CN": "考虑在内"
+      },
+      "tags": [
+        "academic",
+        "business"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-reach-an-agreement",
+      "term": "reach an agreement",
+      "normalizedTerm": "reach an agreement",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "To finish a negotiation with both sides accepting the same terms.",
+      "example": "The two teams reached an agreement after a long call.",
+      "translations": {
+        "bn": "সমঝোতায় পৌঁছানো",
+        "zh-CN": "达成协议"
+      },
+      "tags": [
+        "business",
+        "negotiation"
+      ],
+      "source": "wordtab-original"
+    },
+    {
+      "id": "collocation-strong-argument",
+      "term": "a strong argument",
+      "normalizedTerm": "a strong argument",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "A point that is well supported and hard to disagree with.",
+      "example": "That's a strong argument for keeping the current design.",
+      "translations": {
+        "bn": "জোরালো যুক্তি",
+        "zh-CN": "有力的论点"
+      },
+      "tags": [
+        "academic",
+        "argument"
+      ],
+      "source": "wordtab-original"
+    }
+  ]
+}
