@@ -2437,6 +2437,4278 @@
         "argument"
       ],
       "source": "wordtab-original"
+    },
+    {
+      "id": "idiom-call-it-a-day",
+      "term": "call it a day",
+      "normalizedTerm": "call it a day",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To stop working on something for the rest of the day.",
+      "example": "We have been running experiments for eight hours; let us call it a day.",
+      "translations": {
+        "bn": "আজকের মতো কাজ সমাপ্ত ঘোষণা করা",
+        "zh-CN": "今天就到此为止 / 收工"
+      },
+      "tags": [
+        "academia",
+        "workplace",
+        "daily"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "wrap up",
+        "finish up"
+      ]
+    },
+    {
+      "id": "expression-shoot-an-email",
+      "term": "shoot an email",
+      "normalizedTerm": "shoot an email",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "To send someone an email quickly or informally.",
+      "example": "Shoot an email to the lab coordinator if you need cluster access.",
+      "translations": {
+        "bn": "দ্রুত বা অনানুষ্ঠানিকভাবে একটি ইমেইল পাঠানো",
+        "zh-CN": "发封邮件"
+      },
+      "tags": [
+        "academia",
+        "communication",
+        "email"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "drop a line",
+        "send an email"
+      ]
+    },
+    {
+      "id": "expression-kill-an-idea",
+      "term": "kill an idea",
+      "normalizedTerm": "kill an idea",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "To discard, reject, or decide not to pursue a proposal or hypothesis.",
+      "example": "The committee decided to kill an idea because computational costs were too high.",
+      "translations": {
+        "bn": "কোনো পরিকল্পনা বা প্রস্তাব পুরোপুরি বাতিল করা",
+        "zh-CN": "放弃某个想法 / 否决提案"
+      },
+      "tags": [
+        "academia",
+        "brainstorming",
+        "research"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "abandon",
+        "scrap"
+      ]
+    },
+    {
+      "id": "phrasal_verb-drop-by",
+      "term": "drop by",
+      "normalizedTerm": "drop by",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To visit someone informally or briefly, often without an appointment.",
+      "example": "Feel free to drop by my office during open office hours.",
+      "translations": {
+        "bn": "সংক্ষেপে দেখা করতে যাওয়া বা আসা",
+        "zh-CN": "顺道拜访 / 串门"
+      },
+      "tags": [
+        "campus",
+        "office-hours",
+        "conversation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "stop by",
+        "swing by"
+      ]
+    },
+    {
+      "id": "phrasal_verb-reach-out",
+      "term": "reach out",
+      "normalizedTerm": "reach out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To contact someone in order to get help, collaborate, or share information.",
+      "example": "I will reach out to the department coordinator regarding tuition remission.",
+      "translations": {
+        "bn": "সাহায্য বা যোগাযোগের জন্য কারও সাথে সংযোগ করা",
+        "zh-CN": "联系某人 / 寻求协助"
+      },
+      "tags": [
+        "communication",
+        "academia",
+        "workplace"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "get in touch",
+        "contact"
+      ]
+    },
+    {
+      "id": "idiom-bounce-an-idea-off-someone",
+      "term": "bounce an idea off someone",
+      "normalizedTerm": "bounce an idea off someone",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To share an idea with someone to see their reaction and get feedback.",
+      "example": "Can I bounce an idea off someone before finalizing the grant outline?",
+      "translations": {
+        "bn": "প্রতিক্রিয়া বা পরামর্শের জন্য কারও সাথে ধারণা শেয়ার করা",
+        "zh-CN": "跟某人交流想法以听取反馈"
+      },
+      "tags": [
+        "research",
+        "brainstorming",
+        "colleagues"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "consult",
+        "get feedback"
+      ]
+    },
+    {
+      "id": "idiom-bring-someone-up-to-speed",
+      "term": "bring someone up to speed",
+      "normalizedTerm": "bring someone up to speed",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To provide someone with the latest information or updates on a situation.",
+      "example": "Let me bring someone up to speed on the recent changes to our codebase.",
+      "translations": {
+        "bn": "কাউকে সাম্প্রতিক পরিস্থিতি বা তথ্য জানিয়ে হালনাগাদ করা",
+        "zh-CN": "让某人跟上进度 / 汇报最新情况"
+      },
+      "tags": [
+        "meetings",
+        "teamwork",
+        "updates"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "update",
+        "brief"
+      ]
+    },
+    {
+      "id": "idiom-run-it-by-someone",
+      "term": "run it by someone",
+      "normalizedTerm": "run it by someone",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To present an idea or draft to someone for their review and approval.",
+      "example": "Make sure you run it by someone on the advisory committee before submitting.",
+      "translations": {
+        "bn": "অনুমোদনের জন্য কারও সামনে কোনো বিষয় পেশ করা",
+        "zh-CN": "给某人过目 / 征求意见"
+      },
+      "tags": [
+        "advising",
+        "review",
+        "workplace"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "check with",
+        "verify with"
+      ]
+    },
+    {
+      "id": "phrasal_verb-circle-back",
+      "term": "circle back",
+      "normalizedTerm": "circle back",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To return to discuss or review a topic at a later time.",
+      "example": "Let us circle back to this architecture decision after the benchmark completes.",
+      "translations": {
+        "bn": "পরবর্তীতে পুনরায় কোনো বিষয়ে আলোচনায় ফিরে আসা",
+        "zh-CN": "回头再议 / 稍后再讨论"
+      },
+      "tags": [
+        "meetings",
+        "academia",
+        "planning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "revisit",
+        "return to"
+      ]
+    },
+    {
+      "id": "idiom-table-an-idea",
+      "term": "table an idea",
+      "normalizedTerm": "table an idea",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To postpone or set aside discussion of a topic until a future time.",
+      "example": "We agreed to table an idea until preliminary data becomes available.",
+      "translations": {
+        "bn": "কোনো প্রস্তাব বা আলোচনা সাময়িকভাবে স্থগিত রাখা",
+        "zh-CN": "搁置提议 / 延期讨论"
+      },
+      "tags": [
+        "meetings",
+        "deliberation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "shelve",
+        "postpone"
+      ]
+    },
+    {
+      "id": "idiom-play-devil-s-advocate",
+      "term": "play devil's advocate",
+      "normalizedTerm": "play devil's advocate",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "To argue against an idea simply to test the strength of the argument.",
+      "example": "The professor loved to play devil's advocate during student presentations.",
+      "translations": {
+        "bn": "যুক্তির দৃঢ়তা যাচাই করার জন্য বিপক্ষ মতামত উপস্থাপন করা",
+        "zh-CN": "故意唱反调以检验论点的严谨性"
+      },
+      "tags": [
+        "academia",
+        "debate",
+        "critical-thinking"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "challenge assumptions"
+      ]
+    },
+    {
+      "id": "idiom-take-it-with-a-grain-of-salt",
+      "term": "take it with a grain of salt",
+      "normalizedTerm": "take it with a grain of salt",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To view or accept a claim with skepticism rather than believing it completely.",
+      "example": "These survey responses are self-reported, so take it with a grain of salt.",
+      "translations": {
+        "bn": "অন্ধভাবে বিশ্বাস না করে কিছুটা সন্দেহের সাথে বিচার করা",
+        "zh-CN": "持保留态度 / 不可全信"
+      },
+      "tags": [
+        "research",
+        "skepticism",
+        "data"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "remain skeptical"
+      ]
+    },
+    {
+      "id": "expression-sanity-check",
+      "term": "sanity check",
+      "normalizedTerm": "sanity check",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "A quick calculation or test to ensure a result or assumption is reasonable.",
+      "example": "Always perform a quick sanity check before launching distributed training.",
+      "translations": {
+        "bn": "ফলাফল বা হিসাব যুক্তিযুক্ত কি না তা দ্রুত যাচাই করা",
+        "zh-CN": "合理性验证 / 快速核验"
+      },
+      "tags": [
+        "coding",
+        "math",
+        "verification"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "quick verification"
+      ]
+    },
+    {
+      "id": "expression-deep-dive",
+      "term": "deep dive",
+      "normalizedTerm": "deep dive",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "A comprehensive, thorough examination or analysis of a specific subject.",
+      "example": "Next week's reading group features a deep dive into diffusion models.",
+      "translations": {
+        "bn": "কোনো বিষয়ে গভীরভাবে বিশ্লেষণ বা পর্যালোচনা",
+        "zh-CN": "深入剖析 / 深入探究"
+      },
+      "tags": [
+        "research",
+        "seminar",
+        "learning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "in-depth study"
+      ]
+    },
+    {
+      "id": "idiom-ballpark-figure",
+      "term": "ballpark figure",
+      "normalizedTerm": "ballpark figure",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "An approximate, rough estimate of a quantity or cost.",
+      "example": "Could you provide a ballpark figure for the cloud hosting budget?",
+      "translations": {
+        "bn": "আনুমানিক খসড়া সংখ্যা বা আর্থিক হিসাব",
+        "zh-CN": "大致估算 / 大约数字"
+      },
+      "tags": [
+        "budget",
+        "estimation",
+        "planning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "rough estimate"
+      ]
+    },
+    {
+      "id": "idiom-back-of-the-envelope",
+      "term": "back of the envelope",
+      "normalizedTerm": "back of the envelope",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "A quick, simplified calculation done quickly without formal tools.",
+      "example": "A back of the envelope calculation showed that memory would run out.",
+      "translations": {
+        "bn": "কাগজের এক কোণে করা দ্রুত ও প্রাথমিক খসড়া হিসাব",
+        "zh-CN": "粗略估算 / 概算"
+      },
+      "tags": [
+        "math",
+        "engineering",
+        "estimation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "rough calculation"
+      ]
+    },
+    {
+      "id": "expression-steep-learning-curve",
+      "term": "steep learning curve",
+      "normalizedTerm": "steep learning curve",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "A difficult learning process that requires rapid acquisition of complex skills.",
+      "example": "Linux system administration has a steep learning curve for newcomers.",
+      "translations": {
+        "bn": "শুরুতেই শেখা বেশ কঠিন এমন শেখার অভিজ্ঞতা",
+        "zh-CN": "学习曲线陡峭 / 上手难度大"
+      },
+      "tags": [
+        "skills",
+        "education",
+        "tools"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "phrasal_verb-push-back-on",
+      "term": "push back on",
+      "normalizedTerm": "push back on",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To oppose, question, or resist a claim or demand firmly.",
+      "example": "Reviewers often push back on claims that lack statistical significance.",
+      "translations": {
+        "bn": "কোনো দাবি বা যুক্তির বিরুদ্ধে আপত্তি বা বাধা দেওয়া",
+        "zh-CN": "反驳 / 提出异议"
+      },
+      "tags": [
+        "peer-review",
+        "debate",
+        "critique"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "object to",
+        "resist"
+      ]
+    },
+    {
+      "id": "idiom-unpack-an-argument",
+      "term": "unpack an argument",
+      "normalizedTerm": "unpack an argument",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "To analyze, deconstruct, and explain the distinct components of an idea.",
+      "example": "The guest speaker paused to unpack an argument before taking questions.",
+      "translations": {
+        "bn": "জটিল যুক্তিকে বিস্তারিতভাবে বিশ্লেষণ ও ব্যাখ্যা করা",
+        "zh-CN": "仔细剖析论点"
+      },
+      "tags": [
+        "critical-thinking",
+        "seminar",
+        "philosophy"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "analyze",
+        "deconstruct"
+      ]
+    },
+    {
+      "id": "idiom-on-the-fly",
+      "term": "on the fly",
+      "normalizedTerm": "on the fly",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Created, done, or determined spontaneously while an activity is ongoing.",
+      "example": "The real-time compiler generates optimized machine code on the fly.",
+      "translations": {
+        "bn": "কাজ চলাকালীন উপস্থিতভাবে তাৎক্ষণিকভাবে করা",
+        "zh-CN": "动态进行 / 实时即兴"
+      },
+      "tags": [
+        "programming",
+        "improvisation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "spontaneously"
+      ]
+    },
+    {
+      "id": "idiom-by-and-large",
+      "term": "by and large",
+      "normalizedTerm": "by and large",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "On the whole; considering everything in general terms.",
+      "example": "By and large, the proposed heuristic produces satisfactory cluster quality.",
+      "translations": {
+        "bn": "সামগ্রিকভাবে বা মোটের ওপর",
+        "zh-CN": "总的来说 / 大体上"
+      },
+      "tags": [
+        "generalization",
+        "writing",
+        "summary"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "generally",
+        "overall"
+      ]
+    },
+    {
+      "id": "idiom-bottom-line",
+      "term": "bottom line",
+      "normalizedTerm": "bottom line",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "The most fundamental fact, essential conclusion, or outcome.",
+      "example": "The bottom line is that the neural network needs more training data.",
+      "translations": {
+        "bn": "সবচেয়ে সারসংক্ষেপ বা মূল ফলাফল",
+        "zh-CN": "根本所在 / 归根结底"
+      },
+      "tags": [
+        "conclusion",
+        "decision",
+        "summary"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "core point",
+        "crux"
+      ]
+    },
+    {
+      "id": "idiom-gray-area",
+      "term": "gray area",
+      "normalizedTerm": "gray area",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "An ill-defined situation falling between two clear categories or rules.",
+      "example": "Using assistive AI during take-home exams remains an institutional gray area.",
+      "translations": {
+        "bn": "সুনির্দিষ্ট নিয়ম নেই এমন অস্পষ্ট পরিস্থিতি",
+        "zh-CN": "灰色地带 / 模糊界限"
+      },
+      "tags": [
+        "ethics",
+        "policy",
+        "ambiguity"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "ambiguity"
+      ]
+    },
+    {
+      "id": "idiom-ahead-of-the-curve",
+      "term": "ahead of the curve",
+      "normalizedTerm": "ahead of the curve",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "Ahead of others in anticipating changes, trends, or knowledge.",
+      "example": "Adopting open-access publishing kept their research group ahead of the curve.",
+      "translations": {
+        "bn": "সময়ের আগে বা অন্যদের তুলনায় এগিয়ে থাকা",
+        "zh-CN": "走在时代前列 / 领先潮流"
+      },
+      "tags": [
+        "innovation",
+        "research",
+        "leadership"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "pioneering",
+        "leading"
+      ]
+    },
+    {
+      "id": "idiom-behind-the-curve",
+      "term": "behind the curve",
+      "normalizedTerm": "behind the curve",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "Slower than rivals or standards in adopting new developments.",
+      "example": "Departments without GPU infrastructure soon fell behind the curve.",
+      "translations": {
+        "bn": "সময়ের চেয়ে বা অন্যদের তুলনায় পিছিয়ে পড়া",
+        "zh-CN": "落后于时代 / 跟不上形势"
+      },
+      "tags": [
+        "competition",
+        "technology"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "lagging",
+        "trailing"
+      ]
+    },
+    {
+      "id": "idiom-cut-to-the-chase",
+      "term": "cut to the chase",
+      "normalizedTerm": "cut to the chase",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To arrive at the main point without wasting time on preamble.",
+      "example": "Let us cut to the chase and inspect the validation accuracy curve.",
+      "translations": {
+        "bn": "ভূমিকা বাদ দিয়ে সোজা আসল কথায় আসা",
+        "zh-CN": "开门见山 / 直奔主题"
+      },
+      "tags": [
+        "efficiency",
+        "meetings",
+        "directness"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "get to the point"
+      ]
+    },
+    {
+      "id": "idiom-hit-the-ground-running",
+      "term": "hit the ground running",
+      "normalizedTerm": "hit the ground running",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To start a new project or role immediately with full energy and speed.",
+      "example": "The new lab members were prepared to hit the ground running on day one.",
+      "translations": {
+        "bn": "শুরু থেকেই পূর্ণ উদ্যমে কাজে নেমে পড়া",
+        "zh-CN": "立即投入工作 / 迅速进入状态"
+      },
+      "tags": [
+        "career",
+        "start",
+        "enthusiasm"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "start immediately"
+      ]
+    },
+    {
+      "id": "idiom-on-the-fence",
+      "term": "on the fence",
+      "normalizedTerm": "on the fence",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Undecided or uncommitted between two competing choices.",
+      "example": "I am still on the fence about whether to take compiler design this semester.",
+      "translations": {
+        "bn": "দুই পছন্দের মাঝে সিদ্ধান্তহীনতায় দোলাচল",
+        "zh-CN": "举棋不定 / 犹豫不决"
+      },
+      "tags": [
+        "choices",
+        "decisions",
+        "uncertainty"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "undecided",
+        "torn"
+      ]
+    },
+    {
+      "id": "idiom-low-hanging-fruit",
+      "term": "low-hanging fruit",
+      "normalizedTerm": "low-hanging fruit",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Tasks, objectives, or opportunities that are very easily accomplished.",
+      "example": "Eliminating dead code is low-hanging fruit for runtime speedups.",
+      "translations": {
+        "bn": "অনায়াসে অর্জনযোগ্য সহজ কাজ বা সুবিধা",
+        "zh-CN": "容易实现的目标 / 唾手可得的成果"
+      },
+      "tags": [
+        "strategy",
+        "optimization",
+        "productivity"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "quick win"
+      ]
+    },
+    {
+      "id": "phrasal_verb-boil-down-to",
+      "term": "boil down to",
+      "normalizedTerm": "boil down to",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To have something as the most essential or determining factor.",
+      "example": "Most optimization bottlenecks boil down to memory bandwidth limits.",
+      "translations": {
+        "bn": "মূল কারণ হিসেবে কোনো নির্দিষ্ট বিষয়ে পর্যবসিত হওয়া",
+        "zh-CN": "归根结底在于"
+      },
+      "tags": [
+        "explanation",
+        "core-cause"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "amount to"
+      ]
+    },
+    {
+      "id": "word-bottleneck",
+      "term": "bottleneck",
+      "normalizedTerm": "bottleneck",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "A point of congestion that impedes or slows an entire process.",
+      "example": "Slow hard drive reads were the primary bottleneck in training.",
+      "translations": {
+        "bn": "কাজের গতি আটকে রাখা বা মন্থর করার প্রধান বাধা",
+        "zh-CN": "瓶颈 / 阻碍"
+      },
+      "tags": [
+        "engineering",
+        "performance"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "constriction",
+        "impediment"
+      ]
+    },
+    {
+      "id": "word-takeaway",
+      "term": "takeaway",
+      "normalizedTerm": "takeaway",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "An essential point, fact, or lesson learned from an experience.",
+      "example": "Our central takeaway from the symposium was the importance of reproducible code.",
+      "translations": {
+        "bn": "কোনো আলোচনা বা ঘটনা থেকে প্রধান শিক্ষণীয় বিষয়",
+        "zh-CN": "要点 / 核心收获"
+      },
+      "tags": [
+        "learning",
+        "summary"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "key lesson"
+      ]
+    },
+    {
+      "id": "phrasal_verb-wrap-up",
+      "term": "wrap up",
+      "normalizedTerm": "wrap up",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To bring a meeting, conversation, or task to a conclusion.",
+      "example": "Let us wrap up today's lab meeting so everyone can attend class.",
+      "translations": {
+        "bn": "কোনো কাজ বা আলোচনা শেষ করা",
+        "zh-CN": "结束 / 圆满完成"
+      },
+      "tags": [
+        "meetings",
+        "time-management"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "conclude",
+        "finish"
+      ]
+    },
+    {
+      "id": "phrasal_verb-brush-up-on",
+      "term": "brush up on",
+      "normalizedTerm": "brush up on",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To practice and refresh one's past knowledge of a subject.",
+      "example": "I need to brush up on my statistics before the quantitative qualifying exam.",
+      "translations": {
+        "bn": "পুরোনো জানা বিষয় পুনরায় চর্চা করে ঝালিয়ে নেওয়া",
+        "zh-CN": "温习 / 重温"
+      },
+      "tags": [
+        "studying",
+        "refreshing",
+        "skills"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "review",
+        "refresh"
+      ]
+    },
+    {
+      "id": "phrasal_verb-iron-out",
+      "term": "iron out",
+      "normalizedTerm": "iron out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To resolve minor difficulties, complications, or ambiguities.",
+      "example": "We have to iron out the remaining edge cases before our pull request gets merged.",
+      "translations": {
+        "bn": "ছোটখাটো সমস্যা বা জটিলতা মিটিয়ে ফেলা",
+        "zh-CN": "解决琐碎问题 / 消除分歧"
+      },
+      "tags": [
+        "problem-solving",
+        "software"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "resolve",
+        "settle"
+      ]
+    },
+    {
+      "id": "phrasal_verb-chime-in",
+      "term": "chime in",
+      "normalizedTerm": "chime in",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To contribute comments or remarks to an existing discussion.",
+      "example": "Anyone on the advisory team is welcome to chime in with questions.",
+      "translations": {
+        "bn": "চলমান আলোচনায় নিজের মতামত যুক্ত করা",
+        "zh-CN": "插话 / 附和讨论"
+      },
+      "tags": [
+        "meetings",
+        "speaking",
+        "collaboration"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "interject",
+        "contribute"
+      ]
+    },
+    {
+      "id": "idiom-draw-a-blank",
+      "term": "draw a blank",
+      "normalizedTerm": "draw a blank",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To be completely unable to remember or produce a response.",
+      "example": "When the professor asked for the theorem's proof, I drew a blank.",
+      "translations": {
+        "bn": "হঠাৎ কিছু মনে করতে ব্যর্থ হওয়া বা স্মৃতি হারিয়ে ফেলা",
+        "zh-CN": "脑子一片空白 / 想不起来"
+      },
+      "tags": [
+        "memory",
+        "quizzes",
+        "recall"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "forget"
+      ]
+    },
+    {
+      "id": "idiom-burn-the-midnight-oil",
+      "term": "burn the midnight oil",
+      "normalizedTerm": "burn the midnight oil",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To work, read, or study late into the night.",
+      "example": "Researchers often burn the midnight oil in the final week before conference deadlines.",
+      "translations": {
+        "bn": "দেরী রাত অবধি জেগে কাজ বা পড়াশোনা করা",
+        "zh-CN": "挑灯夜战 / 熬夜工作"
+      },
+      "tags": [
+        "hard-work",
+        "academia",
+        "habits"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "stay up late"
+      ]
+    },
+    {
+      "id": "idiom-bite-off-more-than-you-can-chew",
+      "term": "bite off more than you can chew",
+      "normalizedTerm": "bite off more than you can chew",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To commit to or undertake a task that exceeds one's capacity.",
+      "example": "Taking three graduate seminars and a teaching assistantship will bite off more than you can chew.",
+      "translations": {
+        "bn": "সামর্থ্যের বাইরে অতিরিক্ত দায়িত্ব কাঁধে নেওয়া",
+        "zh-CN": "不堪重负 / 贪多嚼不烂"
+      },
+      "tags": [
+        "workload",
+        "advising",
+        "limits"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "overcommit"
+      ]
+    },
+    {
+      "id": "idiom-in-a-nutshell",
+      "term": "in a nutshell",
+      "normalizedTerm": "in a nutshell",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Stated in the briefest and most concise manner possible.",
+      "example": "In a nutshell, the proposed algorithm doubles speed without losing precision.",
+      "translations": {
+        "bn": "খুব সংক্ষেপে বা এক কথায় প্রকাশ করতে",
+        "zh-CN": "简而言之 / 概括地说"
+      },
+      "tags": [
+        "conciseness",
+        "summary"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "briefly",
+        "in short"
+      ]
+    },
+    {
+      "id": "idiom-keep-in-the-loop",
+      "term": "keep in the loop",
+      "normalizedTerm": "keep in the loop",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To keep someone informed of all updates, plans, and developments.",
+      "example": "Please keep in the loop anyone who contributed to the manuscript.",
+      "translations": {
+        "bn": "নিয়মিত খবর জানিয়ে সার্বক্ষণিক সম্পৃক্ত রাখা",
+        "zh-CN": "让相关人员知情 / 保持信息同步"
+      },
+      "tags": [
+        "communication",
+        "teamwork"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "keep informed"
+      ]
+    },
+    {
+      "id": "idiom-see-eye-to-eye",
+      "term": "see eye to eye",
+      "normalizedTerm": "see eye to eye",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To agree fully with another person's view or perspective.",
+      "example": "The co-advisors did not always see eye to eye on methodological rigor.",
+      "translations": {
+        "bn": "কারও সাথে পরিপূর্ণভাবে একমত হওয়া",
+        "zh-CN": "看法一致 / 意见相同"
+      },
+      "tags": [
+        "agreement",
+        "relationships"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "concur"
+      ]
+    },
+    {
+      "id": "idiom-through-the-grapevine",
+      "term": "through the grapevine",
+      "normalizedTerm": "through the grapevine",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Learned unofficially through gossip, rumors, or word of mouth.",
+      "example": "I heard through the grapevine that a faculty hiring line was just approved.",
+      "translations": {
+        "bn": "মুখে মুখে ছড়ানো অনানুষ্ঠানিক খবরের মাধ্যমে জানা",
+        "zh-CN": "道听途说 / 小道消息"
+      },
+      "tags": [
+        "gossip",
+        "news",
+        "campus"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "by word of mouth"
+      ]
+    },
+    {
+      "id": "idiom-raise-the-bar",
+      "term": "raise the bar",
+      "normalizedTerm": "raise the bar",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To elevate the standard of quality, achievement, or expectations.",
+      "example": "Recent breakthrough papers raise the bar for empirical computer vision baselines.",
+      "translations": {
+        "bn": "মান বা প্রত্যাশার মাপকাঠি আরও উঁচুতে তোলা",
+        "zh-CN": "提高标准 / 提高门槛"
+      },
+      "tags": [
+        "excellence",
+        "standards"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "elevate standards"
+      ]
+    },
+    {
+      "id": "idiom-food-for-thought",
+      "term": "food for thought",
+      "normalizedTerm": "food for thought",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "An insight or question that stimulates deep reflection.",
+      "example": "The keynote speaker left us with provocative food for thought regarding research safety.",
+      "translations": {
+        "bn": "গভীরভাবে চিন্তা করার মতো মূল্যবান খোরাক",
+        "zh-CN": "引人深思的事物 / 精神食粮"
+      },
+      "tags": [
+        "reflection",
+        "lectures"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "intellectual stimulus"
+      ]
+    },
+    {
+      "id": "idiom-think-outside-the-box",
+      "term": "think outside the box",
+      "normalizedTerm": "think outside the box",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To conceive ideas that deviate from standard conventions.",
+      "example": "Overcoming this hardware limitation required us to think outside the box.",
+      "translations": {
+        "bn": "প্রচলিত গণ্ডির বাইরে গিয়ে উদ্ভাবনী চিন্তা করা",
+        "zh-CN": "跳出传统思维 / 创新思考"
+      },
+      "tags": [
+        "creativity",
+        "problem-solving"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "innovate"
+      ]
+    },
+    {
+      "id": "idiom-cross-that-bridge-when-we-come-to-it",
+      "term": "cross that bridge when we come to it",
+      "normalizedTerm": "cross that bridge when we come to it",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To postpone dealing with a hypothetical issue until it actually materializes.",
+      "example": "Server costs may escalate next quarter, but let us cross that bridge when we come to it.",
+      "translations": {
+        "bn": "সমস্যা সামনে এলে তখনই তা সমাধান করার নীতি",
+        "zh-CN": "船到桥头自然直 / 到时候再说"
+      },
+      "tags": [
+        "patience",
+        "planning"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "idiom-read-between-the-lines",
+      "term": "read between the lines",
+      "normalizedTerm": "read between the lines",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To deduce an implied or hidden message not overtly stated.",
+      "example": "If you read between the lines of the rejection note, the reviewers wanted more baselines.",
+      "translations": {
+        "bn": "স্পষ্ট না বলা অন্তর্নিহিত অর্থ বা ইঙ্গিত বোঝা",
+        "zh-CN": "领会弦外之音 / 读懂字里行间"
+      },
+      "tags": [
+        "subtlety",
+        "analysis"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "infer"
+      ]
+    },
+    {
+      "id": "idiom-on-the-same-wavelength",
+      "term": "on the same wavelength",
+      "normalizedTerm": "on the same wavelength",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Holding comparable thoughts, feelings, or opinions; in deep mutual understanding.",
+      "example": "Working together is effortless because we are on the same wavelength.",
+      "translations": {
+        "bn": "একই মানসিক তরঙ্গে ভাবা বা গভীর পারস্পরিক সমঝোতা",
+        "zh-CN": "志同道合 / 处在同一频道"
+      },
+      "tags": [
+        "synergy",
+        "communication"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "in sync"
+      ]
+    },
+    {
+      "id": "idiom-back-to-the-drawing-board",
+      "term": "back to the drawing board",
+      "normalizedTerm": "back to the drawing board",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Starting completely over from scratch because a preceding strategy failed.",
+      "example": "When the empirical proof crumbled, it was back to the drawing board for the authors.",
+      "translations": {
+        "bn": "ব্যর্থতার পর আবার প্রথম থেকে নতুন পরিকল্পনা শুরু করা",
+        "zh-CN": "推倒重来 / 从头开始"
+      },
+      "tags": [
+        "failure",
+        "resilience"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "start over"
+      ]
+    },
+    {
+      "id": "idiom-pull-an-all-nighter",
+      "term": "pull an all-nighter",
+      "normalizedTerm": "pull an all-nighter",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To stay awake through the entire night to study or work.",
+      "example": "The lab members decided to pull an all-nighter to submit the paper before midnight.",
+      "translations": {
+        "bn": "সারারাত জেগে কাজ বা পড়াশোনা করা",
+        "zh-CN": "通宵学习 / 熬夜赶工"
+      },
+      "tags": [
+        "student-life",
+        "studying",
+        "habits"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "stay up all night"
+      ]
+    },
+    {
+      "id": "phrasal_verb-cram-for",
+      "term": "cram for",
+      "normalizedTerm": "cram for",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To study intensely in a short period right before an examination.",
+      "example": "Students pack into the science library to cram for final exams.",
+      "translations": {
+        "bn": "পরীক্ষার ঠিক আগে তাড়াহুড়ো করে মুখস্থ করা",
+        "zh-CN": "突击备考 / 临时抱佛脚"
+      },
+      "tags": [
+        "exams",
+        "studying"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "study intensively"
+      ]
+    },
+    {
+      "id": "idiom-ace-an-exam",
+      "term": "ace an exam",
+      "normalizedTerm": "ace an exam",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To score extraordinarily well or achieve an A grade on an evaluation.",
+      "example": "With thorough preparation, she was able to ace an exam easily.",
+      "translations": {
+        "bn": "পরীক্ষায় অসাধারণ ফলাফল অর্জন করা",
+        "zh-CN": "考出极好成绩 / 拿高分"
+      },
+      "tags": [
+        "achievement",
+        "grades",
+        "exams"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "excel"
+      ]
+    },
+    {
+      "id": "idiom-bomb-a-test",
+      "term": "bomb a test",
+      "normalizedTerm": "bomb a test",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To perform disastrously poorly or completely fail a test.",
+      "example": "If you neglect the homework problem sets, you might bomb a test.",
+      "translations": {
+        "bn": "পরীক্ষায় চরমভাবে খারাপ বা ব্যর্থ হওয়া",
+        "zh-CN": "考砸 / 彻底不及格"
+      },
+      "tags": [
+        "exams",
+        "failure"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "fail miserably"
+      ]
+    },
+    {
+      "id": "idiom-wing-it",
+      "term": "wing it",
+      "normalizedTerm": "wing it",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To do or attempt something without prior preparation, improvising on the spot.",
+      "example": "I lost my presentation notes, so I had to wing it in front of the department.",
+      "translations": {
+        "bn": "পূর্বপ্রস্তুতি ছাড়াই উপস্থিত বুদ্ধি দিয়ে চালিয়ে দেওয়া",
+        "zh-CN": "即兴发挥 / 毫无准备硬上"
+      },
+      "tags": [
+        "improvisation",
+        "speaking"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "improvise"
+      ]
+    },
+    {
+      "id": "phrasal_verb-pitch-in",
+      "term": "pitch in",
+      "normalizedTerm": "pitch in",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To contribute help, effort, or resources toward a joint objective.",
+      "example": "Everyone in our graduate student cohort pitched in to clean the common lounge.",
+      "translations": {
+        "bn": "সম্মিলিত কাজে নিজের শ্রম বা সাহায্য দিয়ে অংশ নেওয়া",
+        "zh-CN": "共同出力 / 鼎力相助"
+      },
+      "tags": [
+        "cooperation",
+        "teamwork"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "contribute",
+        "chip in"
+      ]
+    },
+    {
+      "id": "phrasal_verb-chip-in",
+      "term": "chip in",
+      "normalizedTerm": "chip in",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To contribute a small share of money, time, or assistance.",
+      "example": "We each agreed to chip in five dollars for departmental seminar snacks.",
+      "translations": {
+        "bn": "সবাই মিলে সামান্য অর্থ বা সহায়তা ভাগাভাগি করা",
+        "zh-CN": "分摊费用 / 凑钱"
+      },
+      "tags": [
+        "cooperation",
+        "money",
+        "sharing"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "pitch in"
+      ]
+    },
+    {
+      "id": "phrasal_verb-bail-on-someone",
+      "term": "bail on someone",
+      "normalizedTerm": "bail on someone",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To abruptly abandon someone or cancel scheduled plans at the last minute.",
+      "example": "Please do not bail on someone who reserved a study room for our team.",
+      "translations": {
+        "bn": "শেষ মুহূর্তে কথা না রেখে কারও সাথে চুক্তি ভঙ্গ করে কেটে পড়া",
+        "zh-CN": "放某人鸽子 / 爽约"
+      },
+      "tags": [
+        "friendship",
+        "reliability"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "flake on"
+      ]
+    },
+    {
+      "id": "phrasal_verb-flake-on-someone",
+      "term": "flake on someone",
+      "normalizedTerm": "flake on someone",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To fail to show up for an agreed engagement without adequate notice.",
+      "example": "He promised to review my proofreading, but decided to flake on someone again.",
+      "translations": {
+        "bn": "কথা দিয়েও শেষ মুহূর্তে উপস্থিত না হয়ে ফাঁকি দেওয়া",
+        "zh-CN": "爽约 / 不守信诺"
+      },
+      "tags": [
+        "social",
+        "reliability"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "bail on"
+      ]
+    },
+    {
+      "id": "phrasal_verb-zone-out",
+      "term": "zone out",
+      "normalizedTerm": "zone out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To temporarily lose focus and become oblivious to surroundings.",
+      "example": "During long mathematical derivations, it is easy to zone out momentarily.",
+      "translations": {
+        "bn": "মনোযোগ হারিয়ে হঠাৎ অন্যমনস্ক হয়ে পড়া",
+        "zh-CN": "走神 / 发呆"
+      },
+      "tags": [
+        "attention",
+        "lectures"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "space out"
+      ]
+    },
+    {
+      "id": "phrasal_verb-freak-out",
+      "term": "freak out",
+      "normalizedTerm": "freak out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To undergo sudden intense panic, extreme distress, or emotional agitation.",
+      "example": "Do not freak out if the preliminary evaluation accuracy seems low.",
+      "translations": {
+        "bn": "হঠাৎ তীব্র আতঙ্কগ্রস্ত বা দিশেহারা হয়ে পড়া",
+        "zh-CN": "惊慌失措 / 吓坏了"
+      },
+      "tags": [
+        "emotions",
+        "stress"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "panic"
+      ]
+    },
+    {
+      "id": "phrasal_verb-wind-down",
+      "term": "wind down",
+      "normalizedTerm": "wind down",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To gradually relax, decompress, or draw activity to a calm close.",
+      "example": "Graduate researchers need evening downtime to wind down properly.",
+      "translations": {
+        "bn": "ক্লান্তিময় কাজের পর ধীরে ধীরে শান্ত ও শিথিল হওয়া",
+        "zh-CN": "放松下来 / 逐步收尾"
+      },
+      "tags": [
+        "relaxation",
+        "mental-health"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "relax",
+        "decompress"
+      ]
+    },
+    {
+      "id": "idiom-wrap-your-head-around",
+      "term": "wrap your head around",
+      "normalizedTerm": "wrap your head around",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To successfully understand, process, or reconcile a difficult or perplexing concept.",
+      "example": "It takes time to wrap your head around complex measure theory proofs.",
+      "translations": {
+        "bn": "কোনো দুর্বোধ্য ধারণা পুরোপুরি বুঝতে বা ধারণ করতে পারা",
+        "zh-CN": "理解透彻 / 搞明白复杂概念"
+      },
+      "tags": [
+        "comprehension",
+        "learning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "comprehend",
+        "fathom"
+      ]
+    },
+    {
+      "id": "phrasal_verb-burn-out",
+      "term": "burn out",
+      "normalizedTerm": "burn out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To suffer severe physical or emotional exhaustion from prolonged unrelenting work.",
+      "example": "Pace your laboratory hours so you do not burn out before the dissertation defense.",
+      "translations": {
+        "bn": "অবিরাম পরিশ্রমে মানসিক ও শারীরিকভাবে নিঃশেষ হয়ে যাওয়া",
+        "zh-CN": "精疲力竭 / 倦怠"
+      },
+      "tags": [
+        "wellness",
+        "health"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "exhaust oneself"
+      ]
+    },
+    {
+      "id": "phrasal_verb-pay-off",
+      "term": "pay off",
+      "normalizedTerm": "pay off",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To yield successful, satisfying, or advantageous consequences after diligent effort.",
+      "example": "Months of tedious data sanitation finally began to pay off with cleaner graphs.",
+      "translations": {
+        "bn": "কঠোর সাধনার ইতিবাচক ও ফলপ্রসূ সুফল পাওয়া",
+        "zh-CN": "得到回报 / 见成效"
+      },
+      "tags": [
+        "success",
+        "effort"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "yield rewards"
+      ]
+    },
+    {
+      "id": "phrasal_verb-weed-out",
+      "term": "weed out",
+      "normalizedTerm": "weed out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To remove or eliminate weak, unfit, or undesirable elements from a group.",
+      "example": "Tough introductory algorithm homework sets weed out uncommitted students.",
+      "translations": {
+        "bn": "অযোগ্য বা দুর্বলদের বাছাই করে বাদ দেওয়া",
+        "zh-CN": "淘汰 / 筛除"
+      },
+      "tags": [
+        "selection",
+        "competition"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "filter out",
+        "eliminate"
+      ]
+    },
+    {
+      "id": "phrasal_verb-hang-out",
+      "term": "hang out",
+      "normalizedTerm": "hang out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To spend casual, unstructured leisure time together.",
+      "example": "International students gather at the international center to hang out on weekends.",
+      "translations": {
+        "bn": "বন্ধুদের সাথে আড্ডা দেওয়া বা অবসর সময় কাটানো",
+        "zh-CN": "闲逛 / 聚在一起消遣"
+      },
+      "tags": [
+        "social",
+        "leisure"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "socialize"
+      ]
+    },
+    {
+      "id": "phrasal_verb-mess-up",
+      "term": "mess up",
+      "normalizedTerm": "mess up",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To make a serious blunder, mistake, or mishandle a situation.",
+      "example": "Check parameter configurations so you do not mess up the cross-validation runs.",
+      "translations": {
+        "bn": "ভুল করে কোনো কিছু গোলমাল বা নষ্ট করে ফেলা",
+        "zh-CN": "搞砸 / 弄乱"
+      },
+      "tags": [
+        "mistakes",
+        "coding"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "bungle",
+        "botch"
+      ]
+    },
+    {
+      "id": "phrasal_verb-head-out",
+      "term": "head out",
+      "normalizedTerm": "head out",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To depart from a place or set out on a journey.",
+      "example": "The campus shuttle departs soon, so I must head out immediately.",
+      "translations": {
+        "bn": "কোনো স্থান থেকে রওনা হওয়া বা প্রস্থান করা",
+        "zh-CN": "出发 / 离开"
+      },
+      "tags": [
+        "departure",
+        "travel"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "depart",
+        "leave"
+      ]
+    },
+    {
+      "id": "phrasal_verb-call-off",
+      "term": "call off",
+      "normalizedTerm": "call off",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To cancel an event, meeting, or scheduled engagement entirely.",
+      "example": "Inclement winter weather forced the campus administration to call off evening classes.",
+      "translations": {
+        "bn": "পূর্বনির্ধারিত কোনো কর্মসূচি আনুষ্ঠানিকভাবে বাতিল করা",
+        "zh-CN": "取消 / 叫停"
+      },
+      "tags": [
+        "cancellation",
+        "events"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "cancel"
+      ]
+    },
+    {
+      "id": "phrasal_verb-narrow-down",
+      "term": "narrow down",
+      "normalizedTerm": "narrow down",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To reduce a broad spectrum of possibilities to a concise selection.",
+      "example": "We must narrow down our empirical baseline candidates to three architectures.",
+      "translations": {
+        "bn": "ব্যাপক সম্ভাবনা থেকে বাছাই করে সংখ্যা কমিয়ে আনা",
+        "zh-CN": "缩小范围 / 精简选项"
+      },
+      "tags": [
+        "selection",
+        "research"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "whittle down",
+        "filter"
+      ]
+    },
+    {
+      "id": "phrasal_verb-turn-out",
+      "term": "turn out",
+      "normalizedTerm": "turn out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To conclude, develop, or be revealed in a specific manner in the end.",
+      "example": "The theoretical conjecture turned out to be completely accurate under mild conditions.",
+      "translations": {
+        "bn": "শেষ পর্যন্ত কোনো বিশেষ রূপ লাভ করা বা সত্য প্রমাণিত হওয়া",
+        "zh-CN": "结果证实 / 最终发展为"
+      },
+      "tags": [
+        "outcome",
+        "results"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "prove to be"
+      ]
+    },
+    {
+      "id": "phrasal_verb-run-into-someone",
+      "term": "run into someone",
+      "normalizedTerm": "run into someone",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To encounter an acquaintance completely unexpectedly.",
+      "example": "You might run into someone from our research group at the campus bookstore.",
+      "translations": {
+        "bn": "অপ্রত্যাশিতভাবে কারও মুখোমুখি বা সাক্ষাৎ হওয়া",
+        "zh-CN": "偶遇某人 / 不期而遇"
+      },
+      "tags": [
+        "encounters",
+        "campus"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "bump into"
+      ]
+    },
+    {
+      "id": "phrasal_verb-bump-into-someone",
+      "term": "bump into someone",
+      "normalizedTerm": "bump into someone",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To meet someone by chance without prior arrangement.",
+      "example": "I was pleased to bump into someone who attended my qualifier presentation.",
+      "translations": {
+        "bn": "হঠাৎ কারও সাথে অপ্রত্যাশিতভাবে দেখা হয়ে যাওয়া",
+        "zh-CN": "无意中碰见某人"
+      },
+      "tags": [
+        "social",
+        "campus"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "run into"
+      ]
+    },
+    {
+      "id": "phrasal_verb-put-up-with",
+      "term": "put up with",
+      "normalizedTerm": "put up with",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To tolerate or accept an annoying, difficult, or unpleasant circumstance.",
+      "example": "Living on a graduate stipend means you put up with modest living accommodations.",
+      "translations": {
+        "bn": "অপ্রীতিকর কোনো পরিস্থিতি বা আচরণ সহ্য করা",
+        "zh-CN": "容忍 / 忍受"
+      },
+      "tags": [
+        "tolerance",
+        "lifestyle"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "endure",
+        "tolerate"
+      ]
+    },
+    {
+      "id": "phrasal_verb-catch-on",
+      "term": "catch on",
+      "normalizedTerm": "catch on",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To eventually comprehend a concept, or for a practice to gain popularity.",
+      "example": "It took several tutoring sessions before the student began to catch on to induction.",
+      "translations": {
+        "bn": "ধীরে ধীরে কোনো কিছু উপলব্ধি করা বা গ্রহণযোগ্যতা পাওয়া",
+        "zh-CN": "理解领会 / 变得流行"
+      },
+      "tags": [
+        "understanding",
+        "learning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "comprehend",
+        "grasp"
+      ]
+    },
+    {
+      "id": "phrasal_verb-look-forward-to",
+      "term": "look forward to",
+      "normalizedTerm": "look forward to",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To await an upcoming occasion with positive pleasure and excitement.",
+      "example": "All graduate teaching assistants look forward to the semester break.",
+      "translations": {
+        "bn": "কোনো আসন্ন আনন্দের মুহূর্তের জন্য পরম আগ্রহে অপেক্ষা করা",
+        "zh-CN": "期待 / 盼望"
+      },
+      "tags": [
+        "anticipation",
+        "holidays"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "anticipate eagerly"
+      ]
+    },
+    {
+      "id": "phrasal_verb-hold-off-on",
+      "term": "hold off on",
+      "normalizedTerm": "hold off on",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To deliberately postpone taking action on something until a later time.",
+      "example": "Let us hold off on hardware acquisitions until our grant renewal is confirmed.",
+      "translations": {
+        "bn": "কোনো বিষয়ে পদক্ষেপ নেওয়া আপাতত স্থগিত রাখা",
+        "zh-CN": "暂缓 / 延迟行动"
+      },
+      "tags": [
+        "delay",
+        "decisions"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "delay",
+        "defer"
+      ]
+    },
+    {
+      "id": "phrasal_verb-get-by",
+      "term": "get by",
+      "normalizedTerm": "get by",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "To manage to live, cope, or survive with limited financial or practical means.",
+      "example": "Most international graduate students manage to get by on their academic stipends.",
+      "translations": {
+        "bn": "সীমিত আয়ে কোনোমতে দিনযাপন বা টিকে থাকা",
+        "zh-CN": "勉强过活 / 应付过去"
+      },
+      "tags": [
+        "survival",
+        "finances"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "manage",
+        "cope"
+      ]
+    },
+    {
+      "id": "idiom-hit-the-books",
+      "term": "hit the books",
+      "normalizedTerm": "hit the books",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To begin studying intently with focused dedication.",
+      "example": "Comprehensive qualifying exams are next week, so students must hit the books.",
+      "translations": {
+        "bn": "একনিষ্ঠ মনোযোগ সহকারে পড়াশোনা শুরু করা",
+        "zh-CN": "用功读书 / 埋头苦读"
+      },
+      "tags": [
+        "studying",
+        "exams"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "study hard"
+      ]
+    },
+    {
+      "id": "idiom-sleep-on-it",
+      "term": "sleep on it",
+      "normalizedTerm": "sleep on it",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To delay an important choice overnight in order to reflect calmly.",
+      "example": "Before declining the competitive research fellowship, make sure you sleep on it.",
+      "translations": {
+        "bn": "তাড়াহুড়ো না করে রাতভর ভেবেচিন্তে পরের দিন সিদ্ধান্ত নেওয়া",
+        "zh-CN": "留待明朝再作决定 / 考虑一晚"
+      },
+      "tags": [
+        "decisions",
+        "prudence"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "ponder overnight"
+      ]
+    },
+    {
+      "id": "idiom-rings-a-bell",
+      "term": "rings a bell",
+      "normalizedTerm": "rings a bell",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Sounds somewhat familiar, though precise memories remain elusive.",
+      "example": "That author's name certainly rings a bell from previous citation surveys.",
+      "translations": {
+        "bn": "পরিচিত মনে হওয়া কিন্তু পুরোপুরি স্পষ্ট মনে না আসা",
+        "zh-CN": "听起来耳熟 / 有点印象"
+      },
+      "tags": [
+        "memory",
+        "recognition"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "sounds familiar"
+      ]
+    },
+    {
+      "id": "idiom-break-the-ice",
+      "term": "break the ice",
+      "normalizedTerm": "break the ice",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To overcome initial awkwardness or social hesitation in a novel gathering.",
+      "example": "Introductory round-robin introductions helped break the ice among new international arrivals.",
+      "translations": {
+        "bn": "নতুন আড্ডায় সংকোচ বা অপূর্ণ জড়তা কাটিয়ে স্বাভাবিক হওয়া",
+        "zh-CN": "打破僵局 / 活跃气氛"
+      },
+      "tags": [
+        "social",
+        "networking"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "warm up the room"
+      ]
+    },
+    {
+      "id": "idiom-pull-someone-s-leg",
+      "term": "pull someone's leg",
+      "normalizedTerm": "pull someone's leg",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To playfully tease or mislead someone in good humor.",
+      "example": "Do not panic over that alleged pop quiz; your lab mate was just pulling your leg.",
+      "translations": {
+        "bn": "রসিকতা বা কৌতুক করে কাউকে বোকা বানানো",
+        "zh-CN": "开玩笑 / 逗某人玩"
+      },
+      "tags": [
+        "humor",
+        "teasing"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "tease"
+      ]
+    },
+    {
+      "id": "idiom-speak-of-the-devil",
+      "term": "speak of the devil",
+      "normalizedTerm": "speak of the devil",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Referenced when an individual walks into view just as they were being mentioned.",
+      "example": "Speak of the devil! We were just praising your insightful conference paper draft.",
+      "translations": {
+        "bn": "কারও আলোচনা চলাকালীন আকস্মিকভাবে তার উপস্থিত হওয়া",
+        "zh-CN": "说曹操曹操到"
+      },
+      "tags": [
+        "coincidence",
+        "social"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "talk of someone arriving"
+      ]
+    },
+    {
+      "id": "idiom-piece-of-cake",
+      "term": "piece of cake",
+      "normalizedTerm": "piece of cake",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "A job, challenge, or chore that is exceptionally simple to carry out.",
+      "example": "Configuring the Python virtual environment proved to be a piece of cake.",
+      "translations": {
+        "bn": "খুবই সহজ ও অনায়াসসাধ্য কোনো কাজ",
+        "zh-CN": "小菜一碟 / 易如反掌"
+      },
+      "tags": [
+        "ease",
+        "simplicity"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "breeze",
+        "child's play"
+      ]
+    },
+    {
+      "id": "idiom-cost-an-arm-and-a-leg",
+      "term": "cost an arm and a leg",
+      "normalizedTerm": "cost an arm and a leg",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To demand an exorbitant or tremendously high financial price.",
+      "example": "Specialized hardware accelerators can cost an arm and a leg for modest university labs.",
+      "translations": {
+        "bn": "অত্যধিক পরিমাণ অর্থ ব্যয় বা অতিরিক্ত দামি হওয়া",
+        "zh-CN": "极其昂贵 / 价值不菲"
+      },
+      "tags": [
+        "expense",
+        "money"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "prohibitively expensive"
+      ]
+    },
+    {
+      "id": "idiom-once-in-a-blue-moon",
+      "term": "once in a blue moon",
+      "normalizedTerm": "once in a blue moon",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Taking place on extraordinarily rare and infrequent occasions.",
+      "example": "Departmental banquets with free catered meals happen only once in a blue moon.",
+      "translations": {
+        "bn": "কদাচিৎ বা খুব বিরল কোনো ঘটনা",
+        "zh-CN": "千载难逢 / 极少发生"
+      },
+      "tags": [
+        "rarity",
+        "frequency"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "rarely",
+        "seldom"
+      ]
+    },
+    {
+      "id": "idiom-spill-the-beans",
+      "term": "spill the beans",
+      "normalizedTerm": "spill the beans",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To disclose confidential details or secrets prematurely or inadvertently.",
+      "example": "She promised confidentiality, but accidentally spilled the beans about the award recipient.",
+      "translations": {
+        "bn": "অসাবধানতাবশত গোপন তথ্য বা রহস্য ফাঁস করে দেওয়া",
+        "zh-CN": "走漏风声 / 泄密"
+      },
+      "tags": [
+        "secrets",
+        "communication"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "reveal a secret"
+      ]
+    },
+    {
+      "id": "idiom-burn-bridges",
+      "term": "burn bridges",
+      "normalizedTerm": "burn bridges",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To permanently ruin cordial relationships, precluding future reconciliation.",
+      "example": "Departing researchers should never burn bridges with former faculty mentors.",
+      "translations": {
+        "bn": "সম্পর্ক এমনভাবে ধ্বংস করা যাতে ভবিষ্যতে আর ফেরার পথ না থাকে",
+        "zh-CN": "过河拆桥 / 绝后路"
+      },
+      "tags": [
+        "career",
+        "relationships"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "ruin ties"
+      ]
+    },
+    {
+      "id": "idiom-jump-the-gun",
+      "term": "jump the gun",
+      "normalizedTerm": "jump the gun",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To commence an endeavor or leap to conclusions before the appropriate moment.",
+      "example": "Do not jump the gun by publishing empirical findings before verification tests conclude.",
+      "translations": {
+        "bn": "নির্দিষ্ট সময়ের আগেই অতিরিক্ত তাড়াহুড়ো করে পদক্ষেপ নেওয়া",
+        "zh-CN": "操之过急 / 抢跑"
+      },
+      "tags": [
+        "impatience",
+        "timing"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "act prematurely"
+      ]
+    },
+    {
+      "id": "idiom-cut-someone-some-slack",
+      "term": "cut someone some slack",
+      "normalizedTerm": "cut someone some slack",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To treat someone with lenient tolerance rather than rigid severity.",
+      "example": "It is his first semester speaking English in lectures, so cut someone some slack.",
+      "translations": {
+        "bn": "কারও ভুলত্রুটির প্রতি কিছুটা সহানুভূতি ও ছাড় প্রদর্শন করা",
+        "zh-CN": "放某人一马 / 宽容对待"
+      },
+      "tags": [
+        "empathy",
+        "forgiveness"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "be lenient"
+      ]
+    },
+    {
+      "id": "idiom-face-the-music",
+      "term": "face the music",
+      "normalizedTerm": "face the music",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To confront and endure the unpleasant repercussions of one's missteps.",
+      "example": "Having missed the mandatory visa compliance check-in, he had to face the music.",
+      "translations": {
+        "bn": "নিজের ভুলের অপ্রীতিকর পরিণতি সাহসের সাথে মেনে নেওয়া",
+        "zh-CN": "勇于承担后果 / 面对严峻现实"
+      },
+      "tags": [
+        "consequences",
+        "responsibility"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "accept consequences"
+      ]
+    },
+    {
+      "id": "idiom-hold-your-horses",
+      "term": "hold your horses",
+      "normalizedTerm": "hold your horses",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "An admonition to slow down, exercise forbearance, and wait patiently.",
+      "example": "Hold your horses; our cluster compute nodes are still initializing GPU drivers.",
+      "translations": {
+        "bn": "ধৈর্য ধরে অপেক্ষা করা এবং অযথা তাড়াহুড়ো না করা",
+        "zh-CN": "慢着点 / 别着急"
+      },
+      "tags": [
+        "patience",
+        "calm"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "wait a moment"
+      ]
+    },
+    {
+      "id": "idiom-take-a-rain-check",
+      "term": "take a rain check",
+      "normalizedTerm": "take a rain check",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To politely defer an invitation or offer with an intention to accept later.",
+      "example": "I have homework deadlines tonight, but I would love to take a rain check on dinner.",
+      "translations": {
+        "bn": "আমন্ত্রণ বর্তমানে ফিরিয়ে দিয়ে পরবর্তীতে গ্রহণের অনুরোধ",
+        "zh-CN": "改天再约 / 延期待领"
+      },
+      "tags": [
+        "social",
+        "politeness"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "reschedule"
+      ]
+    },
+    {
+      "id": "idiom-shoot-the-breeze",
+      "term": "shoot the breeze",
+      "normalizedTerm": "shoot the breeze",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To converse in a relaxed, friendly manner regarding trivia or casual matters.",
+      "example": "Graduate students frequently gather in the commons area to shoot the breeze after colloquia.",
+      "translations": {
+        "bn": "কোনো উদ্দেশ্য ছাড়া অলসভাবে প্রাণবন্ত অনানুষ্ঠানিক আড্ডা দেওয়া",
+        "zh-CN": "闲聊天 / 侃大山"
+      },
+      "tags": [
+        "social",
+        "conversation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "chat informally"
+      ]
+    },
+    {
+      "id": "idiom-up-in-the-air",
+      "term": "up in the air",
+      "normalizedTerm": "up in the air",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Remaining completely unsettled, ambiguous, or undetermined.",
+      "example": "Conference travel allowances for international students remain up in the air this quarter.",
+      "translations": {
+        "bn": "এখনও কোনো চূড়ান্ত সিদ্ধান্ত ছাড়া ঝুলন্ত বা অনির্ধারিত থাকা",
+        "zh-CN": "悬而未决 / 尚无定论"
+      },
+      "tags": [
+        "uncertainty",
+        "planning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "unresolved",
+        "pending"
+      ]
+    },
+    {
+      "id": "idiom-beat-around-the-bush",
+      "term": "beat around the bush",
+      "normalizedTerm": "beat around the bush",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To speak indirectly and evasively instead of stating the matter frankly.",
+      "example": "Please do not beat around the bush; tell us plainly if the experiment failed.",
+      "translations": {
+        "bn": "ঘুরিয়ে-পেঁচিয়ে এড়িয়ে না গিয়ে স্পষ্ট বক্তব্য এড়িয়ে কথা বলা",
+        "zh-CN": "拐弯抹角 / 旁敲侧击"
+      },
+      "tags": [
+        "directness",
+        "communication"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "equivocate",
+        "hedge"
+      ]
+    },
+    {
+      "id": "idiom-take-it-easy",
+      "term": "take it easy",
+      "normalizedTerm": "take it easy",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To maintain a peaceful, calm demeanor and refrain from overexertion.",
+      "example": "After submitting your graduate thesis draft, make sure to take it easy this weekend.",
+      "translations": {
+        "bn": "অতিরিক্ত মানসিক বা শারীরিক চাপ না নিয়ে শান্তিতে বিশ্রাম নেওয়া",
+        "zh-CN": "放轻松 / 别紧张"
+      },
+      "tags": [
+        "calm",
+        "relaxation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "relax"
+      ]
+    },
+    {
+      "id": "idiom-keep-your-chin-up",
+      "term": "keep your chin up",
+      "normalizedTerm": "keep your chin up",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "An encouragement to stay determined and optimistic amidst adversity.",
+      "example": "Paper rejections are a standard part of graduate academia, so keep your chin up.",
+      "translations": {
+        "bn": "তিক্ত পরিস্থিতিতেও আত্মবিশ্বাস ও আশাবাদ ধরে রাখা",
+        "zh-CN": "不气馁 / 保持乐观"
+      },
+      "tags": [
+        "encouragement",
+        "resilience"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "stay positive"
+      ]
+    },
+    {
+      "id": "expression-no-cap",
+      "term": "no cap",
+      "normalizedTerm": "no cap",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Stating the unvarnished truth without exaggeration or fabrication; for real.",
+      "example": "That algorithms problem set was the hardest of the semester, no cap.",
+      "translations": {
+        "bn": "সত্যি বলছি / কোনো মিথ্যা বা অতিরঞ্জন নেই",
+        "zh-CN": "绝无虚言 / 说真的"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "informal"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "for real",
+        "no lie"
+      ]
+    },
+    {
+      "id": "expression-lowkey",
+      "term": "lowkey",
+      "normalizedTerm": "lowkey",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "To a subtle, restrained, or secret extent.",
+      "example": "I am lowkey excited about our new distributed training experiments.",
+      "translations": {
+        "bn": "গোপনে, মৃদুভাবে বা কিছুটা অপ্রকাশ্যভাবে",
+        "zh-CN": "暗暗地 / 低调地"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "texting"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "subtly",
+        "somewhat"
+      ]
+    },
+    {
+      "id": "expression-highkey",
+      "term": "highkey",
+      "normalizedTerm": "highkey",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Out in the open, intense, or unmistakably apparent.",
+      "example": "I highkey want to take a week off after submitting our paper.",
+      "translations": {
+        "bn": "প্রকাশ্যে, তীব্রভাবে বা সন্দেহাতীতভাবে",
+        "zh-CN": "明目张胆地 / 非常明显地"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "texting"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "openly",
+        "very much"
+      ]
+    },
+    {
+      "id": "expression-bet",
+      "term": "bet",
+      "normalizedTerm": "bet",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "An affirmation of agreement, confirmation, or approval.",
+      "example": "Let us meet at the science library around noon. — Bet.",
+      "translations": {
+        "bn": "ঠিক আছে / পাকা কথা (সম্মত হওয়া)",
+        "zh-CN": "行 / 一言为定"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "agreement"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "agreed",
+        "deal"
+      ]
+    },
+    {
+      "id": "expression-let-him-cook",
+      "term": "let him cook",
+      "normalizedTerm": "let him cook",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Allowing someone the autonomy to proceed or develop an idea without interruption.",
+      "example": "His theoretical hypothesis sounds radical, but let him cook before judging.",
+      "translations": {
+        "bn": "কাউকে নিজের মতো চিন্তা বা কাজ এগিয়ে নিয়ে যেতে দেওয়া",
+        "zh-CN": "先让他把话说完 / 看看他能搞出什么花样"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "humor"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "give him space"
+      ]
+    },
+    {
+      "id": "expression-touch-grass",
+      "term": "touch grass",
+      "normalizedTerm": "touch grass",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Humorous advice urging someone to detach from online screens and engage reality.",
+      "example": "You have stared at compiler logs for sixteen continuous hours; please go touch grass.",
+      "translations": {
+        "bn": "স্ক্রিন জগৎ থেকে সরে বাস্তব পৃথিবীর আলো-বাতাস গ্রহণ করা",
+        "zh-CN": "走出虚拟世界 / 去户外透透气"
+      },
+      "tags": [
+        "gen-z",
+        "humor",
+        "lifestyle"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "get outside"
+      ]
+    },
+    {
+      "id": "expression-rent-free",
+      "term": "rent free",
+      "normalizedTerm": "rent free",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Obsessively occupying someone's thoughts without purpose or cost.",
+      "example": "That awkward slip during my first graduate presentation lives rent free in my mind.",
+      "translations": {
+        "bn": "মাথায় অনাকাঙ্ক্ষিতভাবে বারবার ঘুরপাক খাওয়া",
+        "zh-CN": "挥之不去 / 萦绕心头"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "psychology"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "unshakeable thought"
+      ]
+    },
+    {
+      "id": "expression-out-of-pocket",
+      "term": "out of pocket",
+      "normalizedTerm": "out of pocket",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Behaving excessively, wildly inappropriately, or far beyond acceptable bounds.",
+      "example": "The harsh tone in that anonymous peer review comment was completely out of pocket.",
+      "translations": {
+        "bn": "অসংযত, অস্বাভাবিক বা মাত্রাতিরিক্ত রূঢ় আচরণ",
+        "zh-CN": "过分失礼 / 离谱反常"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "behavior"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "inappropriate",
+        "wild"
+      ]
+    },
+    {
+      "id": "expression-vibe-check",
+      "term": "vibe check",
+      "normalizedTerm": "vibe check",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "An intuitive evaluation of someone's emotional state, attitude, or atmospheric energy.",
+      "example": "Departmental game nights serve as a wholesome vibe check for new graduate arrivals.",
+      "translations": {
+        "bn": "কারও মেজাজ বা পরিবেশের আবহ পরখ করে দেখা",
+        "zh-CN": "考察氛围 / 了解状态"
+      },
+      "tags": [
+        "gen-z",
+        "social",
+        "informal"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "word-gatekeep",
+      "term": "gatekeep",
+      "normalizedTerm": "gatekeep",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "To withhold information, resources, or privileges to preserve elite exclusivity.",
+      "example": "Senior lab members should never gatekeep useful bash automation scripts.",
+      "translations": {
+        "bn": "তথ্য বা সুবিধা নিজের কাছে কুক্ষিগত রেখে অন্যকে বঞ্চিত করা",
+        "zh-CN": "把持资源 / 搞信息垄断"
+      },
+      "tags": [
+        "gen-z",
+        "social",
+        "academia"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "withhold"
+      ]
+    },
+    {
+      "id": "word-gaslight",
+      "term": "gaslight",
+      "normalizedTerm": "gaslight",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "To psychologically manipulate someone into questioning their own sanity or perceptions.",
+      "example": "Insisting that the server never crashed is an attempt to gaslight the entire team.",
+      "translations": {
+        "bn": "কাউকে নিজের বুদ্ধি বা স্মৃতির ওপর সন্দেহ করতে প্ররোচিত করা",
+        "zh-CN": "心理操纵 / 蓄意欺骗"
+      },
+      "tags": [
+        "gen-z",
+        "psychology",
+        "terms"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "manipulate"
+      ]
+    },
+    {
+      "id": "expression-it-s-giving",
+      "term": "it's giving",
+      "normalizedTerm": "it's giving",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Exuding or radiating a recognizable aesthetic, mood, or thematic impression.",
+      "example": "Her polished keynote slide presentation — it's giving top-tier tech conference.",
+      "translations": {
+        "bn": "কোনো নির্দিষ্ট নান্দনিকতা বা আবহ প্রকাশ করা",
+        "zh-CN": "很有某种感觉 / 展现出某种风格"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "style"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "radiating"
+      ]
+    },
+    {
+      "id": "expression-slaps",
+      "term": "slaps",
+      "normalizedTerm": "slaps",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Outstandingly good, enjoyable, or remarkably pleasing.",
+      "example": "The specialty espresso drinks at the basement university coffee shop absolutely slaps.",
+      "translations": {
+        "bn": "অসাধারণ বা অত্যন্ত দারুণ লাগা (বিশেষ করে খাবার বা গান)",
+        "zh-CN": "棒极了 / 太赞了"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "food"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "is awesome"
+      ]
+    },
+    {
+      "id": "expression-valid",
+      "term": "valid",
+      "normalizedTerm": "valid",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Thoroughly understandable, completely justified, or sensible in context.",
+      "example": "Taking an afternoon nap after submitting a major revision deadline is entirely valid.",
+      "translations": {
+        "bn": "পরিস্থিতি বিবেচনায় সম্পূর্ণ যৌক্তিক ও বোধগম্য",
+        "zh-CN": "非常合理 / 可以理解"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "approval"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "reasonable",
+        "justified"
+      ]
+    },
+    {
+      "id": "expression-based",
+      "term": "based",
+      "normalizedTerm": "based",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Praiseworthy for bold, authentic confidence regardless of external approval.",
+      "example": "Publishing negative benchmark results despite commercial pushback was genuinely based.",
+      "translations": {
+        "bn": "অন্যের মন না জুগিয়ে সত্য প্রকাশে সাহসী ও প্রশংসনীয়",
+        "zh-CN": "坚持自我 / 令人钦佩"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "praise"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "authentic"
+      ]
+    },
+    {
+      "id": "expression-deadass",
+      "term": "deadass",
+      "normalizedTerm": "deadass",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Unequivocally serious; emphatically genuine and completely without jest.",
+      "example": "I deadass left my building security keycard inside the robotics lab overnight.",
+      "translations": {
+        "bn": "সম্পূর্ণ সত্য ও গম্ভীরভাবে (বিন্দু পরিমাণ রসিকতা ছাড়া)",
+        "zh-CN": "千真万确 / 绝不开玩笑"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "emphasis"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "seriously"
+      ]
+    },
+    {
+      "id": "expression-main-character-energy",
+      "term": "main character energy",
+      "normalizedTerm": "main character energy",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Radiating charismatic confidence as if being the protagonist in a story.",
+      "example": "She defended her proposal questions displaying effortless main character energy.",
+      "translations": {
+        "bn": "নিজেকে গল্পের প্রধান চরিত্রের মতো আত্মবিশ্বাসী ও আকর্ষণীয় মনে করা",
+        "zh-CN": "主角光环 / 散发主角气场"
+      },
+      "tags": [
+        "gen-z",
+        "personality",
+        "confidence"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "phrasal_verb-go-off",
+      "term": "go off",
+      "normalizedTerm": "go off",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To express oneself passionately, articulate brilliant insights, or speak vigorously.",
+      "example": "The visiting scholar proceeded to go off during the panel debate with stunning data.",
+      "translations": {
+        "bn": "অত্যন্ত বাগ্মিতা ও আবেগের সাথে যুক্তি পেশ করা",
+        "zh-CN": "火力全开 / 畅所欲言"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "speech"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-caught-in-4k",
+      "term": "caught in 4k",
+      "normalizedTerm": "caught in 4k",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Captured committing an indiscretion with undeniable, crystal-clear evidence.",
+      "example": "He claimed his dataset script was fully novel, but commit history caught in 4k.",
+      "translations": {
+        "bn": "অকাট্য প্রমাণসহ অন্যায় কাজে হাতেনাতে ধরা পড়া",
+        "zh-CN": "被抓个正着 / 铁证如山"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "internet"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "word-rizz",
+      "term": "rizz",
+      "normalizedTerm": "rizz",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "The innate capacity to charm, appeal to, or captivate others through charisma.",
+      "example": "The student president exhibited tremendous communication rizz during orientation.",
+      "translations": {
+        "bn": "ব্যক্তিত্বের মুগ্ধতা, মোহময়তা বা আকর্ষণ ক্ষমতা",
+        "zh-CN": "魅力十足 / 撩人能力"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "charm"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "charm",
+        "charisma"
+      ]
+    },
+    {
+      "id": "expression-sus",
+      "term": "sus",
+      "normalizedTerm": "sus",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Arousing strong suspicion; dubious, fishy, or untrustworthy.",
+      "example": "A sudden system dependency asking for sudo permissions is extraordinarily sus.",
+      "translations": {
+        "bn": "অত্যন্ত সন্দেহজনক, অবিশ্বস্ত বা খটকা জাগানো",
+        "zh-CN": "可疑 / 不对劲"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "caution"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "suspicious"
+      ]
+    },
+    {
+      "id": "word-flex",
+      "term": "flex",
+      "normalizedTerm": "flex",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "An ostentatious display of wealth, accomplishment, status, or prowess.",
+      "example": "Mentioning three accepted journal papers in a casual introduction is quite a flex.",
+      "translations": {
+        "bn": "নিজের সাফল্য বা অহংকার অন্যদের কাছে জাহির করা",
+        "zh-CN": "炫耀 / 显摆"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "pride"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "show off",
+        "boast"
+      ]
+    },
+    {
+      "id": "word-ghosting",
+      "term": "ghosting",
+      "normalizedTerm": "ghosting",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "The abrupt cessation of all communication with someone without any rationale.",
+      "example": "Potential industry employers who disappear after final interviews are guilty of ghosting.",
+      "translations": {
+        "bn": "কোনো কৈফিয়ত না দিয়ে হুট করে যোগাযোগ বন্ধ করে অদৃশ্য হওয়া",
+        "zh-CN": "人间蒸发 / 断崖式断联"
+      },
+      "tags": [
+        "dating",
+        "communication",
+        "recruiting"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-fomo",
+      "term": "fomo",
+      "normalizedTerm": "fomo",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "The uneasy psychological apprehension that others are enjoying rewarding events.",
+      "example": "I attended the departmental social reception largely due to acute fomo.",
+      "translations": {
+        "bn": "কোনো সামাজিক সুযোগ বা আনন্দ থেকে বাদ পড়ার আতঙ্ক",
+        "zh-CN": "错失恐惧症 / 怕错过热闹"
+      },
+      "tags": [
+        "gen-z",
+        "psychology",
+        "social"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "idiom-take-the-l",
+      "term": "take the L",
+      "normalizedTerm": "take the l",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To accept a failure, defeat, or unfortunate mistake with dignified grace.",
+      "example": "When our empirical trial collapsed unexpectedly, we had no choice but to take the L.",
+      "translations": {
+        "bn": "পরাজয় বা দুর্ভাগ্যজনক ভুল বিনীতভাবে স্বীকার করে নেওয়া",
+        "zh-CN": "认栽 / 承认失败"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "resilience"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "accept defeat"
+      ]
+    },
+    {
+      "id": "idiom-take-the-w",
+      "term": "take the W",
+      "normalizedTerm": "take the w",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To secure, celebrate, or celebrate an encouraging triumph or success.",
+      "example": "Receiving minor revisions instead of a rejection lets our lab take the W today.",
+      "translations": {
+        "bn": "ইতিবাচক বিজয় বা সাফল্য অর্জন করে আনন্দ উদযাপন করা",
+        "zh-CN": "赢得胜利 / 拿下胜局"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "success"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "celebrate victory"
+      ]
+    },
+    {
+      "id": "word-drip",
+      "term": "drip",
+      "normalizedTerm": "drip",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "An exceptionally fashionable, trendy, or stylish aesthetic appearance.",
+      "example": "The keynote speaker walked to the podium showcasing undeniable sartorial drip.",
+      "translations": {
+        "bn": "আকর্ষণীয় ও রুচিশীল ফ্যাশনেবল রূপ",
+        "zh-CN": "穿搭有范 / 潮酷行头"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "fashion"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "style"
+      ]
+    },
+    {
+      "id": "idiom-spill-the-tea",
+      "term": "spill the tea",
+      "normalizedTerm": "spill the tea",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To reveal intriguing gossip, insider revelations, or confidential news.",
+      "example": "Graduate students gathered during coffee break to spill the tea regarding tenure votes.",
+      "translations": {
+        "bn": "গোপন ভেতরের খবর বা রসালো পরচর্চা ফাঁস করা",
+        "zh-CN": "八卦吃瓜 / 透露内幕"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "gossip"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "share gossip"
+      ]
+    },
+    {
+      "id": "expression-periodt",
+      "term": "periodt",
+      "normalizedTerm": "periodt",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Used to stress utter finality and brook no further disagreement.",
+      "example": "Reproducibility is the foundational cornerstone of genuine empirical science, periodt.",
+      "translations": {
+        "bn": "কথা এখানেই শেষ এবং এর ওপর আর কোনো বিতর্ক চলে না",
+        "zh-CN": "毋庸置疑 / 就此盖棺定论"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "emphasis"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "end of story"
+      ]
+    },
+    {
+      "id": "expression-hits-different",
+      "term": "hits different",
+      "normalizedTerm": "hits different",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Evoking a uniquely profound, touching, or superior emotional experience.",
+      "example": "Finding the elusive bug after three days of relentless searching hits different.",
+      "translations": {
+        "bn": "অন্য যেকোনো সময়ের চেয়ে আলাদা ও অসাধারণ অনুভূতি জোগানো",
+        "zh-CN": "感觉大不相同 / 别有一番滋味"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "feeling"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "feels unique"
+      ]
+    },
+    {
+      "id": "expression-ate-and-left-no-crumbs",
+      "term": "ate and left no crumbs",
+      "normalizedTerm": "ate and left no crumbs",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Executed an assignment, performance, or talk with absolute perfection.",
+      "example": "She answered the rigorous doctoral examination questions, ate and left no crumbs.",
+      "translations": {
+        "bn": "নিখুঁত ও অনবদ্য দক্ষতার সাথে কোনো কাজ সম্পন্ন করা",
+        "zh-CN": "发挥得淋漓尽致 / 完美收官"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "praise"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-mid",
+      "term": "mid",
+      "normalizedTerm": "mid",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Mediocre, unimpressive, unremarkable, or distinctly ordinary.",
+      "example": "The experimental performance on that synthetic benchmark was thoroughly mid.",
+      "translations": {
+        "bn": "নিতান্তই মাঝারি মানের বা সাধারণ",
+        "zh-CN": "平庸无奇 / 差点意思"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "critique"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "mediocre"
+      ]
+    },
+    {
+      "id": "expression-side-eye",
+      "term": "side eye",
+      "normalizedTerm": "side eye",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "A disapproving, suspicious, or scornful lateral glance toward questionable actions.",
+      "example": "Everyone gave a collective side eye when he claimed his code never required tests.",
+      "translations": {
+        "bn": "সন্দেহ বা বিরক্তির দৃষ্টিতে আড়চোখে তাকানো",
+        "zh-CN": "斜眼鄙视 / 审视质疑的目光"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "skepticism"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "word-stan",
+      "term": "stan",
+      "normalizedTerm": "stan",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "To be an obsessively enthusiastic, loyal supporter of someone or something.",
+      "example": "Open-source researchers passionately stan public model weights and open benchmarks.",
+      "translations": {
+        "bn": "কারও বা কোনো মতবাদের অন্ধ ও পরম ভক্ত হওয়া",
+        "zh-CN": "铁杆粉丝 / 狂热支持"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "enthusiasm"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "word-salty",
+      "term": "salty",
+      "normalizedTerm": "salty",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "Irrational bitterness, irritation, or resentment stemming from petty grievances.",
+      "example": "He was salty for days after his conference paper presentation was assigned an afternoon slot.",
+      "translations": {
+        "bn": "তুচ্ছ কারণে মনে অপ্রয়োজনীয় ক্ষোভ বা তিক্ততা রাখা",
+        "zh-CN": "酸了 / 心怀不满"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "temperament"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "bitter",
+        "resentful"
+      ]
+    },
+    {
+      "id": "expression-cap",
+      "term": "cap",
+      "normalizedTerm": "cap",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "A fabricated statement, untruth, or deceptive exaggeration.",
+      "example": "Claiming your script executes in sub-millisecond durations without caching is pure cap.",
+      "translations": {
+        "bn": "মিথ্যা কথা, বানানো গল্প বা অতিরঞ্জন",
+        "zh-CN": "谎话 / 吹牛"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "deception"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "lie"
+      ]
+    },
+    {
+      "id": "phrasal_verb-sleeping-on",
+      "term": "sleeping on",
+      "normalizedTerm": "sleeping on",
+      "kind": "phrasal_verb",
+      "difficulty": "beginner",
+      "definition": "Failing to recognize or properly evaluate the excellence of an asset or idea.",
+      "example": "Many software developers are sleeping on this exceptionally fast Rust parsing library.",
+      "translations": {
+        "bn": "কোনো কিছুর প্রকৃত মূল্য অনুধাবনে ব্যর্থ হয়ে অবহেলা করা",
+        "zh-CN": "低估小瞧 / 忽视价值"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "value"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "underestimating"
+      ]
+    },
+    {
+      "id": "idiom-read-the-room",
+      "term": "read the room",
+      "normalizedTerm": "read the room",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To perceive and adapt appropriately to the prevailing interpersonal mood.",
+      "example": "When committee members looked exhausted, he knew it was wise to read the room.",
+      "translations": {
+        "bn": "উপস্থিত মানুষজনের মেজাজ ও পরিবেশের গম্ভীরতা অনুমান করে চলা",
+        "zh-CN": "察言观色 / 审时度势"
+      },
+      "tags": [
+        "social",
+        "awareness"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "gauge the mood"
+      ]
+    },
+    {
+      "id": "expression-soft-launch",
+      "term": "soft launch",
+      "normalizedTerm": "soft launch",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "To discreetly introduce or teaser a project to gauge response before general announcement.",
+      "example": "The authors chose to soft launch their benchmark codebase to gather early comments.",
+      "translations": {
+        "bn": "আনুষ্ঠানিক প্রকাশের আগে অনানুষ্ঠানিকভাবে মৃদু সূচনা করা",
+        "zh-CN": "试水发布 / 悄悄预热"
+      },
+      "tags": [
+        "marketing",
+        "projects"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-rage-bait",
+      "term": "rage bait",
+      "normalizedTerm": "rage bait",
+      "kind": "expression",
+      "difficulty": "intermediate",
+      "definition": "Provocative material formulated specifically to ignite anger and traffic.",
+      "example": "Dismissing formal mathematical verification as useless is obvious rage bait on social forums.",
+      "translations": {
+        "bn": "মানুষকে রাগিয়ে মিথস্ক্রিয়া বাড়ানোর অসৎ উদ্দেশ্যমূলক বক্তব্য",
+        "zh-CN": "骗取愤怒流量的内容 / 恶意引战"
+      },
+      "tags": [
+        "internet",
+        "media",
+        "provocation"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-iykyk",
+      "term": "iykyk",
+      "normalizedTerm": "iykyk",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "An abbreviation for 'if you know, you know', indicating an exclusive inside reference.",
+      "example": "Debugging CUDA memory leaks at four in the morning — iykyk.",
+      "translations": {
+        "bn": "যারা ভুক্তভোগী কেবল তারাই এর মর্ম বুঝবে",
+        "zh-CN": "懂的都懂"
+      },
+      "tags": [
+        "gen-z",
+        "acronyms",
+        "humor"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "word-unhinged",
+      "term": "unhinged",
+      "normalizedTerm": "unhinged",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "Wildly chaotic, eccentric, or bizarre in a wonderfully humorous manner.",
+      "example": "The student chat group posted completely unhinged memes during qualifying exam week.",
+      "translations": {
+        "bn": "উদ্ভট, লাগামহীন ও প্রচণ্ড হাস্যকর পাগলামি",
+        "zh-CN": "放飞自我 / 荒诞离谱"
+      },
+      "tags": [
+        "gen-z",
+        "humor",
+        "behavior"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "chaotic",
+        "wild"
+      ]
+    },
+    {
+      "id": "word-feral",
+      "term": "feral",
+      "normalizedTerm": "feral",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "Unrestrained, wildly energetic, or primal in enthusiasm.",
+      "example": "Tired researchers go feral whenever catered seminar pastries are left unattended.",
+      "translations": {
+        "bn": "বুনো উন্মাদনায় মেতে ওঠা বা অতিমাত্রায় ব্যতিব্যস্ত হওয়া",
+        "zh-CN": "陷入狂乱 / 野性大发"
+      },
+      "tags": [
+        "gen-z",
+        "humor"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-ick",
+      "term": "ick",
+      "normalizedTerm": "ick",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "A visceral, sudden sensation of cringing disgust toward a specific behavior.",
+      "example": "Witnessing people commit compiled binaries directly to git gives me the ick.",
+      "translations": {
+        "bn": "কারও অদ্ভুত আচরণে হঠাৎ তীব্র বিরক্তি ও বিতৃষ্ণা জাগা",
+        "zh-CN": "瞬间下头 / 令人反感"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "reaction"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "word-era",
+      "term": "era",
+      "normalizedTerm": "era",
+      "kind": "word",
+      "difficulty": "beginner",
+      "definition": "A designated chapter in personal life characterized by a single priority or mood.",
+      "example": "I have entered my diligent, quiet dissertation writing era.",
+      "translations": {
+        "bn": "জীবনের কোনো নির্দিষ্ট বৈশিষ্ট্যমণ্ডিত সময় বা অধ্যায়",
+        "zh-CN": "特定时期 / 专属阶段"
+      },
+      "tags": [
+        "gen-z",
+        "lifestyle",
+        "phases"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-glow-up",
+      "term": "glow up",
+      "normalizedTerm": "glow up",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "A significant and admirable advancement in capability, appearance, or prestige.",
+      "example": "The open-source repository received an astounding glow up following documentation updates.",
+      "translations": {
+        "bn": "যোগ্যতা, সৌন্দর্য বা মানে অভূতপূর্ব ইতিবাচক পরিবর্তন",
+        "zh-CN": "华丽蜕变 / 颜值能力大提升"
+      },
+      "tags": [
+        "gen-z",
+        "improvement"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "transformation"
+      ]
+    },
+    {
+      "id": "word-clout",
+      "term": "clout",
+      "normalizedTerm": "clout",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "Prominence, social influence, or persuasive power within a community.",
+      "example": "High academic citation counts confer considerable academic clout across campuses.",
+      "translations": {
+        "bn": "সামাজিক প্রতিপত্তি, প্রভাব বা ব্যাপক প্রভাববলয়",
+        "zh-CN": "影响力 / 话语权"
+      },
+      "tags": [
+        "power",
+        "prestige"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "influence",
+        "sway"
+      ]
+    },
+    {
+      "id": "expression-living-for-it",
+      "term": "living for it",
+      "normalizedTerm": "living for it",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Deriving immense joy, satisfaction, and delight from an occurrence.",
+      "example": "The research audience witnessed the spirited theoretical clash and was living for it.",
+      "translations": {
+        "bn": "কোনো কিছুতে পরম আনন্দ ও রোমাঞ্চ উপভোগ করা",
+        "zh-CN": "非常享受 / 爱惨了这感觉"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "delight"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "expression-delulu",
+      "term": "delulu",
+      "normalizedTerm": "delulu",
+      "kind": "expression",
+      "difficulty": "beginner",
+      "definition": "Entertainingly unrealistic or comical in one's overly optimistic beliefs.",
+      "example": "Expecting zero rebuttal comments on a major AI submission is adorably delulu.",
+      "translations": {
+        "bn": "হাস্যকর রকমের অবাস্তব আশাবাদী বা বিভ্রান্তিকর ভাবনায় মগ্ন",
+        "zh-CN": "天真妄想 / 盲目乐观"
+      },
+      "tags": [
+        "gen-z",
+        "slang",
+        "humor"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "delusional"
+      ]
+    },
+    {
+      "id": "word-situationship",
+      "term": "situationship",
+      "normalizedTerm": "situationship",
+      "kind": "word",
+      "difficulty": "intermediate",
+      "definition": "A romantic or personal entanglement that remains ambiguous and uncommitted.",
+      "example": "Navigating an undefined situationship during qualifying exam study is needlessly stressful.",
+      "translations": {
+        "bn": "কোনো নির্দিষ্ট অঙ্গীকারহীন অস্পষ্ট ব্যক্তিগত সম্পর্ক",
+        "zh-CN": "暧昧未明的情感状态"
+      },
+      "tags": [
+        "dating",
+        "relationships",
+        "slang"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "idiom-hit-the-nail-on-the-head",
+      "term": "hit the nail on the head",
+      "normalizedTerm": "hit the nail on the head",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To identify or describe the precise cause, truth, or nature of a situation.",
+      "example": "The reviewer hit the nail on the head regarding our flawed caching assumptions.",
+      "translations": {
+        "bn": "সমস্যার আসল কারণ একদম নিখুঁতভাবে চিহ্নিত করা",
+        "zh-CN": "一针见血 / 说到点子上"
+      },
+      "tags": [
+        "accuracy",
+        "truth",
+        "insight"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "get it exactly right"
+      ]
+    },
+    {
+      "id": "idiom-get-out-of-hand",
+      "term": "get out of hand",
+      "normalizedTerm": "get out of hand",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To spiral out of control, becoming chaotic and unmanageable.",
+      "example": "Departmental discussions can quickly get out of hand without a structured agenda.",
+      "translations": {
+        "bn": "পরিস্থিতি শৃঙ্খলার বাইরে গিয়ে অনিয়ন্ত্রিত হয়ে পড়া",
+        "zh-CN": "失控 / 变得无法收拾"
+      },
+      "tags": [
+        "control",
+        "chaos"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "spiral out of control"
+      ]
+    },
+    {
+      "id": "idiom-the-last-straw",
+      "term": "the last straw",
+      "normalizedTerm": "the last straw",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "The final minor setback in a series of troubles that exhausts one's tolerance.",
+      "example": "Another sudden campus power cut was the last straw for researchers relying on local nodes.",
+      "translations": {
+        "bn": "ধৈর্যের বাঁধ ভেঙে দেওয়া সর্বশেষ চরম ঘটনা",
+        "zh-CN": "压垮骆驼的最后一根稻草"
+      },
+      "tags": [
+        "patience",
+        "limits"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "breaking point"
+      ]
+    },
+    {
+      "id": "idiom-back-to-square-one",
+      "term": "back to square one",
+      "normalizedTerm": "back to square one",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Returned to the very beginning following an unsuccessful enterprise.",
+      "example": "The hypothesis was disproved by empirical simulations, taking us back to square one.",
+      "translations": {
+        "bn": "পরিকল্পনা ভেস্তে যাওয়ায় একদম শুরু থেকে যাত্রা শুরু করতে বাধ্য হওয়া",
+        "zh-CN": "回到原点 / 从头再来"
+      },
+      "tags": [
+        "setback",
+        "restart"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "start over"
+      ]
+    },
+    {
+      "id": "idiom-miss-the-boat",
+      "term": "miss the boat",
+      "normalizedTerm": "miss the boat",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To overlook, forfeit, or squander an advantageous opportunity through tardiness.",
+      "example": "Submit your fellowship application early so you do not miss the boat on funding.",
+      "translations": {
+        "bn": "দেরি করার কারণে মূল্যবান সুযোগ হাতছাড়া করা",
+        "zh-CN": "坐失良机 / 错过机会"
+      },
+      "tags": [
+        "opportunity",
+        "timing"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "lose an opportunity"
+      ]
+    },
+    {
+      "id": "idiom-cry-over-spilled-milk",
+      "term": "cry over spilled milk",
+      "normalizedTerm": "cry over spilled milk",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To waste energy lamenting an irrevocable misfortune that cannot be altered.",
+      "example": "The conference deadline has passed; there is no point to cry over spilled milk.",
+      "translations": {
+        "bn": "অতীতের অবধারিত ক্ষতি নিয়ে অহেতুক আক্ষেপ বা হাহাকার করা",
+        "zh-CN": "作无益的后悔 / 覆水难收"
+      },
+      "tags": [
+        "regret",
+        "acceptance"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "dwell on mistakes"
+      ]
+    },
+    {
+      "id": "idiom-get-cold-feet",
+      "term": "get cold feet",
+      "normalizedTerm": "get cold feet",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To become frightened or hesitate nervously before undertaking a major action.",
+      "example": "It is customary to get cold feet before defending a doctoral prospectus.",
+      "translations": {
+        "bn": "ভয়ে শেষ মুহূর্তে পিছিয়ে যাওয়া বা দ্বিধায় ভোগা",
+        "zh-CN": "临阵退缩 / 胆怯犹豫"
+      },
+      "tags": [
+        "fear",
+        "hesitation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "lose courage"
+      ]
+    },
+    {
+      "id": "idiom-bite-your-tongue",
+      "term": "bite your tongue",
+      "normalizedTerm": "bite your tongue",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To deliberately restrain oneself from uttering a provocative or imprudent comment.",
+      "example": "During committee debates, it is occasionally judicious to bite your tongue.",
+      "translations": {
+        "bn": "মুখে খারাপ বা বিতর্কিত কথা আসা সত্ত্বেও নিজেকে চেপে রাখা",
+        "zh-CN": "保持克制 / 把话咽回肚里"
+      },
+      "tags": [
+        "restraint",
+        "diplomacy"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "hold one's tongue"
+      ]
+    },
+    {
+      "id": "idiom-break-a-leg",
+      "term": "break a leg",
+      "normalizedTerm": "break a leg",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "A standard colloquial phrase wishing good luck before an impending performance.",
+      "example": "You have practiced your slides thoroughly, so go break a leg at the symposium!",
+      "translations": {
+        "bn": "বক্তব্য বা মঞ্চে ওঠার আগে সফলতার শুভকামনা জানানো",
+        "zh-CN": "祝演出成功 / 大放异彩"
+      },
+      "tags": [
+        "wishes",
+        "encouragement"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "good luck"
+      ]
+    },
+    {
+      "id": "idiom-keep-fingers-crossed",
+      "term": "keep fingers crossed",
+      "normalizedTerm": "keep fingers crossed",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To fervently wish or express earnest anticipation for a fortuitous outcome.",
+      "example": "We keep fingers crossed that our paper receives positive rebuttal evaluations.",
+      "translations": {
+        "bn": "শুভ ফলাফলের আশায় মনে মনে শুভকামনা রাখা",
+        "zh-CN": "祈求好运 / 祝愿一切顺利"
+      },
+      "tags": [
+        "hope",
+        "luck"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "wish for luck"
+      ]
+    },
+    {
+      "id": "idiom-learn-the-ropes",
+      "term": "learn the ropes",
+      "normalizedTerm": "learn the ropes",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To acquire the foundational understanding and operational rules of a trade.",
+      "example": "It demands several weeks to learn the ropes of cluster resource schedulers.",
+      "translations": {
+        "bn": "কাজের মৌলিক কলাকৌশল ও রীতিনীতি শিখে নেওয়া",
+        "zh-CN": "摸清门道 / 熟悉业务"
+      },
+      "tags": [
+        "training",
+        "skills"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "learn the basics"
+      ]
+    },
+    {
+      "id": "idiom-over-the-moon",
+      "term": "over the moon",
+      "normalizedTerm": "over the moon",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Overwhelmed with intense joy, exhilaration, and supreme contentment.",
+      "example": "The young scholar was over the moon upon receiving the prestigious research grant.",
+      "translations": {
+        "bn": "অত্যধিক আনন্দ ও সন্তুষ্টিতে আত্মহারা হওয়া",
+        "zh-CN": "欣喜若狂 / 心花怒放"
+      },
+      "tags": [
+        "happiness",
+        "celebration"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "ecstatic"
+      ]
+    },
+    {
+      "id": "idiom-fish-out-of-water",
+      "term": "fish out of water",
+      "normalizedTerm": "fish out of water",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Feeling distinctly uncomfortable, awkward, or alien in an unusual environment.",
+      "example": "Attending a biochemistry seminar made the pure mathematician feel like a fish out of water.",
+      "translations": {
+        "bn": "অপরিচিত পরিবেশে নিজেকে খাপ খাওয়াতে না পেরে অস্বস্তিবোধ করা",
+        "zh-CN": "如鱼离水般局促不安 / 格格不入"
+      },
+      "tags": [
+        "awkwardness",
+        "adaptation"
+      ],
+      "source": "phrasetab-curated"
+    },
+    {
+      "id": "idiom-hit-the-sack",
+      "term": "hit the sack",
+      "normalizedTerm": "hit the sack",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To retire to one's bed to sleep, especially after arduous exertion.",
+      "example": "After an exhausting day in the laboratory, I am ready to hit the sack.",
+      "translations": {
+        "bn": "ক্লান্ত হয়ে ঘুমাতে বিছানায় যাওয়া",
+        "zh-CN": "上床睡觉 / 就寝"
+      },
+      "tags": [
+        "sleep",
+        "rest"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "go to sleep"
+      ]
+    },
+    {
+      "id": "idiom-all-ears",
+      "term": "all ears",
+      "normalizedTerm": "all ears",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Listening with keen, undistracted, and undivided attention.",
+      "example": "Explain your proposed theorem formulation; I am completely all ears.",
+      "translations": {
+        "bn": "পুরো মনোযোগ দিয়ে শোনার জন্য ব্যাকুল ও প্রস্তুত থাকা",
+        "zh-CN": "洗耳恭听 / 全神贯注倾听"
+      },
+      "tags": [
+        "listening",
+        "attention"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "listening intently"
+      ]
+    },
+    {
+      "id": "idiom-play-with-fire",
+      "term": "play with fire",
+      "normalizedTerm": "play with fire",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To undertake recklessly hazardous actions that court immense danger.",
+      "example": "Pushing untested updates to a live production cluster is simply to play with fire.",
+      "translations": {
+        "bn": "জেনে-বুঝে বিপজ্জনক বিপর্যয়ের ঝুঁকি ডেকে আনা",
+        "zh-CN": "玩火自焚 / 铤而走险"
+      },
+      "tags": [
+        "danger",
+        "risk"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "court disaster"
+      ]
+    },
+    {
+      "id": "idiom-in-hot-water",
+      "term": "in hot water",
+      "normalizedTerm": "in hot water",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Entangled in serious trouble, controversy, or facing severe reprimand.",
+      "example": "He found himself in hot water after skipping mandatory biohazard certifications.",
+      "translations": {
+        "bn": "বড় ধরনের বিপদ বা জবাবদিহিতার মুখে পড়া",
+        "zh-CN": "惹上麻烦 / 陷入困境"
+      },
+      "tags": [
+        "trouble",
+        "consequences"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "in trouble"
+      ]
+    },
+    {
+      "id": "idiom-hang-in-there",
+      "term": "hang in there",
+      "normalizedTerm": "hang in there",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To persist steadfastly and endure difficulties without giving up hope.",
+      "example": "Doctoral qualifications test one's perseverance, so hang in there with courage.",
+      "translations": {
+        "bn": "বিপদের মাঝেও মনোবল না হারিয়ে ধৈর্য ধরে টিকে থাকা",
+        "zh-CN": "咬牙坚持 / 别放弃"
+      },
+      "tags": [
+        "perseverance",
+        "support"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "persevere"
+      ]
+    },
+    {
+      "id": "idiom-stick-to-your-guns",
+      "term": "stick to your guns",
+      "normalizedTerm": "stick to your guns",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To unflinchingly maintain one's position against relentless pressure or opposition.",
+      "example": "If your empirical measurements are reproducible, stick to your guns during scrutiny.",
+      "translations": {
+        "bn": "চাপ বা বিরোধিতার মুখেও নিজের অবস্থানে অটল থাকা",
+        "zh-CN": "坚持己见 / 决不退让"
+      },
+      "tags": [
+        "resolve",
+        "conviction"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "stand firm"
+      ]
+    },
+    {
+      "id": "idiom-step-up-your-game",
+      "term": "step up your game",
+      "normalizedTerm": "step up your game",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To substantially enhance one's capabilities, diligence, or performance standard.",
+      "example": "With growing conference competitiveness, researchers must step up your game.",
+      "translations": {
+        "bn": "কাজের মান, দক্ষতা ও উদ্যোগ আগের চেয়ে বাড়িয়ে তোলা",
+        "zh-CN": "提升表现 / 更加努力"
+      },
+      "tags": [
+        "improvement",
+        "excellence"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "raise one's game"
+      ]
+    },
+    {
+      "id": "idiom-right-off-the-bat",
+      "term": "right off the bat",
+      "normalizedTerm": "right off the bat",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Directly from the very outset; instantaneously without hesitation.",
+      "example": "Right off the bat, the lecturer stated that attendance was optional.",
+      "translations": {
+        "bn": "প্রথম থেকেই / কালবিলম্ব না করে একেবারে প্রারম্ভে",
+        "zh-CN": "开宗明义 / 一开始就"
+      },
+      "tags": [
+        "immediacy",
+        "beginning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "immediately",
+        "from the start"
+      ]
+    },
+    {
+      "id": "idiom-caught-off-guard",
+      "term": "caught off guard",
+      "normalizedTerm": "caught off guard",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Stunned, perplexed, or caught completely unready by an unanticipated event.",
+      "example": "An unanticipated inquiry regarding edge-case data caught off guard the presenter.",
+      "translations": {
+        "bn": "অপ্রস্তুত অবস্থায় কোনো ঘটনার সম্মুখীন হয়ে হতভম্ব হওয়া",
+        "zh-CN": "猝不及防 / 措手不及"
+      },
+      "tags": [
+        "surprise",
+        "unpreparedness"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "blindsided"
+      ]
+    },
+    {
+      "id": "idiom-stand-your-ground",
+      "term": "stand your ground",
+      "normalizedTerm": "stand your ground",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To steadfastly resist retreat or capitulation under heavy attack or debate.",
+      "example": "The graduate author stood her ground against aggressive questions from reviewers.",
+      "translations": {
+        "bn": "যুক্তি বা তর্কের মুখে পিছপা না হয়ে নিজের বক্তব্য ধরে রাখা",
+        "zh-CN": "坚守立场 / 寸步不让"
+      },
+      "tags": [
+        "defense",
+        "courage"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "hold one's ground"
+      ]
+    },
+    {
+      "id": "idiom-lose-your-cool",
+      "term": "lose your cool",
+      "normalizedTerm": "lose your cool",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To surrender composure, becoming visibly angry, flustered, or agitated.",
+      "example": "It is crucial never to lose your cool when engaging with hostile critiques.",
+      "translations": {
+        "bn": "ধৈর্য ও আত্মনিয়ন্ত্রণ হারিয়ে রাগ বা উদ্বেগে উত্তেজিত হওয়া",
+        "zh-CN": "沉不住气 / 暴跳如雷"
+      },
+      "tags": [
+        "anger",
+        "composure"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "lose temper"
+      ]
+    },
+    {
+      "id": "idiom-save-face",
+      "term": "save face",
+      "normalizedTerm": "save face",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To preserve one's outward reputation, self-respect, and public dignity.",
+      "example": "Acknowledging a minor arithmetic slip allowed the speaker to save face gracefully.",
+      "translations": {
+        "bn": "নিজের মানসম্মান ও মর্যাদা রক্ষা করা",
+        "zh-CN": "挽回面子 / 保全名誉"
+      },
+      "tags": [
+        "dignity",
+        "reputation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "preserve dignity"
+      ]
+    },
+    {
+      "id": "idiom-silver-lining",
+      "term": "silver lining",
+      "normalizedTerm": "silver lining",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "An encouraging, uplifting prospect embedded within an otherwise gloomy circumstance.",
+      "example": "The silver lining of the rejected manuscript was the unusually helpful referee comments.",
+      "translations": {
+        "bn": "অন্ধকার বা বিপদের মাঝেও লুকিয়ে থাকা আশার আলো",
+        "zh-CN": "一线生机 / 晦暗中的曙光"
+      },
+      "tags": [
+        "hope",
+        "optimism"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "consolation"
+      ]
+    },
+    {
+      "id": "idiom-twist-someone-s-arm",
+      "term": "twist someone's arm",
+      "normalizedTerm": "twist someone's arm",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To exert vigorous persuasion or insistence to overcome someone's hesitation.",
+      "example": "You do not have to twist someone's arm to persuade students to eat free pizza.",
+      "translations": {
+        "bn": "কাউকে অতিরিক্ত পীড়াপীড়ি বা চাপ দিয়ে কোনো কাজে রাজি করানো",
+        "zh-CN": "强人所难 / 施加压力说服"
+      },
+      "tags": [
+        "persuasion",
+        "pressure"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "persuade",
+        "cajole"
+      ]
+    },
+    {
+      "id": "idiom-bend-over-backwards",
+      "term": "bend over backwards",
+      "normalizedTerm": "bend over backwards",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To exert oneself immensely beyond normal expectations to accommodate another.",
+      "example": "University international advisors bend over backwards to resolve complicated visa problems.",
+      "translations": {
+        "bn": "কাউকে সাহায্য করতে সাধ্যের বাইরে অতিরিক্ত ত্যাগ স্বীকার করা",
+        "zh-CN": "竭尽全力讨好 / 煞费苦心协助"
+      },
+      "tags": [
+        "service",
+        "effort"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "go out of one's way"
+      ]
+    },
+    {
+      "id": "idiom-under-the-radar",
+      "term": "under the radar",
+      "normalizedTerm": "under the radar",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "Operating obscurely so as to evade recognition, notice, or public scrutiny.",
+      "example": "Her brilliant open-source library remained under the radar until tech blogs highlighted it.",
+      "translations": {
+        "bn": "সবার অলক্ষ্যে বা জনসমক্ষে না এসে নিঃশব্দে থাকা",
+        "zh-CN": "低调潜行 / 未引起注意"
+      },
+      "tags": [
+        "stealth",
+        "obscurity"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "unnoticed"
+      ]
+    },
+    {
+      "id": "idiom-on-cloud-nine",
+      "term": "on cloud nine",
+      "normalizedTerm": "on cloud nine",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "Transported into an ecstatic state of supreme rapture and happiness.",
+      "example": "He was on cloud nine after receiving notification that his paper was accepted.",
+      "translations": {
+        "bn": "অপার আনন্দের সপ্তম স্বর্গে ভাসমান হওয়া",
+        "zh-CN": "乐不可支 / 乐翻天"
+      },
+      "tags": [
+        "joy",
+        "delight"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "ecstatic"
+      ]
+    },
+    {
+      "id": "idiom-let-the-cat-out-of-the-bag",
+      "term": "let the cat out of the bag",
+      "normalizedTerm": "let the cat out of the bag",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To inadvertently expose or prematurely unveil an undisclosed secret.",
+      "example": "Be discreet, lest you let the cat out of the bag about upcoming faculty appointments.",
+      "translations": {
+        "bn": "অসাবধানতাবশত কোনো গোপন কথা আগেভাগে ফাঁস করে দেওয়া",
+        "zh-CN": "走漏消息 / 泄露机密"
+      },
+      "tags": [
+        "secrets",
+        "revelation"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "reveal secret"
+      ]
+    },
+    {
+      "id": "idiom-bark-up-the-wrong-tree",
+      "term": "bark up the wrong tree",
+      "normalizedTerm": "bark up the wrong tree",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To pursue a misguided course of action or misdirect one's efforts or blame.",
+      "example": "Blaming network latency for local compute bottlenecks is to bark up the wrong tree.",
+      "translations": {
+        "bn": "ভুল জায়গায় কারণ খোঁজা বা অযথা ভুল ব্যক্তিকে দোষারোপ করা",
+        "zh-CN": "找错对象 / 误入歧途"
+      },
+      "tags": [
+        "mistakes",
+        "direction"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "misdirect effort"
+      ]
+    },
+    {
+      "id": "idiom-make-ends-meet",
+      "term": "make ends meet",
+      "normalizedTerm": "make ends meet",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To balance revenues with expenses, subsisting with financial difficulty.",
+      "example": "Many graduate students budget carefully every month to make ends meet.",
+      "translations": {
+        "bn": "সীমিত আয়ে টেনেটুনে নিজের দৈনন্দিন খরচ সামাল দেওয়া",
+        "zh-CN": "维持生计 / 收支相抵"
+      },
+      "tags": [
+        "money",
+        "budget"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "survive financially"
+      ]
+    },
+    {
+      "id": "idiom-hit-the-road",
+      "term": "hit the road",
+      "normalizedTerm": "hit the road",
+      "kind": "idiom",
+      "difficulty": "beginner",
+      "definition": "To set forth upon a voyage or depart for one's destination.",
+      "example": "Pack your conference baggage early so our carpool can hit the road by morning.",
+      "translations": {
+        "bn": "গাড়িতে বা যাত্রাপথে গন্তব্যের উদ্দেশ্যে রওনা দেওয়া",
+        "zh-CN": "启程上路 / 动身上路"
+      },
+      "tags": [
+        "travel",
+        "departure"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "depart"
+      ]
+    },
+    {
+      "id": "phrasal_verb-spill-over",
+      "term": "spill over",
+      "normalizedTerm": "spill over",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To expand beyond customary confines and affect adjacent domains.",
+      "example": "Frustrations with teaching grading often spill over into afternoon research productivity.",
+      "translations": {
+        "bn": "এক জায়গার উত্তেজনা বা চাপ উপচে অন্য জায়গায় বিস্তার লাভ করা",
+        "zh-CN": "蔓延扩散 / 影响波及"
+      },
+      "tags": [
+        "spread",
+        "influence"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "overflow"
+      ]
+    },
+    {
+      "id": "phrasal_verb-fade-out",
+      "term": "fade out",
+      "normalizedTerm": "fade out",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To diminish, vanish, or dissolve gradually until wholly extinct.",
+      "example": "Excitement regarding older computational paradigms began to fade out over time.",
+      "translations": {
+        "bn": "ধীরে ধীরে গুরুত্ব বা উপস্থিতি হারিয়ে নিভে যাওয়া",
+        "zh-CN": "逐渐淡出 / 慢慢消逝"
+      },
+      "tags": [
+        "decline",
+        "disappearance"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "dissolve"
+      ]
+    },
+    {
+      "id": "phrasal_verb-phase-in",
+      "term": "phase in",
+      "normalizedTerm": "phase in",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To introduce, deploy, or implement a protocol gradually in designated stages.",
+      "example": "The engineering department plans to phase in the restructured doctoral syllabus next autumn.",
+      "translations": {
+        "bn": "পর্যায়ক্রমে ধাপে ধাপে নতুন নিয়ম বা ব্যবস্থা চালু করা",
+        "zh-CN": "分阶段引入 / 逐步实施"
+      },
+      "tags": [
+        "transition",
+        "planning"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "introduce gradually"
+      ]
+    },
+    {
+      "id": "phrasal_verb-scale-back",
+      "term": "scale back",
+      "normalizedTerm": "scale back",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To curb, curtail, or diminish the dimension or budget of an operation.",
+      "example": "We had to scale back our experimental dataset sizes due to cloud storage quotas.",
+      "translations": {
+        "bn": "পরিসর, খরচ বা উদ্যোগ কমিয়ে সীমিত আকার দেওয়া",
+        "zh-CN": "缩减规模 / 削减开支"
+      },
+      "tags": [
+        "reduction",
+        "budget"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "cut back"
+      ]
+    },
+    {
+      "id": "phrasal_verb-shore-up",
+      "term": "shore up",
+      "normalizedTerm": "shore up",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To reinforce, buttress, or fortify something vulnerable or precarious.",
+      "example": "Adding rigorous empirical baseline tests shored up the paper against reviewer criticism.",
+      "translations": {
+        "bn": "অতিরিক্ত যুক্তি বা প্রমাণ দিয়ে দুর্বল ভিত্তিকে মজবুত করা",
+        "zh-CN": "加固支撑 / 巩固强化"
+      },
+      "tags": [
+        "support",
+        "strengthen"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "bolster"
+      ]
+    },
+    {
+      "id": "phrasal_verb-ramp-up",
+      "term": "ramp up",
+      "normalizedTerm": "ramp up",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To substantially accelerate, heighten, or amplify volume or intensity.",
+      "example": "Graduate cohorts ramp up their collective writing pace as summer submission approaches.",
+      "translations": {
+        "bn": "উৎপাদন, কাজের গতি বা তীব্রতা দ্রুত বৃদ্ধি করা",
+        "zh-CN": "加快进度 / 提高产量"
+      },
+      "tags": [
+        "acceleration",
+        "growth"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "accelerate"
+      ]
+    },
+    {
+      "id": "phrasal_verb-zero-in-on",
+      "term": "zero in on",
+      "normalizedTerm": "zero in on",
+      "kind": "phrasal_verb",
+      "difficulty": "intermediate",
+      "definition": "To target, focus undivided attention upon, or converge tightly upon an objective.",
+      "example": "Subsequent ablation studies allowed the researchers to zero in on the precise glitch.",
+      "translations": {
+        "bn": "নির্দিষ্ট লক্ষ্য বা মূল সমস্যার ওপর চোখ নিবদ্ধ করা",
+        "zh-CN": "锁定目标 / 全神贯注于"
+      },
+      "tags": [
+        "focus",
+        "precision"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "pinpoint"
+      ]
+    },
+    {
+      "id": "collocation-level-playing-field",
+      "term": "level playing field",
+      "normalizedTerm": "level playing field",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "A equitable milieu granting equal privileges and unbiased conditions to all.",
+      "example": "Standardized open benchmarks establish a genuinely level playing field for novel methods.",
+      "translations": {
+        "bn": "সবার জন্য পক্ষপাতহীন নিরপেক্ষ ও সমান সুযোগের পরিবেশ",
+        "zh-CN": "公平竞争的舞台 / 平等环境"
+      },
+      "tags": [
+        "equity",
+        "fairness"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "fair competition"
+      ]
+    },
+    {
+      "id": "collocation-common-ground",
+      "term": "common ground",
+      "normalizedTerm": "common ground",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "Shared convictions, aims, or principles upon which consensus can be founded.",
+      "example": "The interdisciplinary panel discovered valuable common ground regarding ethics.",
+      "translations": {
+        "bn": "দ্বিমতের মাঝেও উভয়ের সম্মতিভিত্তিক অভিন্ন ক্ষেত্র",
+        "zh-CN": "共同点 / 共同利益"
+      },
+      "tags": [
+        "agreement",
+        "consensus"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "mutual understanding"
+      ]
+    },
+    {
+      "id": "collocation-mixed-feelings",
+      "term": "mixed feelings",
+      "normalizedTerm": "mixed feelings",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "Simultaneous presence of contradictory sentiments such as joy and sorrow.",
+      "example": "Graduating scholars often experience mixed feelings about relinquishing student life.",
+      "translations": {
+        "bn": "একই সাথে ভালো ও মন্দ লাগার মতো মিশ্র মানসিক অনুভূতি",
+        "zh-CN": "百感交集 / 矛盾的心情"
+      },
+      "tags": [
+        "emotion",
+        "ambivalence"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "conflicted emotions"
+      ]
+    },
+    {
+      "id": "collocation-gut-feeling",
+      "term": "gut feeling",
+      "normalizedTerm": "gut feeling",
+      "kind": "collocation",
+      "difficulty": "intermediate",
+      "definition": "An instinctive perception or conviction independent of deliberated rational deduction.",
+      "example": "Trust your gut feeling when an empirical result seems too miraculous to be authentic.",
+      "translations": {
+        "bn": "কোনো যুক্তি বা প্রমাণের অতীত সহজাত অন্তর্দৃষ্টি বা মনস্তাত্ত্বিক অনুভূতি",
+        "zh-CN": "直觉 / 预感"
+      },
+      "tags": [
+        "intuition",
+        "instinct"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "intuition"
+      ]
+    },
+    {
+      "id": "idiom-put-on-the-back-burner",
+      "term": "put on the back burner",
+      "normalizedTerm": "put on the back burner",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To defer, downgrade, or suspend priority on a task until more pressing matters resolve.",
+      "example": "We chose to put on the back burner minor aesthetic tweaks until algorithms stabilized.",
+      "translations": {
+        "bn": "কোনো কাজকে কম অগ্রাধিকার দিয়ে পরে করার জন্য স্থগিত রাখা",
+        "zh-CN": "暂时搁置 / 降至次要地位"
+      },
+      "tags": [
+        "delay",
+        "priorities"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "shelve"
+      ]
+    },
+    {
+      "id": "idiom-drop-the-ball",
+      "term": "drop the ball",
+      "normalizedTerm": "drop the ball",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "To commit an unforced blunder or fail disgracefully in fulfilling one's obligations.",
+      "example": "Team members who neglect submission instructions drop the ball on collaborative efforts.",
+      "translations": {
+        "bn": "দায়িত্ব পালনে ব্যর্থ হয়ে চরম নির্বুদ্ধিতার ভুল করা",
+        "zh-CN": "搞砸失职 / 犯低级失误"
+      },
+      "tags": [
+        "failure",
+        "mistakes"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "make a mistake"
+      ]
+    },
+    {
+      "id": "idiom-elephant-in-the-room",
+      "term": "elephant in the room",
+      "normalizedTerm": "elephant in the room",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "An unmistakable, colossal topic or dilemma that everyone tacitly avoids confronting.",
+      "example": "The shrinking departmental travel budget remained the elephant in the room at our faculty meeting.",
+      "translations": {
+        "bn": "সবার পরিচিত কিন্তু অপ্রীতিকর ভয়ে কেউ উচ্চারণ করতে না চাওয়া প্রকট সমস্যা",
+        "zh-CN": "显而易见却被回避的棘手问题"
+      },
+      "tags": [
+        "avoidance",
+        "dilemma"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "unaddressed issue"
+      ]
+    },
+    {
+      "id": "idiom-cut-to-the-bone",
+      "term": "cut to the bone",
+      "normalizedTerm": "cut to the bone",
+      "kind": "idiom",
+      "difficulty": "advanced",
+      "definition": "Drastically and ruthlessly diminished to an irreducible bare minimum.",
+      "example": "In difficult fiscal seasons, student travel allowances are frequently cut to the bone.",
+      "translations": {
+        "bn": "অতিরিক্ত কাটছাঁট করে ন্যূনতম সীমায় নামিয়ে আনা",
+        "zh-CN": "削减殆尽 / 极度紧缩"
+      },
+      "tags": [
+        "reduction",
+        "austerity"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "slash severely"
+      ]
+    },
+    {
+      "id": "idiom-the-ball-is-in-your-court",
+      "term": "the ball is in your court",
+      "normalizedTerm": "the ball is in your court",
+      "kind": "idiom",
+      "difficulty": "intermediate",
+      "definition": "It is now someone's personal accountability or turn to execute the forthcoming step.",
+      "example": "We provided all requested ablation graphs, so the ball is in your court to synthesize.",
+      "translations": {
+        "bn": "পরবর্তী পদক্ষেপ নেওয়ার দায়িত্ব এখন আপনার হাতে",
+        "zh-CN": "轮到你采取行动了 / 由你做主"
+      },
+      "tags": [
+        "responsibility",
+        "action"
+      ],
+      "source": "phrasetab-curated",
+      "synonyms": [
+        "your move"
+      ]
     }
   ]
 }
